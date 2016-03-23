@@ -1,6 +1,6 @@
-// https://pac.itzmx.com
+// http://tianti.io/n.pac
 
-var proxy = "PROXY server01.pac.itzmx.com:25";
+var proxy = "PROXY pac.tianti.io:25;PROXY 45.32.42.148:25;";
 
 var domains = {
   "usa.tommy.com": 1,
