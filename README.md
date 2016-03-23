@@ -1,2 +1,2 @@
 # new-pac
-<li> cfu.pac:https://raw.githubusercontent.com/Alvin9999/new-pac/pac
+<li> new-pac.pac:https://raw.githubusercontent.com/Alvin9999/master/.pac
