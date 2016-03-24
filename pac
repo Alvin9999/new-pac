@@ -152,6 +152,8 @@ var domains = {
   "alvinalexander.com": 1, 
   "alwaysdata.com": 1, 
   "alwaysdata.net": 1, 
+  "epochtimes.com": 1,
+  "dongtaiwang.com": 1, 
   "amazon.com": 1, 
   "ameblo.jp": 1, 
   "americangreencard.com": 1, 
