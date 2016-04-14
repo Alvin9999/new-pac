@@ -1,6 +1,7 @@
-// http://tianti.io/n.pac
+// https://pac.mcplay.cn
 
-var proxy = "PROXY 45.32.26.51:25;PROXY 133.130.122.19:25";
+var proxy = "PROXY 210.83.229.107:23;";
+
 
 var domains = {
   "usa.tommy.com": 1,
