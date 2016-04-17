@@ -1,6 +1,6 @@
 // https://pac.mcplay.cn
 
-var proxy = "PROXY 210.83.229.107:23;";
+var proxy = "PROXY 153.92.46.76:25;PROXY 45.32.26.50:25;";
 
 
 var domains = {
