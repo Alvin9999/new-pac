@@ -1,6 +1,6 @@
 // http://pac.itzmx.com/abc.pac
 
-var proxy = "PROXY 153.92.46.76:25;PROXY 45.32.26.50:25;";
+var proxy = "PROXY porxy-jp-sz.mcplay.cn:23;";
 
 var domains = {
   "usa.tommy.com": 1,
