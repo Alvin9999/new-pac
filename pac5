@@ -1,4 +1,4 @@
-// http://pac.itzmx.com/abc.pac
+// https://pac.mcplay.cn
 
 var proxy = "PROXY porxy-jp-sz.mcplay.cn:23;";
 
