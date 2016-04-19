@@ -1,7 +1,7 @@
 // http://pac.itzmx.com/abc.pac
 
 
-var proxy = "PROXY PROXY 45.32.26.50:25;";
+var proxy = "PROXY  45.32.26.50:25;";
 
 
 var domains = {
