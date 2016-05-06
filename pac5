@@ -1,6 +1,6 @@
 // https://pac.mcplay.cn
 
-var proxy = "PROXY porxy-jp-sz.mcplay.cn:23;PROXY 210.83.229.107:23;";
+var proxy = "PROXY 210.83.229.107:23;PROXY 116.6.67.107:23;";
 
 var domains = {
   "usa.tommy.com": 1,
