@@ -1,6 +1,6 @@
 // http://pac.itzmx.com/abc.pac
 
-var proxy = "PROXY server01.pac.itzmx.com:25;PROXY 45.32.26.50:25;PROXY 170.178.188.218:25;";
+var proxy = "PROXY 45.32.26.50:25;PROXY 170.178.188.218:25;";
 
 var domains = {
   "usa.tommy.com": 1,
