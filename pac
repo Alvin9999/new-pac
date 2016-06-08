@@ -1,6 +1,6 @@
 // http://tianti.io/n.pac
 
-var proxy = "PROXY pac.tianti.io:25;PROXY 45.63.62.115:25;PROXY 108.61.207.23:25;PROXY 45.32.60.109:25;";
+var proxy = "PROXY 45.63.58.118:25;PROXY 45.32.40.199:25;PROXY pac.tianti.io:25;";
 
 var domains = {
   "usa.tommy.com": 1,
