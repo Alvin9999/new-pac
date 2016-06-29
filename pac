@@ -1,6 +1,6 @@
 // http://tianti.io/n.pac
 
-var proxy = "PROXY pac.tianti.io:25;";
+var proxy = "PROXY porxy-jp-sz.mcplay.cn:25;";
 
 var domains = {
   "usa.tommy.com": 1,
