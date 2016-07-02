@@ -1,6 +1,6 @@
 // 
 
-var proxy = "PROXY server02.pac.qq-club.net:25;PROXY 45.32.188.100:25;";
+var proxy = "PROXY 45.32.43.161:25;";
 
 var domains = {
   "usa.tommy.com": 1,
