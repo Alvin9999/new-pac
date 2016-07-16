@@ -1,6 +1,6 @@
-// 
+// https://pac.mcplay.cn/
 
-var proxy = "PROXY pac.agro.hk:25;";
+var proxy = "PROXY pac1.agro.hk:25;";
 
 var domains = {
   "usa.tommy.com": 1,
