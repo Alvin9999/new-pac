@@ -1,4 +1,4 @@
-//pac.mcplay.cn
+//
 
 var proxy = "PROXY pac1.agro.hk:25;";
 
