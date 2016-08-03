@@ -31,6 +31,7 @@ var domains = {
   "dw.com": 1,
   "watchinese.com": 1,
   "ntdtv.com": 1,
+  "tumblr.com": 1,
   "lvv2.com": 1,
   "raw.githubusercontent.com": 1,
   "iobit.com": 1,
