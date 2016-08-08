@@ -1,6 +1,6 @@
 //
 
-var proxy = "PROXY pac1.agro.hk:25;";
+var proxy = "PROXY pac1.agro.tw:25;";
 
 var domains = {
   "usa.tommy.com": 1,
