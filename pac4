@@ -1,6 +1,6 @@
 // 
 
-var proxy = "PROXY p.tianti.io:25;";
+var proxy = "PROXY 64.137.176.85:25;";
 
 var domains = {
   "usa.tommy.com": 1,
