@@ -1,5 +1,3 @@
-//
-
 var proxy = "PROXY pac1.agro.me.uk:25;";
 
 var domains = {
