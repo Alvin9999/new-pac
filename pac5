@@ -1,4 +1,4 @@
-var proxy = "PROXY 47.90.48.135:25;PROXY 64.137.239.130:25;PROXY 45.32.26.50:25;PROXY server01.pac.itzmx.com:25";
+var proxy = "PROXY server01.pac.itzmx.com:25";PROXY 45.32.26.50:25;;
 
 var domains = {
   "usa.tommy.com": 1,
