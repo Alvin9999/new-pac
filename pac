@@ -1,4 +1,4 @@
-var proxy = "PROXY pac1.nagro.net:25;";
+var proxy = "PROXY 163.44.169.139:25;";
 
 var domains = {
   "usa.tommy.com": 1,
