@@ -1,5 +1,3 @@
-var proxy = "PROXY jw06.setdns.work:80;";
-
 var domains = {
   "bannedbook.org": 1, 
   "bannedbook.net": 1,  
