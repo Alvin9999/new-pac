@@ -1,68 +1,32 @@
+var proxy = "PROXY 162.208.8.88:25;PROXY 162.208.8.82:25;192.243.111.43:25;PROXY 192.243.111.41:25;PROXY 192.243.111.39:25;PROXY 192.243.111.226:25;";
+
 var domains = {
-  "bannedbook.org": 1, 
-  "bannedbook.net": 1,  
-  "huaglad.com": 1,
-  "doubleclick.net": 1,
-  "googleadsensetvsite.com": 1,
-  "googlesyndication.com": 1, 
-  "googletagmanager.com": 1, 
-  "googletagservices.com": 1, 
-  "googleusercontent.com": 1,
-  "google-analytics.com": 1,
-  "qi-gong.me": 1,     
-  "3tui.net": 1, 
-  "androidebook.org": 1, 
-  "androidmall.org": 1, 
-  "bannednews.org": 1, 
-  "bnews.co": 1, 
-  "breakgfw.com": 1, 
-  "hyperspaceproxy.info": 1, 
-  "singlelogin.org": 1,
-  "bookos-z1.org": 1,
-  "dotheone.com": 1,
-  "android-x86.org": 1,
-  "web.whatapp.com": 1,
-  "thelaunchbook.com": 1,
-  "freefq.com": 1,
-  "faluninfo.net": 1,
-  "falundafaradio.org": 1,
-  "globalrescue.net": 1,
-  "guangming.org": 1,
-  "zhengwunet.org": 1,
-  "yuanming.net": 1,
-  "99cn.info": 1,
-  "jinpianwang.com": 1,
-  "bookepub.com": 1,
-  "100ke.org": 1,
-  "dtwang.org": 1,
-  "blogspot.fr": 1,
-  "zhengjian.org": 1,
-  "zh-cn.shenyun.com": 1,
+  "download.kolor.com": 1,
+  "messenger.com": 1,
+  "tumblr.com": 1,
+  "share.dmhy.org": 1,
+  "archeage.jp": 1,
+  "blogspot.jp": 1,
   "bbc.com": 1,
-  "dw.com": 1,
-  "watchinese.com": 1,
-  "ntdtv.com": 1,
   "ero-video.net": 1,
   "onedrive.live.com": 1,
   "blogsmithmedia.com": 1,
   "keepvid.com": 1,
   "unblockdmm.com": 1,
   "lvv2.com": 1,
-  "usembassy.gov": 1,
+  "raw.githubusercontent.com": 1,
   "iobit.com": 1,
   "telegram.org": 1,
   "abc.xyz": 1,
   "s3.amazonaws.com": 1,
   "d.chenqiwei.com": 1,
   "blogspot.com": 1,
-  "vpsdime.com": 1,
   "teamviewer.com": 1,
   "truste.com": 1,
   "ml314.com": 1,
   "a.fsdn.com": 1,
   "akamaihd.net": 1,
   "cdninstagram.com": 1,
-  "namecheap.com": 1,
   "chromium.org": 1,
   "nexon.net": 1,
   "nexon.com": 1,
@@ -70,16 +34,10 @@ var domains = {
   "nexon.co.jp": 1,
   "hornystress.me": 1,
   "konachan.com": 1,
-  "inboot.me": 1,
-  "my.vultr.com": 1,
-  "www.vultr.com": 1,
   "flashfxp.com": 1,
   "nicoseiga.jp": 1,
   "smilevideo.jp": 1,
-  "nimg.jp": 1,
-  "nyaa.eu": 1,
   "nyaa.se": 1,
-  "dmhy.org": 1, 
   "p.jwpcdn.com": 1, 
   "jwplayer.com": 1, 
   "0to255.com": 1, 
@@ -238,6 +196,7 @@ var domains = {
   "badoo.com": 1, 
   "baidu.jp": 1, 
   "baixing.me": 1, 
+  "bannedbook.org": 1, 
   "bao.li": 1, 
   "barenakedislam.com": 1, 
   "basetimesheightdividedby2.com": 1, 
@@ -567,6 +526,7 @@ var domains = {
   "djangosnippets.org": 1, 
   "dl-laby.jp": 1, 
   "dlsite.com": 1, 
+  "dlsite.jp": 1, 
   "dmcdn.net": 1, 
   "dns2go.com": 1, 
   "dnscrypt.org": 1, 
@@ -872,7 +832,9 @@ var domains = {
   "giganews.com": 1, 
   "gigporno.ru": 1, 
   "gimpshop.com": 1, 
+  "girlbanker.com": 1, 
   "git-scm.com": 1, 
+  "github.com": 1, 
   "givemesomethingtoread.com": 1, 
   "glennhilton.com": 1, 
   "globaljihad.net": 1, 
@@ -897,6 +859,7 @@ var domains = {
   "goodreaders.com": 1, 
   "goodreads.com": 1, 
   "goofind.com": 1, 
+  "google-analytics.com": 1, 
   "google.co.id": 1, 
   "google.co.jp": 1, 
   "google.co.kr": 1,
@@ -909,9 +872,8 @@ var domains = {
   "google.nl": 1,
   "google.com": 1, 
   "google.com.au": 1,
-  "google.com.hk": 1,
   "google.com.my": 1,
-  "google.com.tw": 1,
+  "google.com.sg": 1,
   "googleadservices.com": 1, 
   "googleapis.com": 1, 
   "googlecode.com": 1, 
@@ -925,6 +887,10 @@ var domains = {
   "googleplus.com": 1, 
   "googlesile.com": 1, 
   "googlesource.com": 1, 
+  "googlesyndication.com": 1, 
+  "googletagmanager.com": 1, 
+  "googletagservices.com": 1, 
+  "googleusercontent.com": 1, 
   "googlevideo.com": 1, 
   "gopetition.com": 1, 
   "gospelherald.com": 1, 
@@ -1046,6 +1012,7 @@ var domains = {
   "htmldog.com": 1, 
   "htxt.it": 1, 
   "hua-yue.net": 1, 
+  "huaglad.com": 1, 
   "huanghuagang.org": 1, 
   "huaren.us": 1, 
   "huaxia-news.com": 1, 
@@ -1497,7 +1464,6 @@ var domains = {
   "nf.id.au": 1, 
   "nga.mil": 1, 
   "ngensis.com": 1, 
-  "nicovideo.jp": 1, 
   "nighost.org": 1, 
   "ning.com": 1, 
   "nintendium.com": 1, 
@@ -1668,7 +1634,6 @@ var domains = {
   "porn2.com": 1, 
   "pornbase.org": 1, 
   "pornhub.com": 1, 
-  "phncdn.com": 1,
   "pornmm.net": 1, 
   "pornoxo.com": 1, 
   "pornrapidshare.com": 1, 
@@ -1717,6 +1682,7 @@ var domains = {
   "pwned.com": 1, 
   "python.com": 1, 
   "qanote.com": 1, 
+  "qi-gong.me": 1, 
   "qidian.ca": 1, 
   "qienkuen.org": 1, 
   "qiwen.lu": 1, 
@@ -2492,6 +2458,7 @@ var domains = {
   "wujieliulan.com": 1, 
   "wukangrui.net": 1, 
   "wwitv.com": 1, 
+  "www.nicovideo.jp": 1, 
   "wzyboy.im": 1, 
   "x-art.com": 1, 
   "x-berry.com": 1, 
@@ -2634,25 +2601,6 @@ var direct = 'DIRECT;';
 
 var hasOwnProperty = Object.hasOwnProperty;
 
-var servlist = ["PROXY 162.208.8.82:25; ","PROXY 162.208.8.88:25; ","PROXY 192.243.111.43:25; ","PROXY 192.243.111.41:25; ","PROXY 192.243.111.39:25; ","PROXY 192.243.111.226;25 "]; 
-
-function ip2int(ip_string) {
-    var REG =/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
-    var result = REG.exec(ip_string); 
-    if (result!=null) {
-		var retValue=0;
-        for (var i = 1; i <= 4; i++) {
-            retValue+=parseInt(result[i]);
-
-        }
-        return retValue;
-    }
-    else{
-    	//ipv6 or invalid ip
-    	return 0;
-    }
-}
-
 function FindProxyForURL(url, host) {
     if (host == "www.haosou.com") {
         return "PROXY 360.itzmx.com:80";
@@ -2666,16 +2614,7 @@ function FindProxyForURL(url, host) {
             if (url.indexOf('http://') == 0)
                 return "PROXY 360.itzmx.com:80";
         if (hasOwnProperty.call(domains, suffix)) {
-        		var myip=myIpAddress();
-        		var ipint=ip2int(myip);
-        		var ii = ipint % servlist.length;
-        		if(ii==servlist.length-1)
-        			var proxyRet=servlist[ii]+servlist[0];
-        		else
-        			var proxyRet=servlist[ii]+servlist[ii+1];
-        		
-        		//alert(proxyRet);
-        		return proxyRet;
+            return proxy;
         }
         if (pos <= 0) {
             break;
@@ -2684,4 +2623,3 @@ function FindProxyForURL(url, host) {
     }
     return direct;
 }
-
