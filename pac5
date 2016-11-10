@@ -1,4 +1,4 @@
-var proxy = "PROXY 47.90.49.49:25;PROXY 45.32.26.50:25;"
+var proxy = "PROXY xy.ffgo.online:25;"
 
 var domains = {
   "usa.tommy.com": 1,
