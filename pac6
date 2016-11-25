@@ -2636,7 +2636,7 @@ var direct = 'DIRECT;';
 
 var hasOwnProperty = Object.hasOwnProperty;
 
-var servlist = ["PROXY 47.88.212.10:25;","PROXY 45.76.207.82:25;","PROXY 128.199.129.104:25;"]; 
+var servlist = ["PROXY 47.88.212.10:25;","PROXY 45.76.207.82:25;","PROXY 128.199.129.104:25;","PROXY 162.243.125.228:25;"]; 
 
 function ip2int(ip_string) {
     var REG =/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
