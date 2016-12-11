@@ -2,6 +2,7 @@ var proxy = "PROXY jw06.setdns.work:80;";
 
 var domains = {
   "bannedbook.org": 1, 
+  "github.com": 1,
   "bannedbook.net": 1,  
   "huaglad.com": 1,
   "doubleclick.net": 1,
