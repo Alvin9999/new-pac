@@ -1,8 +1,7 @@
-var proxy = "PROXY xi.dnsfree.space:80;";
+var proxy =  "PROXY xi.dnsfree.space:80;";
 
 var domains = {
-  "bannedbook.org": 1,
-  "github.com": 1,
+  "bannedbook.org": 1, 
   "bannedbook.net": 1,  
   "huaglad.com": 1,
   "doubleclick.net": 1,
@@ -43,8 +42,16 @@ var domains = {
   "watchinese.com": 1,
   "ntdtv.com": 1,
   "live.com": 1,
+  "twitpic.com": 1, 
+  "twimg.com": 1, 
+  "tweetdeck.com": 1, 
   "keepvid.com": 1,
   "unblockdmm.com": 1,
+  "ytimg.com": 1, 
+  "cloudfront.net": 1, 
+  "bing.com": 1, 
+  "msn.com": 1, 
+  "coursera.org": 1, 
   "lvv2.com": 1,
   "usembassy.gov": 1,
   "iobit.com": 1,
@@ -67,6 +74,7 @@ var domains = {
   "nexon.co.jp": 1,
   "konachan.com": 1,
   "vultr.com": 1,
+  "glosbe.com": 1, 
   "flashfxp.com": 1,
   "nyaa.eu": 1,
   "nyaa.se": 1,
@@ -102,6 +110,7 @@ var domains = {
   "881903.com": 1, 
   "89-64.org": 1,
   "twitch.tv": 1,
+  "freewechat.com": 1,  
   "9001700.com": 1, 
   "908taiwan.org": 1, 
   "9bis.com": 1, 
@@ -504,8 +513,10 @@ var domains = {
   "faydao.com": 1, 
   "fb.com": 1, 
   "fb.me": 1, 
+  "fbcdn.com": 1, 
   "fbcdn.net": 1, 
   "fbsbx.com": 1, 
+  "thefacebook.com": 1, 
   "fdc89.jp": 1, 
   "feedburner.com": 1, 
   "feministteacher.com": 1, 
@@ -753,79 +764,43 @@ var domains = {
   "ironicsoftware.com": 1, 
   "ironpython.net": 1, 
   "isaacmao.com": 1, 
-  "isgreat.org": 1, 
-  "islamicity.com": 1, 
-  "ismprofessional.net": 1, 
   "isohunt.com": 1, 
   "israbox.com": 1, 
   "istef.info": 1, 
   "istockphoto.com": 1, 
-  "isunaffairs.com": 1, 
   "isuntv.com": 1, 
-  "itaboo.info": 1, 
   "itshidden.com": 1, 
-  "itweet.net": 1, 
-  "iu45.com": 1, 
-  "iverycd.com": 1, 
   "ixquick.com": 1, 
-  "izaobao.us": 1, 
-  "izihost.org": 1, 
-  "izles.net": 1, 
   "jackjia.com": 1, 
-  "japan-whores.com": 1, 
   "jayparkinsonmd.com": 1, 
   "jbtalks.cc": 1, 
   "jbtalks.com": 1, 
   "jbtalks.my": 1, 
-  "jeanyim.com": 1, 
   "jgoodies.com": 1, 
-  "jiaoyou8.com": 1, 
-  "jiehua.cz": 1, 
-  "jiepang.com": 1, 
-  "jieshibaobao.com": 1, 
-  "jimoparty.com": 1, 
-  "jinbushe.org": 1, 
   "jingpin.org": 1, 
   "jinhai.de": 1, 
-  "jiruan.net": 1, 
   "jitouch.com": 1, 
   "joachims.org": 1, 
-  "jobso.tv": 1, 
   "joeedelman.com": 1, 
   "joeyrobert.org": 1, 
   "journalofdemocracy.org": 1, 
-  "jpopforum.net": 1, 
   "jqueryui.com": 1, 
   "juliereyc.com": 1, 
   "junauza.com": 1, 
-  "junefourth-20.net": 1, 
   "justfreevpn.com": 1, 
   "justin.tv": 1, 
-  "justtristan.com": 1, 
   "juziyue.com": 1, 
   "jwmusic.org": 1, 
-  "jyxf.net": 1, 
-  "ka-wai.com": 1, 
-  "kaiyuan.de": 1, 
   "kakao.com": 1, 
-  "kangye.org": 1, 
   "kanzhongguo.com": 1, 
   "kanzhongguo.eu": 1, 
-  "karayou.com": 1, 
   "kcome.org": 1, 
   "kcsoftwares.com": 1, 
   "kechara.com": 1, 
   "keepandshare.com": 1, 
-  "kendincos.net": 1, 
   "kenengba.com": 1, 
   "keontech.net": 1, 
-  "keso.cn": 1, 
   "kickstarter.com": 1, 
-  "killwall.com": 1, 
-  "kingdomsalvation.org": 1, 
-  "kinghost.com": 1, 
-  "kissbbao.cn": 1, 
-  "kl.am": 1, 
   "klip.me": 1, 
   "knowledgerush.com": 1, 
   "kodingen.com": 1, 
@@ -1762,7 +1737,6 @@ var domains = {
   "tweetbackup.com": 1, 
   "tweetboard.com": 1, 
   "tweetboner.biz": 1, 
-  "tweetdeck.com": 1, 
   "tweetedtimes.com": 1, 
   "tweetmylast.fm": 1, 
   "tweetphoto.com": 1, 
@@ -1783,7 +1757,6 @@ var domains = {
   "twilio.com": 1, 
   "twilog.org": 1, 
   "twimbow.com": 1, 
-  "twimg.com": 1, 
   "twip.me": 1, 
   "twipple.jp": 1, 
   "twistar.cc": 1, 
@@ -1798,7 +1771,6 @@ var domains = {
   "twitlonger.com": 1, 
   "twitoaster.com": 1, 
   "twitonmsn.com": 1, 
-  "twitpic.com": 1, 
   "twitreferral.com": 1, 
   "twitstat.com": 1, 
   "twittbot.net": 1, 
@@ -2136,7 +2108,6 @@ var domains = {
   "youtube.com": 1, 
   "youversion.com": 1, 
   "ytht.net": 1, 
-  "ytimg.com": 1, 
   "yuanming.net": 1, 
   "yunchao.net": 1, 
   "yvesgeleyn.com": 1, 
@@ -2185,7 +2156,6 @@ var domains = {
   "zuo.la": 1, 
   "zuola.com": 1, 
   "zvereff.com": 1,
-  "glosbe.com": 1, 
   "zyzc9.com": 1
 };
 
@@ -2194,7 +2164,6 @@ var direct = 'DIRECT;';
 var hasOwnProperty = Object.hasOwnProperty;
 
 var servlist = ["PROXY 45.32.226.8:25;","PROXY 45.32.228.234:25;","PROXY 45.63.37.76:25;","PROXY 45.63.34.7:25;","PROXY 45.32.225.217:25;","PROXY 45.63.38.210:25;","PROXY 104.156.252.15:25;","PROXY 45.63.35.80:25;"]; 
-
 
 function ip2int(ip_string) {
     var REG =/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
@@ -2215,7 +2184,7 @@ function ip2int(ip_string) {
 
 function FindProxyForURL(url, host) {
     if (host == "www.haosou.com") {
-        return "PROXY 360.itzmx.com:80";
+        return "PROXY 127.0.0.1:80";
     }
 
     var suffix;
@@ -2224,7 +2193,7 @@ function FindProxyForURL(url, host) {
         suffix = host.substring(pos + 1);
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)
-                return "PROXY 360.itzmx.com:80";
+                return "PROXY 127.0.0.1:80";
         if (hasOwnProperty.call(domains, suffix)) {
         		var myip=myIpAddress();
         		var ipint=ip2int(myip);
