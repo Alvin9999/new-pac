@@ -3,6 +3,7 @@ var proxy = "PROXY xi.dnsfree.space:80;";
 var domains = {
   "github.com": 1,
   "huaglad.com": 1,
+  "pinterest.com": 1,
   "doubleclick.net": 1,
   "googleadsensetvsite.com": 1,
   "googlesyndication.com": 1, 
