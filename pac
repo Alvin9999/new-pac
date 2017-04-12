@@ -1,6 +1,7 @@
 var proxy = "PROXY xi.dnsfree.space:80;";
 
 var domains = {
+  "slideshare.net": 1,
   "huaglad.com": 1,
   "pinterest.com": 1,
   "doubleclick.net": 1,
