@@ -1,5 +1,5 @@
 
-var proxy = "45.32.113.95:25; ";
+var proxy = "47.88.223.209:25; DIRECT";
 
 var domains = {
   "localhost": 1
