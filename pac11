@@ -1,0 +1,4 @@
+function FindProxyForURL(url, host) {
+  return "DIRECT; PROXY 47.74.132.157:25; ; 
+} 
+ 
