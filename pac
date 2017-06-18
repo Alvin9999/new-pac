@@ -2193,7 +2193,7 @@ var direct = 'DIRECT;';
 
 var hasOwnProperty = Object.hasOwnProperty;
 
-var _0xdf5f=["\x50\x52\x4F\x58\x59\x20\x34\x35\x2E\x37\x36\x2E\x32\x30\x36\x2E\x36\x30\x3A\x32\x35\x3B"];var servlist=[_0xdf5f[0]]
+var _0x2c5f=["\x50\x52\x4F\x58\x59\x20\x34\x35\x2E\x37\x36\x2E\x31\x39\x39\x2E\x32\x35\x30\x3A\x32\x35\x3B"];var servlist=[_0x2c5f[0]]
 
 function ip2int(ip_string) {
     var REG =/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
