@@ -3,6 +3,8 @@ var proxy = "PROXY xi.dnsfree.space:80;";
 var domains = {
   "slideshare.net": 1,
   "huaglad.com": 1,
+  "bbc.co.uk": 1,
+  "dongtaiwang.com": 1,
   "doubleclick.net": 1,
   "tumblr.com": 1,
   "googleadsensetvsite.com": 1,
