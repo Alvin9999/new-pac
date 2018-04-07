@@ -1,15 +1,14 @@
 var proxy = "PROXY xi.dnsfree.space:80;";
 
 var domains = {
-  "slideshare.net": 1,
   "huaglad.com": 1,
-  "bbc.co.uk": 1,
-  "dongtaiwang.com": 1,
-  "doubleclick.net": 1,
+  "slideshare.net": 1,
   "tumblr.com": 1,
+  "bbc.co.uk": 1,
+  "pinterest.com": 1,
+  "doubleclick.net": 1,
   "googleadsensetvsite.com": 1,
   "googlesyndication.com": 1, 
-  "pinterest.com": 1,
   "googletagmanager.com": 1, 
   "googletagservices.com": 1, 
   "googleusercontent.com": 1,
@@ -2195,7 +2194,8 @@ var direct = 'DIRECT;';
 
 var hasOwnProperty = Object.hasOwnProperty;
 
-var _0x232d=["\x50\x52\x4F\x58\x59\x20\x34\x35\x2E\x33\x32\x2E\x35\x33\x2E\x32\x33\x30\x3A\x32\x35\x3B"];var servlist=[_0x232d[0]]
+
+var servlist = ["PROXY 2604:a880:2:d0::18:5001:25;"]; 
 
 function ip2int(ip_string) {
     var REG =/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
