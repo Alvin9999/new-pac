@@ -7,6 +7,7 @@
   <li class="Box-row">
           <strong><a class="d-block" href="https://github.com/Alvin9999/new-pac/wiki/%E7%81%AB%E7%8B%90%E7%BF%BB%E5%A2%99%E6%B5%8F%E8%A7%88%E5%99%A8">火狐翻墙浏览器</a></strong>
         </li>  
+以上3款浏览器，永久免费。免安装，无需设置，解压后使用。稳定、流畅、高速、不限流量，长期更新。集成Goflyway、v2ray、SSR、SS、DAZE、Naiveproxy、Brook、Trojan-go、Etgo、Astar、SkyZip、无界、自由门，适合windows操作系统，比如：Xp、win7、win8、win10系统。
         <li class="Box-row">
           <strong><a class="d-block" href="https://github.com/Alvin9999/new-pac/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6">iOS自由上网软件</a></strong>
         </li>        
