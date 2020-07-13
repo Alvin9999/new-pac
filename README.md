@@ -62,9 +62,6 @@
           <strong><a class="d-block" href="https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAWireGuard-VPN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B">v2ray各平台图文使用教程</a></strong>
   </li>
             <li class="Box-row">
-          <strong><a class="d-block" href="https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAWireGuard-VPN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B">自建wireguard服务器教程</a></strong>
-  </li>
-            <li class="Box-row">
           <strong><a class="d-block" href="https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%90%84%E5%B9%B3%E5%8F%B0%E5%9B%BE%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">v2ray各平台图文使用教程</a></strong>
   </li>
             <li class="Box-row">
