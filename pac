@@ -1,5 +1,5 @@
-var proxy = "PROXY xi.dnsfree.space:443;";
-
+var proxy = "SOCKS5 127.0.0.1:2080; DIRECT;";
+var localsocks = "SOCKS5 127.0.0.1:80";
 var domains = {
   "huaglad.com": 1,
   "slideshare.net": 1,
@@ -2216,7 +2216,7 @@ function ip2int(ip_string) {
 
 function FindProxyForURL(url, host) {
     if (host == "www.haosou.com") {
-        return "PROXY 360.itzmx.com:80";
+        return localsocks;
     }
 
     var suffix;
@@ -2225,7 +2225,7 @@ function FindProxyForURL(url, host) {
         suffix = host.substring(pos + 1);
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)
-                return "PROXY 360.itzmx.com:80";
+                return localsocks;
         if (hasOwnProperty.call(domains, suffix)) {
         		var myip=myIpAddress();
         		var ipint=ip2int(myip);
