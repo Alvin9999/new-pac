@@ -1,5 +1,5 @@
 var proxy = "PROXY xi.dnsfree.space:443;";
-
+    
 var domains = {
   "huaglad.com": 1,
   "slideshare.net": 1,
