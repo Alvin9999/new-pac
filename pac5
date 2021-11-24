@@ -1,4 +1,4 @@
-var proxy = "PROXY xi24.dnsfree.space:443;";
+var proxy = "PROXY xi25.dnsfree.space:443;";
      
 var domains = {
   "slideshare.net": 1,
