@@ -2185,7 +2185,6 @@ var domains = {
   "zsrhao.com": 1, 
   "zuo.la": 1, 
   "zuola.com": 1, 
-  "zvereff.com": 1,
 };
 
 var direct = 'DIRECT;';
