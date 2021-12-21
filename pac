@@ -990,7 +990,6 @@ var domains = {
   "mingpaotor.com": 1, 
   "mingpaovan.com": 1, 
   "minimalmac.com": 1, 
-  "mininova.org": 1, 
   "minzhuhua.net": 1, 
   "minzhuzhanxian.com": 1, 
   "minzhuzhongguo.org": 1, 
