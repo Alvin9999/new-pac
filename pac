@@ -6,7 +6,6 @@ var domains = {
   "tumblr.com": 1,
   "bbc.co.uk": 1,
   "pinterest.com": 1,
-  "doubleclick.net": 1,
   "googleadsensetvsite.com": 1,
   "googlesyndication.com": 1, 
   "googletagmanager.com": 1, 
