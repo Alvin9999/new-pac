@@ -506,7 +506,6 @@ var domains = {
   "fb.me": 1, 
   "fbcdn.net": 1, 
   "fbsbx.com": 1, 
-  "fdc89.jp": 1, 
   "feedburner.com": 1, 
   "feministteacher.com": 1, 
   "ff.im": 1, 
