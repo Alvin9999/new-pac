@@ -1,4 +1,4 @@
-var proxy = "PROXY 104.17.209.105:443;";
+var proxy = "PROXY 104.19.110.120:443;";
      
 var domains = {
   "slideshare.net": 1,
