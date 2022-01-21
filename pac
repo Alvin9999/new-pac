@@ -1,4 +1,4 @@
-var proxy = "PROXY 104.18.254.203:443;";
+var proxy = "PROXY 104.19.236.8:443;";
         
 var domains = {
   "huaglad.com": 1,
