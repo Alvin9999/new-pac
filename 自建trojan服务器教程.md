@@ -1,6 +1,6 @@
 **2021年11月14日更新。**
 
-**如果无法查看图片，可以访问http://tr1.freeair888.club/自建trojan服务器教程**
+**如果无法查看图片，可以访问http://tr1.freeair888.club/自建trojan服务器教程/**
 
 ***
 
