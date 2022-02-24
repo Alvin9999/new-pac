@@ -1,6 +1,6 @@
 **2022年2月8日更新。服务器系统推荐Debain10，不建议用CentOS 7系统，CentOS 7安装脚本可能有问题。**
 
-**如果无法查看图片，可以访问http://tr1.freeair888.club/自建v2ray服务器教程**
+**如果无法查看图片，可以访问http://tr1.freeair888.club/自建v2ray服务器教程/**
 
 ***
 
