@@ -1,4 +1,4 @@
-**2022年2月8日更新。服务器系统推荐Debain10，不建议用CentOS 7系统，CentOS 7安装脚本可能有问题。**
+**2022年3月7日更新。服务器系统推荐Debain10，不建议用CentOS 7系统，CentOS 7安装脚本可能有问题。**
 
 **如果无法查看图片，可以访问http://tr1.freeair888.club/自建v2ray服务器教程/**
 
@@ -209,35 +209,7 @@ service ntpd start
 
 > 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
 
-**提醒**：以下为高阶篇教程，高阶篇需要域名。第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) 。
-
 ***
-
-**高阶篇**
-
-VLESS+TCP+TLS/VLESS+TCP+XTLS/VLESS+WS+TLS/VMess+TCP+TLS/VMess+WS+TLS，搭建脚本需要购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B)（有免费域名）。
-
-**（VLESS+TCP+TLS/VLESS+TCP+XTLS/VLESS+WS+TLS/VMess+TCP+TLS/VMess+WS+TLS/Trojan/Trojan-Go WS）+伪装站点、七合一共存脚本，支持多内核安装，支持系统Debian 8+ / Ubuntu 16.04+ / Centos7**
-
-***
-
-wget -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-
-***
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless1.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless2.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless3.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless4.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless5.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless6.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vless/vless7.PNG)
 
 **第三步：一键加速VPS服务器**
 
