@@ -263,3 +263,8 @@ systemctl restart trojan
 ![](https://www.atrandys.com/wp-content/uploads/2019/10/clipboard.png)
 
 如果你的同一个域名申请了很多此证书，这个处理方法可能有用：更换二级域名，例如原来使用的域名是www.abc.com或abc.com或xyz.abc.com，那么现在你添加一个二级域名解析例如xxx.abc.com，安装时使用这个域名即可。
+
+***
+
+
+有问题可以发邮件至海外邮箱kebi2014@gmail.com
