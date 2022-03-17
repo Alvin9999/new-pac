@@ -1,4 +1,4 @@
-**2021年11月14日更新。注意：ProxySU官网的最新版已经去掉了很多款工具的搭建模块，如果想按照教程那样搭建SSR等工具，可以下载旧版，本页面也有下载ProxySU-v2.5.4旧版的地址。**
+**2022年3月17日更新开通服务器教程。注意：ProxySU官网的最新版已经去掉了很多款工具的搭建模块，如果想按照教程那样搭建SSR等工具，可以下载旧版，本页面也有下载ProxySU-v2.5.4旧版的地址。**
 
 ***
 
@@ -9,7 +9,7 @@ ProxySU是一款windows科学上网搭建软件，支持一键搭建V2ray，Troj
 
 **使用提醒**：
 
-ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian9)。[ProxySU官网](https://github.com/proxysu/windows/tree/v2.2.2)。
+ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian10)。[ProxySU官网](https://github.com/proxysu/windows/tree/v2.2.2)。
 
 **ProxySU-v2.2.2功能如下:**
 
@@ -54,7 +54,7 @@ ProxySU的安装流程，是假设在全新系统下，没有装过以上代理�
 
 ##### 支持的VPS系统为：  
 * CentOS 7/8   
-* Debian 8/9/10 (推荐Debian9)  
+* Debian 8/9/10 (推荐Debian10)  
 * Ubuntu 16.04及以上
 
 示意图:
@@ -111,24 +111,40 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
 
 
-**开通服务器步骤如图**：
+**vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr2.PNG)
+选择“Cloud Compute”。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
 
-**vps服务器推荐用Debain9，不推荐用CentOS7，CentOS7用ProxySU无法自动开启bbr加速。**
+选择“Regular Performance”。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr5.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr6.PNG)
+选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
 
-**开通服务器时，当出现了ip，不要立马去ping或者用ProxySU去连接，再等5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统密码获取方法如下图：**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+
+**点击图中的系统名字，会弹出具体系统版本，推荐Debain10。不推荐用CentOS7，CentOS7用ProxySU无法自动开启bbr加速。**
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+
+选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+
+关闭自动备份，这个是收费的，可以关闭它。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+
+最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+
+
+
+**开通服务器时，当出现了ip，不要立马去ping或者用ProxySU去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统密码获取方法如下图：**
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
@@ -150,7 +166,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 当前版本为ProxySU-v2.5.4,文件很小,大小为778kb.如果github国内下载慢,可以用下面的网盘来下载. 
 
-[国外云盘下载1](https://tr101.free4444.xyz/ProxySU-v2.5.4.zip)  [国外云盘下载2](https://tr201.free4444.xyz/ProxySU-v2.5.4.zip)  
+[国外云盘下载1](https://tr601.free4444.xyz/ProxySU-v2.5.4.zip)  [国外云盘下载2](https://tr201.free4444.xyz/ProxySU-v2.5.4.zip)  
 
 ## Windows系统需要安装net4.0及以上
 
