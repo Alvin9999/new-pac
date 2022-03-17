@@ -1,6 +1,6 @@
-**2021年11月14日更新。**
+**2022年3月17日更新开通服务器教程。**
 
-**如果无法查看图片，可以访问http://tr1.freeair888.club/自建wireguard服务器教程/**
+**如果无法查看图片，可以访问https://tr1.freeair888.club/自建wireguard服务器教程/**
 
 ***
 
@@ -66,24 +66,38 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
 
 
-**开通服务器步骤如图**：
+**vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr2.PNG)
+选择“Cloud Compute”。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/master/vultr/vultr3.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
 
-### WireGuard VPN安装脚本仅支持Centos7或8!
+选择“Regular Performance”。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr5.PNG)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr6.PNG)
+选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
 
-**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统（推荐centos6）的密码获取方法如下图：**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+
+**点击图中的系统名字，会弹出具体系统版本， 搭建脚本只支持CentOS7或CentOS8 **
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+
+选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+
+关闭自动备份，这个是收费的，可以关闭它。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+
+最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+
+**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统（推荐centos6）的密码获取方法如下图：**
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
@@ -106,7 +120,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
-[国外云盘1下载](https://tr101.free4444.xyz/Xshell_setup_wm.exe)
+[国外云盘1下载](https://tr601.free4444.xyz/Xshell_setup_wm.exe)
 [国外云盘2下载](https://tr201.free4444.xyz/Xshell_setup_wm.exe)
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
@@ -252,8 +266,7 @@ TunSafe尚没有针对Linux，OSX或FreeBSD的图形用户界面。但是，您�
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/wire/wire-erwei2.jpg)
 
 
-安卓版：WireGuard_v0.0.20200206.xapk [国外云盘下载](https://tr61.free4444.xyz/WireGuard_v0.0.20200206.xapk)
-TunSafe VPN_v1.0.apk [国外云盘下载](https://tr61.free4444.xyz/TunSafeVPN_v1.0.apk)
+安卓版：WireGuard.apk [国外云盘下载](https://f-droid.org/repo/com.wireguard.android_491.apk) [国外云盘2下载](https://tr601.free4444.xyz/com.wireguard.android_491.apk)
 
 安卓版安卓wireguard后，选择右下角的+号按钮进行配置，可以选择第一个将配置文件导入进去，也可以选择第二个扫描二维码。
 
