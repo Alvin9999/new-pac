@@ -159,6 +159,12 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh)"
 
+> 如果输入安装命令没反应，或者提示curl: command not found ，那是因为服务器系统没有自带curl命令，安装一下curl。
+
+> CentOS系统安装curl命令：yum install -y curl   
+
+> Debian/Ubuntu系统安装curl命令：apt-get install -y curl
+
 ***
 
 复制上面整个代码到vps服务器中进行安装，安装过程中会提示输入域名。
