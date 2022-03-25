@@ -162,9 +162,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **第二步:ProxySU下载及搭建**
 
-**ProxySU**:[github官方下载](https://github.com/proxysu/windows/releases) **下载那个zip文件,下载后解压.**
-
-当前版本为ProxySU-v2.5.4,文件很小,大小为778kb.如果github国内下载慢,可以用下面的网盘来下载. 
+当前版本为ProxySU-v2.5.4,文件很小,大小为778kb.
 
 [国外云盘下载1](https://tr601.free4444.xyz/ProxySU-v2.5.4.zip)  [国外云盘下载2](https://tr201.free4444.xyz/ProxySU-v2.5.4.zip)  
 
