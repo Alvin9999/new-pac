@@ -9,8 +9,48 @@ ProxySU是一款windows科学上网搭建软件，支持一键搭建V2ray，Troj
 
 **使用提醒**：
 
-ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian10)。[ProxySU官网](https://github.com/proxysu/windows/tree/v2.2.2)。
+ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian10)。[ProxySU官网](https://github.com/proxysu/ProxySU/tree/master)。
 
+**ProxySU-v2.2.2功能如下:**
+
+##### V2ray可一键安装的模式有：
+* tcp 
+* tcp+http伪装  
+* tcp+TLS 
+* tcp+TLS （自签证书）
+* Vless+tcp+TLS+Web (新热门协议)
+* WebSocket
+* WebSocket+TLS 
+* WebSocket+TLS+Web 
+* WebSocket+TLS（自签证书） 
+* http2  
+* http2+TLS+Web
+* http2（自签证书）
+* mKCP及各种伪装 
+* QUIC及各种伪装。  
+注：mKCP和QUIC模式使用udp协议，可以有效减少网络延时，有加速的作用，但在网络管控严厉时期，会导致IP被封，遇到的一次，就是刚安装好，使用了3个小时后，IP被封（现已确认是mKCP的流量被识别导致，项目组正在维护中。2020.6.10维护完毕，升级到版本4.24.2及以上，启用mKCP密钥可增强抗识别）。以上模式最推荐的是WebSocket+TLS+Web 和http2+TLS+Web 需要有一个域名。如果能加上CDN则稳定性更好。加上CDN后，是加速还是减速，与线路有关。
+
+##### Trojan 可一键安装：  
+* Trojan + TLS + Web
+
+##### Trojan-Go 可一键安装：  
+* Trojan-Go + TLS + Web  
+* Trojan-Go + WebSocket + TLS + Web
+
+##### NaiveProxy一键安装：  
+* NaiveProxy + TLS +Web  
+
+##### ShadowsocksR(SSR)一键安装：  
+* SSR+TLS+Caddy  
+
+##### Shadowsocks-libev及相关插件一键安装：  
+* SS 经典模式  
+* SS+WebSocket+TLS+Caddy(Web前置) (推荐)  
+* SS+WebSocket  
+* SS+QUIC  
+* SS+kcptun  
+* SS+obfs+http+Web  
+* SS+obfs+TLS+Web  
 
 ##### 支持的VPS系统为：  
 * CentOS 7/8   
