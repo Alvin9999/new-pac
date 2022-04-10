@@ -1,4 +1,4 @@
-**2022年3月17日更新开通服务器教程。**
+**2022年4月10日更新推荐ssr参数。**
 
 **如果无法查看图片，可以访问https://tr1.freeair888.club/自建ss服务器教程/**
 
@@ -149,9 +149,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **如果搭建SSR账号，请使用脚本一，目前推荐的SSR参数设置为以下，有利于突破网络封锁，参数如下**：
 
-1、加密方式：none  协议：origin 混淆：tls1.2_ticket_auth
+1、加密方式：aes-256-cfb  协议：origin 混淆：tls1.2_ticket_auth
 
-2、加密方式：none  协议：auth_chain_a 混淆：tls1.2_ticket_auth 
+2、加密方式：aes-256-cfb  协议：auth_chain_a 混淆：tls1.2_ticket_auth 
 
 3、高阶篇的SSR+TLS+Caddy
 
