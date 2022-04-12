@@ -166,6 +166,10 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 [国外云盘下载1](https://tr601.free4444.xyz/ProxySU-v2.3.0.zip)  [国外云盘下载2](https://tr201.free4444.xyz/ProxySU-v2.3.0.zip)  
 
+**注意：如果是搭建v2ray，搭建完成并导入账号信息到客户端后，检测下客户端里面账号信息的额外ID（alterID）是不是0，如果不是0，手动修改为0就能使用了。**
+
+**官方其它版本下载**：https://github.com/proxysu/ProxySU/releases
+
 ## Windows系统需要安装net4.0及以上
 
 [Microsoft.NET Framework 4.0](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net40-offline-installer) or higher
