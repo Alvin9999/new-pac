@@ -1,4 +1,4 @@
-**2022年3月17日更新开通服务器教程。**
+**2022年4月16日更新trojan账号设置方法。**
 
 **如果无法查看图片，可以访问https://tr1.freeair888.club/自建trojan服务器教程/**
 
@@ -175,9 +175,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 安装过程会先提示输入域名，不要带http或https，只输入域名即可，例如domain.com或 a.domain.com ，之后提示输入密码时输入密码。
 
-最终安装完成后，配置文件信息会自动展示在屏幕上，可以复制下来用。并且vps会展示一条下载地址，复制地址，并下载下来即可。解压缩下载的trojan-cli.zip的压缩包，进入文件夹，双击start.bat，开启Trojan服务，Trojan会监听本地1080端口。
+最终安装完成后，配置文件信息会自动展示在屏幕上，对于trojan账号信息，最重要的是域名和密码。以v2rayN客户端为例，填入方法如下图：
 
-浏览器代理设置成socks5，直接指向127.0.0.1：1080即可。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-.png)
+
+打开v2rayN客户端——添加trojan服务器——填入账号信息，如上图，重要信息包括：域名、密码、传输层安全tls。
+
+浏览器代理设置成socks5 127.0.0.1:1080。
 
 谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
 
