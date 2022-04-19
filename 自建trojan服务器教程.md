@@ -177,9 +177,9 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 最终安装完成后，配置文件信息会自动展示在屏幕上，对于trojan账号信息，最重要的是域名和密码。以v2rayN客户端为例，填入方法如下图：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-2.png)
 
-打开v2rayN客户端——添加trojan服务器——填入账号信息，如上图，重要信息包括：域名、密码、传输层安全tls。
+打开v2rayN客户端——添加trojan服务器——填入账号信息，如上图，重要信息包括：域名、密码、传输层安全tls、SNI。
 
 浏览器代理设置成socks5 127.0.0.1:1080。
 
