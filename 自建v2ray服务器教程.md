@@ -1,4 +1,4 @@
-**2022年3月17日更新开通服务器教程。服务器系统推荐Debain10，不建议用CentOS 7系统，CentOS 7安装脚本可能有问题。**
+**2022年4月24日更新。**
 
 **如果无法查看图片，可以访问https://tr1.freeair888.club/自建v2ray服务器教程/**
 
@@ -185,6 +185,8 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
 
 **如果选择的是CentOS系统，还需要关闭vps防火墙来开放端口，相关命令如下：**
 
