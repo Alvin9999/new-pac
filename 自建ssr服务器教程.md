@@ -157,6 +157,8 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **如果搭建SS账号，请使用脚本二，加密方式推荐aes-256-gcm**
 
+**推荐搭建SSR账号。**
+
 ***
 
 **CentOS 6和7/Debian6+/Ubuntu14+ ShadowsocksR/Shadowsocks一键部署管理脚本：**
