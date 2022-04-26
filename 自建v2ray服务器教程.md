@@ -344,7 +344,7 @@ service ntpd start
 
 **如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。**
 
-**如果ip和端口都没问题，可以尝试来更换传输协议，比如TCP、Websocket、mKCP等，测试哪种协议最适合自己的网络环境。**
+**如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。**
 
 ***
 
