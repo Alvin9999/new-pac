@@ -180,7 +180,7 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
 
-安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。
+安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。（推荐websocket协议）
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
 
