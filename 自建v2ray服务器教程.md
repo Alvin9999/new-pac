@@ -66,12 +66,15 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
 
-选择“Regular Performance”。
+选择“Regular Performance”。如果选择这个，在下面选择具体套餐的时候，最低是3.5美元/月（也要看服务器位置），流量是500GB/月；5美元是1T流量/月。
+
+如果选择前面3个，在下面选择具体套餐的时候，最低是5美元/月，但5美元是2T流量/月。也就是，对流量需求较高的可以选择前面3个。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
+可以优先尝试洛杉矶服务器，亚洲服务器日本、韩国延迟较低，但用的人很多，国内速度不一定就会很好，当然其它服务器位置也可以尝试。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
 
