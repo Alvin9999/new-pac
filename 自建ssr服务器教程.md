@@ -1,4 +1,4 @@
-**2022年4月10日更新推荐ssr参数。**
+**2022年5月4日更新高阶篇。**
 
 **如果无法查看图片，可以访问https://tr1.freeair888.club/自建ss服务器教程/**
 
@@ -158,7 +158,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 3、高阶篇的SSR+TLS+Caddy
 
-**如果搭建SS账号，请使用脚本二，加密方式推荐aes-256-gcm**
+**如果搭建SS账号，请使用脚本二，加密方式可选aes-256-gcm，或者高阶篇的SS+插件模式（推荐）**
 
 **推荐搭建SSR账号。**
 
@@ -277,7 +277,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 **高阶篇**
 
-当封锁特别厉害的时候，常规的SS/SSR配置可能已经无法满足需求，这个时候我们可以搭建SSR+TLS+Caddy，搭建需要购买域名，可以参考这个[域名购买及设置教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) （有免费域名） 。
+当封锁特别厉害的时候，常规的SS/SSR配置可能已经无法满足需求，这个时候SSR节点我们可以搭建SSR+TLS+Caddy，搭建需要购买域名，可以参考这个[域名购买及设置教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) （有免费域名） 。如果搭建SS节点，推荐SS+插件，比如v2ray插件模式下的Websocket，这个配置不用域名就可以搭建。
 
 用一键搭建工具ProxySU来搭建即可，傻瓜式，很方便，[一键搭建工具ProxySU使用教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7ProxySU)
 
