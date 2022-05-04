@@ -285,6 +285,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/ssimage/ssrtls.PNG)
 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/ssimage/ss-plugin2.png)
+
 ***
 
 **第三步：一键加速VPS服务器**
