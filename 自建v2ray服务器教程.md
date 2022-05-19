@@ -1,6 +1,6 @@
 **2022年4月24日更新。**
 
-**如果无法查看图片，可以访问https://tr1.freeair888.club/自建v2ray服务器教程/**
+**如果无法查看图片，可以访问https://tr2.freeair888.club/自建v2ray服务器教程/**
 
 ***
 
@@ -54,60 +54,60 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **账号充值如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
 
 选择“Cloud Compute”。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
 
 选择“Regular Performance”。如果选择这个，在下面选择具体套餐的时候，最低是3.5美元/月（也要看服务器位置），流量是500GB/月；5美元是1T流量/月。
 
 如果选择前面3个，在下面选择具体套餐的时候，最低是6美元/月，但6美元是2T流量/月。也就是，对流量需求较高的可以选择前面3个。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
 可以优先尝试洛杉矶服务器，亚洲服务器日本、韩国延迟较低，但用的人很多，国内速度不一定就会很好，当然其它服务器位置也可以尝试。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
 
 **点击图中的系统名字，会弹出具体系统版本，推荐Debain10 （不要选CentOS7！）**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
 
 选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
 
 关闭自动备份，这个是收费的，可以关闭它。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
 最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
 
 **开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
 
 
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
 
 ***
 
@@ -120,7 +120,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/Mac.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/Mac.png)
 
 如果不能用Mac自带的终端连接的话，直接网上搜“Mac连接SSH的软件”，有很多，然后通过软件来连接vps服务器就行，具体操作方式参考windows xshell。Mac成功连接vps后剩下的操作和windows一样。
 
@@ -130,23 +130,23 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 下载windows xshell软件并安装后，打开软件
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell11.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell11.png)
 
 选择文件，新建
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell12.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell12.png)
 
 随便取个名字，然后把你的服务器ip填上
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell13.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell13.png)
 
 连接国外ip即服务器时，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买的服务器系统的密码。
 
 **如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被墙的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell14.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell14.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/xshell2.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/xshell2.png)
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
@@ -179,17 +179,17 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 复制上面安装命令代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着输入数字1来安装。安装完成后，如果想修改、查看配置等，可以输入v2ray进行管理页面，不用重复安装脚本。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-1.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-1.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
 
 安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。（推荐websocket协议）
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
 
 **如果选择的是CentOS系统，还需要关闭vps防火墙来开放端口，相关命令如下：**
 
@@ -253,24 +253,24 @@ chmod +x tcp.sh
 
 安装完成后，脚本管理命令为：./tcp.sh
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
 操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
 
 内核安装完成后，输入y进行重启，重启才能让内核生效
 
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
 
 重启完成后，输入数字6来启动暴力BBR魔改版加速
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
 
 输入./tcp.sh查看最终是否启动成功。
 
@@ -278,7 +278,7 @@ chmod +x tcp.sh
 
 **注意：如果在安装内核环节出现这样一张图，注意选择NO**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
 
 ***
 
