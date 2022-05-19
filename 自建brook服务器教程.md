@@ -1,6 +1,6 @@
 **2022年3月17日更新开通服务器教程。**
 
-**如果无法查看图片，可以访问https://tr1.freeair888.club/自建brook服务器教程/**
+**如果无法查看图片，可以访问https://tr2.freeair888.club/自建brook服务器教程/**
 
 ***
 
@@ -54,61 +54,61 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **账号充值如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
 
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
 
 选择“Cloud Compute”。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
 
 选择“Regular Performance”。如果选择这个，在下面选择具体套餐的时候，最低是3.5美元/月（也要看服务器位置），流量是500GB/月；5美元是1T流量/月。
 
 如果选择前面3个，在下面选择具体套餐的时候，最低是6美元/月，但6美元是2T流量/月。也就是，对流量需求较高的可以选择前面3个。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
 
 可以优先尝试洛杉矶服务器，亚洲服务器日本、韩国延迟较低，但用的人很多，国内速度不一定就会很好，当然其它服务器位置也可以尝试。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
 
 **点击图中的系统名字，会弹出具体系统版本，推荐Debain10**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
 
 选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
 
 关闭自动备份，这个是收费的，可以关闭它。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
 最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
 
 **开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
 
 
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
 
 
 ***
@@ -122,7 +122,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/Mac.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/Mac.png)
 
 如果不能用Mac自带的终端连接的话，直接网上搜“Mac连接SSH的软件”，有很多，然后通过软件来连接vps服务器就行，具体操作方式参考windows xshell。Mac成功连接vps后剩下的操作和windows一样。
 
@@ -132,23 +132,23 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 下载windows xshell软件并安装后，打开软件
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell11.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell11.png)
 
 选择文件，新建
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell12.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell12.png)
 
 随便取个名字，然后把你的服务器ip填上
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell13.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell13.png)
 
 连接国外ip即服务器时，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买的服务器系统的密码。
 
 **如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被墙的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/xshell14.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/xshell14.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/xshell2.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/ss/xshell2.png)
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
@@ -183,37 +183,37 @@ setsid ./brook server -l :9999 -p password
 
 复制上面的**脚本一代码**到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装。以后只需要运行这个快捷命令就可以出现下图的界面进行设置，快捷管理命令为：bash brook.sh 或 ./brook.sh
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook1.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook1.PNG)
 
 出现上图表明脚本安装成功，脚本安装成功后就可以输入快捷管理命令bash brook.sh 或 ./brook.sh 如果输入了快捷管理命令后，出现“Permission denied”字样，如下图，接着需要输入命令：chmod +x brook.sh 然后再输入快捷管理命令即可。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook2.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook2.PNG)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook3.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook3.PNG)
 
 输入快捷管理命令后，出现上图，接着输入数字1来进行安装。会依次对**端口、密码、协议和版本号**进行选择。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook4.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook4.PNG)
 
 端口输入1-65535之间的数字。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook5.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook5.PNG)
 
 密码最好不要有特殊符号。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook6.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook6.PNG)
 
 协议选择新版协议，输入1。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook7.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook7.PNG)
 
 版本号输入v20200801
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook8.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook8.PNG)
 
 最终安装成功后，会出现下面的界面。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brook9.PNG)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brook9.PNG)
 
 此脚本是开机自动启动，部署一次即可。最后可以重启服务器确保部署生效（一般情况不重启也可以）。重启需要在命令栏里输入reboot ，输入命令后稍微等待一会服务器就会自动重启，一般重启过程需要2～5分钟，重启过程中Xshell会自动断开连接，等VPS重启好后才可以用Xshell软件进行连接。如果部署过程中卡在某个位置超过10分钟，可以用xshell软件断开，然后重新连接你的ip，再复制代码进行部署。
 
@@ -238,23 +238,23 @@ chmod +x tcp.sh
 
 安装完成后，脚本管理命令为：./tcp.sh
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
 操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
 
 内核安装完成后，输入y进行重启，重启才能让内核生效
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
 
 重启完成后，输入数字6来启动暴力BBR魔改版加速
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
 
 输入./tcp.sh查看最终是否启动成功。
 
@@ -262,7 +262,7 @@ chmod +x tcp.sh
 
 **注意：如果在安装内核环节出现这样一张图，注意选择NO**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
 
 ***
 
@@ -274,19 +274,19 @@ Brook Tools v1.0.8 [下载地址](https://tr61.free4444.xyz/BrookToolsv1.0.8.7z)
 
 第二步：下载Brook Windows命令行版客户端，地址：https://github.com/txthinking/brook/releases ，如下图，windows32位系统选择第一个，64位系统选择第二个，下载后**重命名为**brook.exe
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin1.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin1.png)
 
 第三步：将下载好的Brook Tools压缩包解压出来，解压路径不要包含中文，将重命名好的Brook Windows命令行版客户端**放在同一个文件夹**。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin2.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin2.png)
 
 打开Brook Tools客户端，点击界面上的“浏览”后，打开同一文件夹的brook.exe ,之后点击“保存配置”、“启动”
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin3.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin3.png)
 
 Brook Tools客户端有2种代理方式，默认的是**http代理**，如果把前面的勾去掉，则变为**socks5代理**。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin4.png)
+![](https://fastly.jsdelivr.net/gh/Alvin9999/PAC/brook/brookwin4.png)
 
 浏览器代理相应设置为：如果是http代理，设置为HTTP 127.0.0.1 2080；如果是socks5代理，设置为socks5 127.0.0.1 2080；
 
@@ -297,7 +297,7 @@ Brook Tools客户端有2种代理方式，默认的是**http代理**，如果把
 
 完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。
 
-![](https://cdn.jsdelivr.net/gh/PAC/v2ray/bhttp.PNG)
+![](https://fastly.jsdelivr.net/gh/PAC/v2ray/bhttp.PNG)
 
 ***
 
