@@ -88,6 +88,8 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **点击图中的系统名字，会弹出具体系统版本， 搭建脚本只支持CentOS7或CentOS8**
 
+（2022.7.8测试发现：搭建脚本也可以支持Ubuntu20.04。推荐使用CentOS8或Ubuntu20.04。CentOS7会有一些未知问题，导致无法正常上网。参见[问题#930](https://github.com/Alvin9999/new-pac/issues/930)）
+
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
 
 选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
@@ -160,7 +162,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ***
 
-**一键安装wirguard脚本代码（Centos7/Centos8）**：
+**一键安装wirguard脚本代码（Centos7/Centos8/Ubuntu20.04）**：
 
 ***
 
