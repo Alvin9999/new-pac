@@ -190,6 +190,8 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 **脚本三（SSR多用户管理脚本）**
 
+**同一个账号也可以多人使用，但如果需要多个端口来管理使用，需要用这个脚本。**
+
 **脚本三没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ssrmu.sh  所有用户流量清零命令:
 bash ssrmu.sh clearall**
 
