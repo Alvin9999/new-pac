@@ -2,7 +2,7 @@
 
 **https://github.com/Alvin9999/new-pac/wiki**
 
-**备用网址：https://tr2.freeair888.club** （记得前面加https）
+**备用网址：https://tr3.freeair888.club** （记得前面加https）
 
 github镜像网站：https://hub.fastgit.xyz/Alvin9999/new-pac/wiki
 
