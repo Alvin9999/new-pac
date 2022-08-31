@@ -1,6 +1,6 @@
 **2022年4月16日更新trojan账号设置方法。**
 
-**如果无法查看图片，可以访问https://tr2.freeair888.club/自建trojan服务器教程/**
+**如果无法查看图片，可以访问https://tr3.freeair888.club/自建trojan服务器教程/**
 
 ***
 
