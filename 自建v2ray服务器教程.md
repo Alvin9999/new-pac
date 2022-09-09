@@ -192,13 +192,15 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
 
-**如果安装后提示无法启动成功，输入以下3条命令**：
+**注意：如果安装后提示v2ray无法启动成功，输入以下3条命令**：
 
 > sed -i "s/v2ray -config/v2ray run -config/g" /etc/systemd/system/v2ray.service.d/10-donot_touch_single_conf.conf
 
 > systemctl daemon-reload
 
 > systemctl restart v2ray
+
+***
 
 **如果选择的是CentOS系统，还需要关闭vps防火墙来开放端口，相关命令如下：**
 
