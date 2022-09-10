@@ -193,6 +193,8 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 **注意：如果安装后提示v2ray无法启动成功，输入以下3条命令**：
 
+> v2ray update v4.45.2 
+
 > sed -i "s/v2ray -config/v2ray run -config/g" /etc/systemd/system/v2ray.service.d/10-donot_touch_single_conf.conf
 
 > systemctl daemon-reload
