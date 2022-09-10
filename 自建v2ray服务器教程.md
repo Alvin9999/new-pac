@@ -1,5 +1,4 @@
-**2022年9月9日更新。如果用脚本安装v2ray后启动不成功，教程更新了解决方法，或者换用[一键搭建科学上网工具ProxySU](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7ProxySU)
-来搭建v2ray，这款工具不用输入代码。**
+**2022年9月9日更新。如果用脚本安装v2ray后启动不成功，教程更新了解决方法。**
 
 **如果无法查看图片，可以访问https://tr3.freeair888.club/自建v2ray服务器教程/**
 
