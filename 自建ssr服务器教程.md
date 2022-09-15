@@ -1,4 +1,4 @@
-**2022年9月15日更新。**
+**2022年9月15日更新。vultr更新了规则，开通服务器后必须手动在网站服务器后台关闭防火墙，不然无法用SSH工具去链接服务器，也就是默认的22端口是关闭的，关闭防火墙教程已更新。**
 
 **如果无法查看图片，可以访问https://tr3.freeair888.club/自建ss服务器教程/**
 
@@ -89,11 +89,24 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
 
-**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等3~5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统密码获取方法如下图：**
+**开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，vultr更新了规则，还需要手动关闭防火墙，方法在下方。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
+
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
+
+
+### vultr更新了规则，开通服务器后必须手动在网站服务器后台关闭防火墙，不然无法用SSH工具去链接服务器，也就是默认的22端口是关闭的。关闭防火墙方法：
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr-firewall.png)
+
+### 点击服务器的设置Settings——防火墙Firewall——选择No Firewall——点击更新Update FirewallGroup
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr-firewall2.png)
+
+### 之后等待120秒(2分钟)让设置生效，这样22端口就开放了。
+
 
 **删掉服务器步骤如下图**：
 
@@ -152,7 +165,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **如果搭建SSR账号，请使用脚本一，目前推荐的SSR参数设置为以下，有利于突破网络封锁，参数如下**：
 
-1、加密方式：none   协议：origin 混淆：tls1.2_ticket_auth
+1、加密方式：none  协议：origin 混淆：tls1.2_ticket_auth
 
 2、加密方式：none   协议：auth_chain_a 混淆：tls1.2_ticket_auth 
 
