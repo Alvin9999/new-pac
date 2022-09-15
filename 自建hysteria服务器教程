@@ -195,7 +195,7 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 账号端口也可以回车，或者输入想要的端口号
 
-协议类型很重要：没有域名只能选择数字1的upd协议类型，其它2个都用不了。如果有域名，那么会多一个选择，可以选择udp或者wechat-video。faketcop模式需要电脑是linux。
+协议类型很重要：没有域名只能选择数字1的upd协议类型，其它2个都用不了。如果有域名，那么会多一个选择，可以选择udp或者wechat-video，如果选择wechat-video后需要填写自己的域名。faketcp模式需要电脑是linux。
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy5.png)
 
