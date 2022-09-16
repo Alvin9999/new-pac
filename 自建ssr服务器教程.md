@@ -201,20 +201,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 ***
 
-**脚本三（SSR多用户管理脚本）**
-
-**同一个账号也可以多人使用，但如果需要多个端口来管理使用，需要用这个脚本。**
-
-**脚本三没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ssrmu.sh  所有用户流量清零命令:
-bash ssrmu.sh clearall**
-
-***
-
-yum -y install wget
-
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
-
-***
 
 > 如果提示 wget: command not found 的错误，这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。CentOS系统安装wget命令: yum install -y wget  Debian/Ubuntu系统安装wget命令:apt-get install -y wget
 
