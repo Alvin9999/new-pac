@@ -240,6 +240,10 @@ hysteria客户端下载好后，将config.json配置文件放在同一级目录�
 
 如果按照默认来设置浏览器，可以设置成http127.0.0.1和10809 或者socks5 127.0.0.1和10808
 
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy10.png)
+
+启动客户端后，出现connected和running字样表示启动成功。如果没有启动成功，请检查配置信息是否设置正确以及与服务器一致。
+
 ***
 
 **常见问题及解决方法**：
