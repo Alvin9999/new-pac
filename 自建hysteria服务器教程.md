@@ -1,11 +1,10 @@
-**2022年9月15日发布。vultr更新了规则，开通服务器后必须手动在网站服务器后台关闭防火墙，不然无法用SSH工具去链接服务器，也就是默认的22端口是关闭的，关闭防火墙教程已更新。**
+**2022年9月15日发布。**
 
 ***
 
 Hysteria 是一个功能丰富的，专为恶劣网络环境进行优化的网络工具（双边加速），比如卫星网络、拥挤的公共 Wi-Fi、在中国连接国外服务器等。 基于修改版的 QUIC 协议。由go编写的非常优秀的“轻量”代理程序，它很好的解决了在搭建科学上网服务器时的痛点——线路一般、高峰时期慢。虽然是走的udp但是提供obfs，暂时不会被运营商针对性的QoS(不开obfs也不会被QoS)。下图为原开发项目提供的不同协议的速度对比：
 
 ![](https://fastly.jsdelivr.net/gh/HyNetwork/hysteria/docs/bench/bench.png)
-
 
 **自建hysteria教程很简单，整个教程分三步**：
 
@@ -87,7 +86,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
 
-最后点击“Deploy Now”开始部署，等3~5分钟就差不多了。
+最后点击“Deploy Now”开始部署，等2~3分钟就差不多了。
 
 **开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，vultr更新了规则，还需要手动关闭防火墙，方法在下方。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
@@ -97,16 +96,15 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
 
 
-### vultr更新了规则，开通服务器后必须手动在网站服务器后台关闭防火墙，不然无法用SSH工具去链接服务器，也就是默认的22端口是关闭的。关闭防火墙方法：
+**vultr开通服务器后最好手动在网站服务器后台关闭防火墙，避免无法用SSH工具去链接服务器。关闭防火墙方法：**
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr-firewall.png)
 
-### 点击服务器的设置Settings——防火墙Firewall——选择No Firewall——点击更新Update FirewallGroup
+**点击服务器的设置Settings——防火墙Firewall——选择No Firewall——点击更新Update FirewallGroup**
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/vultr-firewall2.png)
 
-### 之后等待120秒(2分钟)让设置生效，这样22端口就开放了。
-
+**之后等待120秒(2分钟)让设置生效，这样22端口就开放了。**
 
 **删掉服务器步骤如下图**：
 
