@@ -170,7 +170,7 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 ***
 
-> 如果输入安装命令没反应，那是因为服务器系统没有自带curl命令，安装一下curl。
+> 如果输入安装命令后提示curl: command not found，那是因为服务器系统没有自带curl命令，安装一下curl。
 
 > CentOS系统安装curl命令：yum install -y curl
 
