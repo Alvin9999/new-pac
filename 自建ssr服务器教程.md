@@ -143,7 +143,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 2、加密方式：none   协议：auth_chain_a 混淆：tls1.2_ticket_auth 
 
-3、高阶篇的SSR+TLS+Caddy
 
 **如果搭建SS账号，请使用脚本二，加密方式可选aes-256-gcm，或者高阶篇的SS+插件模式（推荐）**
 
