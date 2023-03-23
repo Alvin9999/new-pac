@@ -1,4 +1,4 @@
-**2022年9月29日更新。**
+**2023年3月23日更新方法2。**
 
 **如果无法查看图片，可以访问https://tr3.freeair888.club/自建brook服务器教程/**
 
@@ -140,7 +140,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **CentOS 6和7 / Debian 6+ / Ubuntu 14.04 + brook一键部署管理脚本**
 
-**2020年9月1日，[brook](https://github.com/txthinking/brook/releases/tag/v20200909)进行了重大的更新，9月1日到最新的版本客户端和服务端必须是最新的。如果你使用的是9月1日之前的老客户端，脚本一还是能用，只在安装的时候不能自动获取版本，需要手动输入版本号v20200801 如果你使用的是9月1日或最新的客户端版本，可以用脚本二来手动安装，几条命令就可以了。**
+**2020年9月1日，[brook](https://github.com/txthinking/brook/releases/tag/v20200909)进行了重大的更新，9月1日到最新的版本客户端和服务端必须是最新的。如果你使用的是9月1日之前的老客户端，脚本一还是能用，只是在安装的时候不能自动获取版本，需要手动输入版本号v20200801 如果你使用的是9月1日或最新的客户端版本，可以用脚本二来手动安装，几条命令就可以了。**
 
 **方法一（老）：**
 
@@ -150,19 +150,13 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 
 **方法二（新）：**
 
-curl -L https://github.com/txthinking/brook/releases/download/v20200909/brook_linux_amd64 -o /usr/bin/brook
+curl -L https://github.com/txthinking/brook/releases/download/v20230401/brook_linux_amd64 -o /usr/bin/brook
 
 chmod +x /usr/bin/brook
 
-setsid ./brook server -l :9999 -p password
+setsid brook server --listen :9999 --password hello
 
-> 第一条命令是下载20200909版本，第二条命令给brook赋予权限，最后一条命令的意思是启动brook并增加守护进程，这样当ssh窗口关闭时，brook仍然是运行的，端口设置为9999，密码设置为password，端口和密码可以改成自己的
-
-**方法二修改brook端口号和密码方法**：
-
-关闭brook进程命令：killall brook
-
-运行第三条命令：setsid ./brook server -l :新端口 -p 新密码
+> 第一条命令是下载v20230401版本，第二条命令给brook赋予权限，最后一条命令的意思是启动brook并增加守护进程，这样当ssh窗口关闭时，brook仍然是运行的，端口设置为9999，密码设置为hello，端口和密码可以改成自己的
 
 ***
 
