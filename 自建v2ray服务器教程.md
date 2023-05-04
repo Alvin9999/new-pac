@@ -1,4 +1,4 @@
-**2022年9月29日更新。如果用脚本安装v2ray后启动不成功，教程更新了解决方法。**
+**2023年5月4日更新。教程末尾增加八合一共存脚本。**
 
 **如果无法查看图片，可以访问https://tr3.freeair888.club/自建v2ray服务器教程/**
 
@@ -346,11 +346,21 @@ service ntpd start
 
 **3、搭建的账号之前能用，突然不能用了，怎么解决？**
 
-**如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。**
+如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。
 
-**如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。**
+如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。
 
-**如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。**
+如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
+
+**4、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
+
+支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。
+
+脚本：wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
+备用：wget -P /root -N --no-check-certificate "https://www.v2ray-agent.com/v2ray-agent/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+
+
 
 ***
 
