@@ -137,7 +137,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**：
+**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**（ps：如果这个脚本不好用，教程末尾还有一个八合一共存脚本）
 
 安装命令：
 
@@ -354,7 +354,7 @@ service ntpd start
 
 **4、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
 
-支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。
+支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
 
 脚本：wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
@@ -370,7 +370,7 @@ service ntpd start
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
 
-2.单独安装Reality（无需域名）
+2.单独安装Reality（无需域名）（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
 
