@@ -360,6 +360,19 @@ service ntpd start
 
 备用：wget -P /root -N --no-check-certificate "https://www.v2ray-agent.com/v2ray-agent/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
+**一图教程(快速使用)**：
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-1.jpg)
+
+**进阶使用**：
+
+1、个性化安装
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
+
+2.单独安装Reality（无需域名）
+
+![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
 
 
 ***
