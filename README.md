@@ -3,3 +3,4 @@
 **https://github.com/Alvin9999/new-pac/wiki**
 
 **备用网址：https://a1.freegithub.site/Alvin9999/new-pac/wiki**
+**备用网址：https://tr1.freeku9.xyz**
