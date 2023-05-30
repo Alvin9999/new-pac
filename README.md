@@ -2,4 +2,6 @@
 
 **https://github.com/Alvin9999/new-pac/wiki**
 
+**备用网址：https://b1.freeku8.xyz/Alvin9999/new-pac/wiki （镜像网址）**
+
 **备用网址：https://tr1.freeku9.xyz**
