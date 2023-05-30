@@ -1,6 +1,6 @@
 **2023年5月4日更新。教程末尾增加八合一共存脚本。**
 
-**如果无法查看图片，可以访问https://a1.freegithub.site/Alvin9999/new-pac/wiki/自建v2ray服务器教程**
+**如果无法查看图片，可以访问https://b1.freeku8.xyz/Alvin9999/new-pac/wiki/自建v2ray服务器教程**
 
 ***
 
