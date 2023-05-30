@@ -1,6 +1,6 @@
 **2023年5月14日更新安装脚本和安卓版下载地址。**
 
-**如果无法查看图片，可以访问https://b1.freeku8.xyz/Alvin9999/new-pac/wiki/自建wireguard服务器教程/**
+**如果无法查看图片，可以访问https://b1.freeku8.xyz/Alvin9999/new-pac/wiki/自建wireguard服务器教程**
 
 ***
 
