@@ -1,6 +1,6 @@
 **2023年3月23日更新方法2。**
 
-**如果无法查看图片，可以访问https://b1.freeku8.xyz/Alvin9999/new-pac/wiki/自建brook服务器教程**
+**如果无法查看图片，可以访问https://b1.freeku8.xyz/Alvin9999/new-pac/wiki/自建brook服务器教程 （镜像网址）**
 
 ***
 
