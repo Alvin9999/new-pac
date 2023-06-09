@@ -11,7 +11,7 @@ ProxySU是一款windows科学上网搭建软件，**不用输入代码、不用�
 ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian10)。[ProxySU官网](https://github.com/proxysu/ProxySU)。
 
 
-示意图:
+ProxySU-2.2.2示意图:
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps1.jpg)
 
