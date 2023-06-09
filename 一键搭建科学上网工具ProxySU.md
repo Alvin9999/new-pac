@@ -1,63 +1,15 @@
-**2022年9月15日更新。**
-
-**2022年4月12日更新ProxySU的推荐版本v2.4.0，解决提示域名解析错误的问题。注意：ProxySU官网的最新版已经去掉了很多款工具的搭建模块，如果想按照教程那样搭建SSR等工具，可以下载旧版，本页面也有下载ProxySU-v2.4.0旧版的地址。**
+**2023年6月9日更新。**
 
 ***
 
-
 **介绍**:
 
-ProxySU是一款windows科学上网搭建软件，**不用输入代码、不用脚本**，支持一键搭建V2ray，Trojan，NaiveProxy, Trojan-Go, ShadowsocksR(SSR),Shadowsocks-libev及相关插件一键安装工具。
+ProxySU是一款windows科学上网搭建软件，**不用输入代码、不用脚本**，支持一键搭建V2ray，Xray，Trojan，NaiveProxy, Trojan-Go, Hysteria,Brook,ShadowsocksR(SSR),Shadowsocks-libev及相关插件一键安装工具。
 
 **使用提醒**：
 
-ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian10)。[ProxySU官网](https://github.com/proxysu/windows/tree/v2.2.2)。
+ProxySU的安装流程，是假设在全新系统下，没有装过以上代理软件，如果已经安装过，最好将系统重装一下，会减少很多的麻烦。ProxySU在开发过程中，一般都是在[vultr](https://www.vultr.com/?ref=7048874)的vps中测试，测试系统版本为：Centos7/8 Debian9/10 Ubuntu18.04/20.04(推荐Debian10)。[ProxySU官网](https://github.com/proxysu/ProxySU)。
 
-**ProxySU-v2.2.2功能如下:**
-
-##### V2ray可一键安装的模式有：
-* tcp 
-* tcp+http伪装  
-* tcp+TLS 
-* tcp+TLS （自签证书）
-* Vless+tcp+TLS+Web (新热门协议)
-* WebSocket
-* WebSocket+TLS 
-* WebSocket+TLS+Web 
-* WebSocket+TLS（自签证书） 
-* http2  
-* http2+TLS+Web
-* http2（自签证书）
-* mKCP及各种伪装 
-* QUIC及各种伪装。  
-注：mKCP和QUIC模式使用udp协议，可以有效减少网络延时，有加速的作用，但在网络管控严厉时期，会导致IP被封，遇到的一次，就是刚安装好，使用了3个小时后，IP被封（现已确认是mKCP的流量被识别导致，项目组正在维护中。2020.6.10维护完毕，升级到版本4.24.2及以上，启用mKCP密钥可增强抗识别）。以上模式最推荐的是WebSocket+TLS+Web 和http2+TLS+Web 需要有一个域名。如果能加上CDN则稳定性更好。加上CDN后，是加速还是减速，与线路有关。
-
-##### Trojan 可一键安装：  
-* Trojan + TLS + Web
-
-##### Trojan-Go 可一键安装：  
-* Trojan-Go + TLS + Web  
-* Trojan-Go + WebSocket + TLS + Web
-
-##### NaiveProxy一键安装：  
-* NaiveProxy + TLS +Web  
-
-##### ShadowsocksR(SSR)一键安装：  
-* SSR+TLS+Caddy  
-
-##### Shadowsocks-libev及相关插件一键安装：  
-* SS 经典模式  
-* SS+WebSocket+TLS+Caddy(Web前置) (推荐)  
-* SS+WebSocket  
-* SS+QUIC  
-* SS+kcptun  
-* SS+obfs+http+Web  
-* SS+obfs+TLS+Web  
-
-##### 支持的VPS系统为：  
-* CentOS 7/8   
-* Debian 8/9/10 (推荐Debian10)  
-* Ubuntu 16.04及以上
 
 示意图:
 
@@ -139,6 +91,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
 
+
 **删掉服务器步骤如下图**：
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
@@ -151,10 +104,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **第二步:ProxySU下载及搭建**
 
-当前提供下载的版本为ProxySU-v2.4.0,文件很小,大小为569kb.注意：ProxySU官网的最新版已经去掉了很多款工具的搭建模块，如果想按照教程那样搭建SSR等工具，可以下载旧版。
+当前提供下载的版本为ProxySU-v2.4.0,文件很小,大小为569kb. ProxySU-v2.4.0是比较老的版本，保留了SSR和SS搭建。如果想搭建其它工具，推荐用[ProxySU最新版](https://github.com/proxysu/ProxySU/releases)。
 
-[国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.4.0.zip)  [国外云盘下载2](https://d1.freessr1.xyz/ProxySU-v2.4.0.zip)  
-
+[国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.4.0.zip)  [国外云盘下载2](https://d.ssrfree4.xyz/ProxySU-v2.4.0.zip)  
 
 **如果在安装过程中总是提示某个错误，也可以尝试其它ProxySU版本，官方其它版本下载**：https://github.com/proxysu/ProxySU/releases
 
