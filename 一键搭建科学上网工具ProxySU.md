@@ -4,7 +4,7 @@
 
 **介绍**:
 
-ProxySU是一款windows科学上网搭建软件，**不用输入代码、不用脚本**，支持一键搭建V2ray，Xray，Trojan，NaiveProxy, Trojan-Go, Hysteria,Brook, MTProto Go,ShadowsocksR(SSR),Shadowsocks-libev及相关插件一键安装工具。
+ProxySU是一款windows科学上网搭建软件，**不用输入代码、不用脚本**，支持一键搭建V2ray，Xray，Trojan，NaiveProxy, Trojan-Go, Hysteria, Brook, MTProto Go, ShadowsocksR(SSR),Shadowsocks-libev及相关插件一键安装工具。
 
 **使用提醒**：
 
