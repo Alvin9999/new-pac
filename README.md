@@ -2,7 +2,5 @@
 
 **https://github.com/Alvin9999/new-pac/wiki**
 
-备用网址：https://a2.freeku4.xyz 备用网址：https://t2.freego1.xyz
-
-备用网址：https://t1.freego2.xyz
+备用网址：https://t.free3.site
 
