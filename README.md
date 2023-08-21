@@ -2,5 +2,5 @@
 
 **https://github.com/Alvin9999/new-pac/wiki**
 
-备用网址：https://t.free3.site
+备用网址：https://t.free6.site
 
