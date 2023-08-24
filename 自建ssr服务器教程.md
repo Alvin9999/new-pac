@@ -160,6 +160,13 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 
 ***
 
+***
+
+注意！Centos8及以上由于原有Python脚本版本低，会发生ssr无法启动的问题，可以参照这篇文章进行安装：https://www.ywbj.cc/?p=45
+
+***
+
+
 **脚本二（SS）**
 
 **脚本二没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ss-go.sh**
