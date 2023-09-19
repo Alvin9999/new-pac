@@ -175,19 +175,7 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
 
-**注意：如果安装后提示“Failed to start V2Ray Service”，即v2ray无法启动成功，输入以下3条命令**：
-
-> sed -i "s/v2ray -config/v2ray run -config/g" /etc/systemd/system/v2ray.service.d/10-donot_touch_single_conf.conf
-
-> systemctl daemon-reload
-
-> systemctl restart v2ray
-
-如果以上命令还是无法启动，将服务器的v2ray版本退回到指定版本，输入命令：
-
-> v2ray update v4.45.2
-
-> 之后再重启下v2ray就可以了: 输入命令v2ray--数字1服务管理--数字3重启服务
+安装成功后会出现“multi-v2ray install success!”字样。
 
 ***
 
