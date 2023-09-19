@@ -1,6 +1,4 @@
-**2023年6月15日更新。**
-
-**2023年5月4日更新。教程末尾增加八合一共存脚本。**
+**2023年9月19日更新。**
 
 ***
 
@@ -33,7 +31,6 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 注册并邮件激活账号，充值后即可购买服务器。充值方式是支付宝或paypal，使用paypal有银行卡（包括信用卡）即可。paypal注册地址：https://www.paypal.com （paypal是国际知名的第三方支付服务商，注册一下账号，绑定银行卡即可购买国外商品）
 
 ***
-
 
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
@@ -205,37 +202,6 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 ***
 
-**注意：账号无法使用，可能原因：客户端与服务端的设备系统时间相差过大。解决方法如下：**
-
-**1、一般国外的VPS的镜像都是默认的国外时区，使用起来不是很方便。可以把它修改成北京时间，就会方便很多。**
-**修改中国时区代码如下**：
-
-\cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-
-**2、利用NTP同步时间协议**
-
-**CentOS系统先安装NTP**：yum install ntp ntpdate -y
-
-> 如果是Ubuntu/Debian系统执行下面2条命令来安装NTP
-
-> apt-get update
-
-> apt-get install ntp ntpdate -y  
-
-**安装NTP后，按照顺序依次执行以下3条命令，分别是停止NTP服务、同步NTP时间、启动NTP服务**：
-
-service ntpd stop  
-
-ntpdate us.pool.ntp.org 
-
-service ntpd start 
-
-**执行完成后，VPS上就是相对精确的时间设置了。很多依赖于系统时间的应用程序也就能正常工作了。注意：当vps重启后输入date来检查下时间，如果时间不是最新的，再执行以上3条命令即可。**
-
-> 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
-
-
-***
 
 **第三步：一键加速VPS服务器**
 
@@ -304,36 +270,7 @@ chmod +x tcp.sh
 
 **常见问题参考解决方法**：
 
-**1、账号无法使用，可能原因一：客户端与服务端的设备系统时间相差过大。**
-
-**a、一般国外的VPS的镜像都是默认的国外时区，使用起来不是很方便。可以把它修改成北京时间，就会方便很多。**
-**修改中国时区代码如下**：
-
-\cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
-
-**b、利用NTP同步时间协议**
-
-**CentOS系统先安装NTP**：yum install ntp ntpdate -y
-
-> 如果是Ubuntu/Debian系统执行下面2条命令来安装NTP
-
-> apt-get update
-
-> apt-get install ntp ntpdate -y  
-
-**安装NTP后，按照顺序依次执行以下3条命令，分别是停止NTP服务、同步NTP时间、启动NTP服务**：
-
-service ntpd stop  
-
-ntpdate us.pool.ntp.org 
-
-service ntpd start 
-
-**执行完成后，VPS上就是相对精确的时间设置了。很多依赖于系统时间的应用程序也就能正常工作了。注意：当vps重启后输入date来检查下时间，如果时间不是最新的，再执行以上3条命令即可。**
-
-> 除了通过NTP来同步时间以外，还可以手动修改vps系统时间，需要先修改中国时区，之后输入时间命令，格式（数字改为和自己电脑时间一致，误差30秒以内）：date -s "2020-2-02 19:14:00"
-
-**2、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
+**1、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
 
 关闭vps防火墙即可开放所有端口，本地电脑防火墙和杀毒软件手动关闭即可。
 
@@ -344,7 +281,7 @@ service ntpd start
 禁止firewall开机启动命令：systemctl disable firewalld.service
 
 
-**3、搭建的账号之前能用，突然不能用了，怎么解决？**
+**2、搭建的账号之前能用，突然不能用了，怎么解决？**
 
 如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。
 
@@ -352,9 +289,9 @@ service ntpd start
 
 如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
 
-**4、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
+**3、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
 
-支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
+支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。(注意：使用Reality协议，v2rayN客户端版本需要6.21或以上)
 
 脚本：wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 
@@ -370,7 +307,7 @@ service ntpd start
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
 
-2.单独安装Reality（无需域名）（注意：使用Reality协议，v2rayN客户端版本需要6.21或以上）
+2.单独安装Reality（无需域名） (注意：使用Reality协议，v2rayN客户端版本需要6.21或以上)
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
 
