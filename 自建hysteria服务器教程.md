@@ -1,4 +1,4 @@
-**2023年6月15日更新。**
+**2023年9月20日教程末尾增加hysteria 2一键脚本。**
 
 ***
 
@@ -27,7 +27,6 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 注册并邮件激活账号，充值后即可购买服务器。充值方式是支付宝或paypal，使用paypal有银行卡（包括信用卡）即可。paypal注册地址：https://www.paypal.com （paypal是国际知名的第三方支付服务商，注册一下账号，绑定银行卡即可购买国外商品）
 
 ***
-
 
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
@@ -79,6 +78,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/crp_up/pac教程06.png)
+
 
 **删掉服务器步骤如下图**：
 
@@ -132,11 +132,12 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
+注意：以下是安装hysteria 1脚本，教程的末尾是安装hysteria 2脚本。图文教程是安装hysteria 1。hysteria 1和2不兼容，安装hysteria 1后请使用hysteria 1相关的客户端。
 
 ***
 
 
-**hysteria一键部署管理脚本：**
+**hysteria 1一键部署管理脚本：**
 
 bash <(curl -fsSL https://git.io/hysteria.sh)
 
@@ -196,9 +197,9 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 ***
 
-【hysteria客户端下载及使用方法】
+【hysteria 1客户端下载及使用方法】
 
-hysteria官方客户端下载地址：https://github.com/HyNetwork/hysteria/releases
+hysteria官方客户端下载地址：https://github.com/apernet/hysteria/releases/tag/v1.3.5
 
 根据电脑系统进行下载，电脑windows 32位系统就下载[hysteria-windows-386.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.2.1/hysteria-windows-386.exe) 64位系统可以用hysteria-windows-386.exe 或者[hysteria-windows-amd64.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.2.1/hysteria-windows-amd64.exe)
 
@@ -239,6 +240,26 @@ B: 如果ip正常，那么多半是端口号被封了，此时需要换端口号
 2、需要安装bbr加速吗？
 
 bbr加速是tcp加速，而hysteria是Quic(udp)协议。所以不用再部署bbr加速，当然自己想部署也可以，部署bbr加速可参考其它教程。
+
+3、如何安装hysteria 2？
+
+Hysteria 2 继承了 Hysteria 1.x 的几乎所有功能，同时引入了各种新的修复和增强。但值得注意的是，由于协议和代码经过了重大更改，Hysteria 2 与 Hysteria 1.x 完全不兼容。 用户必须在客户端和服务器上使用一致的版本。安装Hysteria 2后客户端请使用2.0及以上版本。
+
+***
+
+**hysteria 2一键部署管理脚本：**
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh
+
+***
+
+> 如果输入安装命令后提示wget: command not found，那是因为服务器系统没有自带wget命令，安装一下wget。
+
+> CentOS系统安装curl命令：yum install -y wget
+
+> Debian/Ubuntu系统安装curl命令：apt-get install -y wget
+
+hysteria官方客户端下载地址：https://github.com/apernet/hysteria/releases
 
 ***
 
