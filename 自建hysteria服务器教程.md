@@ -199,7 +199,7 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 【hysteria 1客户端下载及使用方法】
 
-hysteria官方客户端下载地址：https://github.com/apernet/hysteria/releases/tag/v1.3.5
+hysteria 1官方客户端下载地址：https://github.com/apernet/hysteria/releases/tag/v1.3.5
 
 根据电脑系统进行下载，电脑windows 32位系统就下载[hysteria-windows-386.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.2.1/hysteria-windows-386.exe) 64位系统可以用hysteria-windows-386.exe 或者[hysteria-windows-amd64.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.2.1/hysteria-windows-amd64.exe)
 
