@@ -207,7 +207,7 @@ hysteria客户端下载好后，将config.json配置文件放在同一级目录�
 
 ![](https://fastly.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy8.png)
 
-为了方便大家，打包了一份包含config.json配置文件和hysteria 1.2.1版本的文件压缩包，解压后可以编辑config.json，将里面的内容替换成自己的，编辑工具可以用记事本或者notepad。再次提醒需要删除acl和mmdb两行信息，不然客户端无法正常启动。[国外网盘下载](https://tr601.free4444.xyz/hysteria1.2.1.7z)
+为了方便大家，打包了一份包含config.json配置文件和hysteria 1.2.1版本的文件压缩包，解压后可以编辑config.json，将里面的内容替换成自己的，编辑工具可以用记事本或者notepad。再次提醒需要删除acl和mmdb两行信息，不然客户端无法正常启动。[国外网盘下载](https://d.dtku35.xyz/hysteria1.2.1.7z)
 
 启动hysteria，浏览器代理设置成和配置文件一样就行，配置文件包含http和socks5代理，http代理默认的是127.0.0.1和10809，socks5代理默认的是127.0.0.1和10808，端口号可以修改，浏览器二选一，端口号和配置文件一致。
 
