@@ -334,8 +334,11 @@ Mac SSR客户端 文件名称：ShadowsocksX-NG-R8.dmg
 [下载地址3](https://free.zhujicn2.net/ShadowsocksX-NG-R8.dmg)
 [github下载](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases) 
 
-Linux 客户端 文件名称：Shadowsocks-Qt5-x86_64-v3.0.1
+Linux 客户端 文件名称：Shadowsocks-Qt5-x86_64-v3.0.1.AppImage
 
+[下载地址1](https://d2.freessr2.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
+[下载地址2](https://d.dtku35.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
+[下载地址3](https://free.zhujicn2.net/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
 [下载地址](http://www.mediafire.com/folder/xag0zy318a5tt/Linux) 
 
 安卓SSR 3.4.0客户端  文件名称：shadowsocksr-release.apk
