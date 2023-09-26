@@ -212,11 +212,11 @@ sz /etc/wireguard/client.conf
 
 PC端：
 
-电脑客户端有3种软件，分别是wireguard-windows、desktop-app和tunsafe，提醒一下，前两款软件还在维护更新，tunsafe据说没有维护了，用还是能用，教程是以tunsafe为例子，其它软件供参考。
+电脑客户端有3种软件，分别是wireguard-windows、TunnlTo Desktop-App和tunsafe，提醒一下，前两款软件还在维护更新，tunsafe据说没有维护了，用还是能用，教程是以tunsafe为例子，其它软件供参考。
 
-wireguard-windows下载及更新地址：https://github.com/WireGuard/wireguard-windows/tags
+wireguard-windows下载及更新地址：https://www.wireguard.com/install/
 
-desktop-app下载及更新地址：https://github.com/TunnlTo/desktop-app/releases
+TunnlTo Desktop-App下载及更新地址：https://github.com/TunnlTo/desktop-app/releases
 
 TunSafe 官网下载：https://tunsafe.com/download 
 
