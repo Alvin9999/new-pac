@@ -308,4 +308,4 @@ Brook Tools客户端有2种代理方式，默认的是**http代理**，如果把
 ***
 
 
-有问题可以发邮件至海外邮箱kebi2014@gmail.com
+有问题可以发邮件至海外邮箱rebeccalane27@gmail.com
