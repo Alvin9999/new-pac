@@ -264,4 +264,4 @@ hysteria官方客户端下载地址：https://github.com/apernet/hysteria/releas
 ***
 
 
-有问题可以发邮件至海外邮箱kebi2014@gmail.com
+有问题可以发邮件至海外邮箱rebeccalane27@gmail.com
