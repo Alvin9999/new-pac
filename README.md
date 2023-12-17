@@ -2,4 +2,4 @@
 
 **主页：https://github.com/Alvin9999/new-pac/wiki/**
 
-**备用网址：https://egithub.xyz/Alvin9999/new-pac/wiki （国内访问github镜像）**
+**备用：https://egithub.xyz/Alvin9999/new-pac/wiki （国内访问github镜像）**
