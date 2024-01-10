@@ -1,6 +1,4 @@
-**2024年1月1日更新，解决图片显示问题。**
-
-**2023年9月20日教程末尾增加hysteria 2一键脚本。**
+**2024年1月10日更新hysteria 2搭建图文教程。**
 
 ***
 
@@ -261,7 +259,41 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hyster
 
 > Debian/Ubuntu系统安装curl命令：apt-get install -y wget
 
-hysteria官方客户端下载地址：https://github.com/apernet/hysteria/releases
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-001.jpg)
+
+输入安装脚本后，选择数字1安装程序。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-002.jpg)
+
+协议证书申请方式选择1。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-003.jpg)
+
+端口可以自己填写想要的，也可以回车随机。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-004.jpg)
+
+端口模式选择1，单端口模式。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-005.jpg)
+
+端口可以自己填写想要的，也可以回车随机。
+
+伪装网站地址回车。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-006.jpg)
+
+最后出现这一步就成功了。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-007.jpg)
+
+这一部分就是客户端配置信息，可以复制下来。新建名字为config.json文件，将客户端配置信息复制进去并保存。
+
+hysteria 2的v2.2.3版本下载：https://github.com/apernet/hysteria/releases/download/app%2Fv2.2.3/hysteria-windows-386.exe
+
+hysteria 2更新地址：https://github.com/apernet/hysteria/releases
+
+将下载后的hysteria-windows-386.exe文件和config.json文件放在同一目录，双击运行ysteria-windows-386.exe就可以启动了。需要注意的是，脚本搭建后默认的代理端口是5678，那么浏览器代理端口也要填写socks5 127.0.0.1 5678 , 当然你也可以在客户端配置信息文件修改5678端口。
 
 ***
 
