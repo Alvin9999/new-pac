@@ -159,7 +159,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
 
-无需域名。有域名也行。按照提示操作即可。搭建好后默认有5个节点，3个vless节点，1个trojan节点，1个ss节点。鼠标往上翻，根据客户端来复制对应的一键导入链接。
+无需域名。有域名也行。按照提示操作即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。鼠标往上翻，根据客户端来复制对应的一键导入链接。
 
 ***
 
