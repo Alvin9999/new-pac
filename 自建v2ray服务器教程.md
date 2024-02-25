@@ -1,4 +1,4 @@
-**2024年1月1日更新，解决图片显示问题。**
+**2024年2月25日更新教程末尾脚本。**
 
 ***
 
@@ -134,7 +134,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**（ps：如果这个脚本不好用，教程末尾还有一个八合一共存脚本）
+**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**（ps：如果这个脚本不好用，教程末尾还有一键搭建多个协议节点脚本）
 
 安装命令：
 
@@ -277,28 +277,13 @@ chmod +x tcp.sh
 
 如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
 
-**3、VLESS(TCP_Vision、Reality、gRPC、WS)、VMess(WS)、Trojan(TCP、gRPC)、Hysteria、八合一共存脚本**
+**3、一键搭建多个协议节点脚本，无需域名，小白专用**
 
-支持多种传输协议，包括VLESS、VMess、Trojan和Hysteria，支持多种协议组合。支持自动申请和更新SSL证书，并且提供了一个伪装站点。支持无需域名的VLESS Reality特性。(注意：使用Reality协议，v2rayN客户端版本需要6.21或以上)
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
 
-脚本：wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+脚本快捷管理命令：argox
 
-备用：wget -P /root -N --no-check-certificate "https://www.v2ray-agent.com/v2ray-agent/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-
-**一图教程(快速使用)**：
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-1.jpg)
-
-**进阶使用**：
-
-1、个性化安装
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-2.jpg)
-
-2.单独安装Reality（无需域名） (注意：使用Reality协议，v2rayN客户端版本需要6.21或以上)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/8and1-3.jpg)
-
+无需域名。有域名也行。按照提示操作安装，全程回车即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。鼠标往上翻，根据客户端来复制对应的一键导入链接。
 
 ***
 
