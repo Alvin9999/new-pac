@@ -1,4 +1,4 @@
-**2024年1月1日更新，解决图片显示问题。**
+**2024年2月25日更新。**
 
 ***
 
@@ -108,7 +108,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 [国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.4.0.zip)  [国外云盘下载2](https://d.dtku35.xyz/ProxySU-v2.4.0.zip)  
 
-**如果在安装过程中总是提示某个错误，也可以尝试其它ProxySU版本，官方其它版本下载**：https://github.com/proxysu/ProxySU/releases
+**如果在安装过程中总是提示某个错误，也可以尝试其它ProxySU版本，官方其它版本下载。下载后缀名为zip的文件，解压后运行ProxySuper.WPF.exe**：https://github.com/proxysu/ProxySU/releases
 
 ## Windows系统需要安装net4.0及以上
 
