@@ -243,7 +243,7 @@ chmod +x tcp.sh
 
 **客户端使用教程：[v2ray各平台图文使用教程](https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%90%84%E5%B9%B3%E5%8F%B0%E5%9B%BE%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)**
 
-浏览器代理设置成Socks(5) 127.0.0.1 和1080 即可通过v2ray代理上网。
+浏览器代理设置成Socks(5) 127.0.0.1 和端口号，这个端口号需要和你的客户端本地端口号一致，如果你使用的是V2rayN客户端，打开软件——设置——参数设置——本地socks监听端口号，默认是10808或者1080。
 
 谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
 
