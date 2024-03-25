@@ -33,9 +33,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **账号充值如图**：
 
-![](https://www.githubip.xyz/Alvin9999/pac2/master/pp100.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
 
-![](https://www.githubip.xyz/Alvin9999/pac2/master/pp101.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
 
 
 **vultr改版了，最新开通服务器步骤如图**：
