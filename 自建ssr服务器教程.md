@@ -153,6 +153,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ```bash
 yum -y install wget
+
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
 ***
@@ -165,6 +166,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 
 ```bash
 yum -y install wget
+
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ss-go.sh && chmod +x ss-go.sh && bash ss-go.sh
 ```
 
@@ -237,7 +239,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 **注意：如果创建的是centos7的服务器，需要使用命令关闭防火墙，否则无法使用代理。CentOS 7.0默认使用的是firewall作为防火墙。**
 
 **查看防火墙状态命令**：
-
 ```bash
 firewall-cmd --state
 ```
