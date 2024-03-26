@@ -1,4 +1,4 @@
-**2024年2月25日更新教程末尾脚本。**
+**2024年3月26日更新。**
 
 ***
 
@@ -138,15 +138,21 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 安装命令：
 
+```bash
 source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
+```
 
 升级命令(保留配置文件更新)：
 
+```bash
 source <(curl -sL https://multi.netlify.app/v2ray.sh) -k
+```
 
 卸载命令：
 
+```bash
 source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
+```
 
 > 如果输入安装命令后提示curl: command not found，那是因为服务器系统没有自带curl命令，安装一下curl。
 
@@ -181,12 +187,18 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 **如果选择的是CentOS系统，还需要关闭vps防火墙来开放端口，相关命令如下：**
 
-**查看防火墙状态命令**：firewall-cmd --state
-
-**停止firewall命令**：systemctl stop firewalld.service
-
-**禁止firewall开机启动命令**：systemctl disable firewalld.service
-
+**查看防火墙状态命令**：
+```bash
+firewall-cmd --state
+```
+**停止firewall命令**：
+```bash
+systemctl stop firewalld.service
+```
+**禁止firewall开机启动命令**：
+```bash
+systemctl disable firewalld.service
+```
 
 ***
 
@@ -279,8 +291,9 @@ chmod +x tcp.sh
 
 **3、一键搭建多个协议节点脚本，无需域名，小白专用**
 
+```bash
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
-
+```
 脚本快捷管理命令：argox
 
 [图文教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)
