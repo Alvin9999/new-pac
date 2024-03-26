@@ -1,4 +1,4 @@
-**2024年1月1日更新，解决图片显示问题。**
+**2024年3月26日更新。**
 
 ***
 
@@ -36,7 +36,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
-
 
 **vultr改版了，最新开通服务器步骤如图**：
 
@@ -152,10 +151,10 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ***
 
+```bash
 yum -y install wget
-
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
-
+```
 ***
 
 **脚本二（SS）**
@@ -164,9 +163,10 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 
 ***
 
+```bash
 yum -y install wget
-
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ss-go.sh && chmod +x ss-go.sh && bash ss-go.sh
+```
 
 ***
 
@@ -236,12 +236,19 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 **注意：如果创建的是centos7的服务器，需要使用命令关闭防火墙，否则无法使用代理。CentOS 7.0默认使用的是firewall作为防火墙。**
 
-**查看防火墙状态命令：firewall-cmd --state**
+**查看防火墙状态命令**：
 
-**停止firewall命令：systemctl stop firewalld.service**
-
-**禁止firewall开机启动命令：systemctl disable firewalld.service**
-
+```bash
+firewall-cmd --state
+```
+**停止firewall命令**：
+```bash
+systemctl stop firewalld.service
+```
+**禁止firewall开机启动命令**：
+```bash
+systemctl disable firewalld.service
+```
 ***
 
 **高阶篇**
@@ -265,13 +272,11 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 ***
 
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
-
 chmod +x tcp.sh
-
 ./tcp.sh
-
-
+```
 ***
 
 > 如果提示 wget: command not found 的错误，这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。CentOS系统安装wget命令: yum install -y wget Debian/Ubuntu系统安装wget命令:apt-get install -y wget
