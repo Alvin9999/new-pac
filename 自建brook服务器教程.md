@@ -96,8 +96,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de4.PNG)
-
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
