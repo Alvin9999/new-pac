@@ -1,4 +1,4 @@
-**2024年1月1日更新，解决图片显示问题。**
+**2024年4月2日更新。**
 
 ***
 
@@ -17,11 +17,12 @@
 Brook是一款新兴的代理软件，其版本横垮Windows、安卓、iOS、MacOS、Linux等多个系统平台，功能类似于我们经常使用的Shadowsocks/ShadowsocksR。Brook 的目标是简单易用、傻瓜化、速度快（新协议）。通过在服务器端安装Brook服务器端，同时在本地设备中使用Brook客户端，两者成功连接之后，可以为我们提供科学上网服务。如果你想在SS/SSR/V2ray之外，尝试一种新的代理软件，那么Brook是一个不错的选择！
 
 ***
+
 **第一步：购买VPS服务器**
 
 VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。
 
-vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球25个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。）  
+vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球32个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
 <a href="https://www.vultr.com/?ref=7048874"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
 
@@ -31,58 +32,65 @@ vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月
 
 ***
 
-
 **注意：2.5美元套餐只提供ipv6 ip，一般的电脑用不了，所以建议选择3.5美元及以上的套餐。**
 
-vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Billing选项里可以看到账户余额。
+vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被墙时这个方法很有用。当ip被墙时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。在账号的Account——Make a payment选项里可以看到账户余额。
 
 **账号充值如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp100.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v0.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/pp101.png)
-
+依次点击Account——Make a payment——Alipay(支付宝)
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
-选择“Cloud Compute”。
+点击网页右上角的Deploy图标
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new2.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2.jpg)
 
-选择“Regular Performance”。如果选择这个，在下面选择具体套餐的时候，最低是3.5美元/月（也要看服务器位置），流量是500GB/月；5美元是1T流量/月。
+在下拉菜单中，点击Deploy New Server
 
-如果选择前面3个，在下面选择具体套餐的时候，最低是6美元/月，但6美元是2T流量/月。也就是，对流量需求较高的可以选择前面3个。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v3.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new3.PNG)
+服务器类型选择Cloud Compute-Shared CPU
 
-选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v4.jpg)
 
-电信用户推荐洛杉矶服务器；联通、移动用户推荐韩国、洛杉矶服务器。其它位置也可以尝试。
+选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
 
-**点击图中的系统名字，会弹出具体系统版本，推荐Debain10**
+点击图中的系统名字，会弹出具体系统版本，推荐Debain10、Debain11
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new5.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
-选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。
+选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。便宜的套餐，点击Regular Cloud Compute，选择第一个套餐，提示升级选择No Thanks。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new6.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v7.jpg)
 
-关闭自动备份，这个是收费的，可以关闭它。
+关闭自动备份Auto Backups，这个是收费的。点击它，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/new7.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v8.jpg)
 
 最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
 
 **完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/crp_up/pac教程05.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v9.jpg)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/Debian2.png)
+点击Products——Compute就可以看到购买的服务器列表
 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v10.jpg)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v11.jpg)
+
+在服务器的最右边，点击三个点，再点击Server Details就可以看到该服务器的详细信息。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v12.jpg)
+
+服务器ip和系统密码可以看到并能复制。
 
 **删掉服务器步骤如下图**：
 
