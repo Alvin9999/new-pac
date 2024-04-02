@@ -145,7 +145,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **hysteria 1一键部署管理脚本：**
 
+```bash
 bash <(curl -fsSL https://git.io/hysteria.sh)
+```
 
 ***
 
@@ -255,7 +257,9 @@ Hysteria 2 继承了 Hysteria 1.x 的几乎所有功能，同时引入了各种�
 
 **hysteria 2一键部署管理脚本：**
 
+```bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hysteria2-install/main/hysteria2-install-main/hy2/hysteria.sh && bash hysteria.sh
+```
 
 ***
 
