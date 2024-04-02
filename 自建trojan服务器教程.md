@@ -152,7 +152,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **脚本1**：
 
+```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh)"
+```
 
 > 如果输入安装命令没反应，或者提示curl: command not found ，那是因为服务器系统没有自带curl命令，安装一下curl。
 
@@ -164,7 +166,9 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 
 **脚本2**：
 
+```bash
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
+```
 
 [图文教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)
 
@@ -204,12 +208,14 @@ bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
 
 ***
 
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
 
 chmod +x tcp.sh
 
 ./tcp.sh
 
+```
 
 ***
 
