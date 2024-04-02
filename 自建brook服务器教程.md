@@ -96,6 +96,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 删除服务器时，先开新的服务器后再删除旧服务器，这样可以保证新服务器的ip与旧ip不同。
 
+
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de2.PNG)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/de5.png)
@@ -142,24 +143,27 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-
 **CentOS 6和7 / Debian 6+ / Ubuntu 14.04 + brook一键部署管理脚本**
 
 **2020年9月1日，[brook](https://github.com/txthinking/brook/releases/tag/v20200909)进行了重大的更新，9月1日到最新的版本客户端和服务端必须是最新的。如果你使用的是9月1日之前的老客户端，脚本一还是能用，只是在安装的时候不能自动获取版本，需要手动输入版本号v20200801 如果你使用的是9月1日或最新的客户端版本，可以用脚本二来手动安装，几条命令就可以了。**
 
 **方法一（老）：**
 
+```bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/brook.sh && chmod +x brook.sh  && bash brook.sh
+```
 
 > 如果提示 wget: command not found 的错误，这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。CentOS系统安装wget命令: yum install -y wget Debian/Ubuntu系统安装wget命令:apt-get install -y wget
 
 **方法二（新）：**
 
+```bash
 curl -L https://github.com/txthinking/brook/releases/download/v20230401/brook_linux_amd64 -o /usr/bin/brook
 
 chmod +x /usr/bin/brook
 
 setsid brook server --listen :9999 --password hello
+```
 
 > 第一条命令是下载v20230401版本，第二条命令给brook赋予权限，最后一条命令的意思是启动brook并增加守护进程，这样当ssh窗口关闭时，brook仍然是运行的，端口设置为9999，密码设置为hello，端口和密码可以改成自己的
 
@@ -209,12 +213,13 @@ setsid brook server --listen :9999 --password hello
 
 ***
 
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
 
 chmod +x tcp.sh
 
 ./tcp.sh
-
+```
 
 ***
 
