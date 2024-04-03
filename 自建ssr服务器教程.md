@@ -159,8 +159,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ***
 
 ```bash
-yum -y install wget
-
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
 ***
@@ -172,14 +170,16 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 ***
 
 ```bash
-yum -y install wget
-
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ss-go.sh && chmod +x ss-go.sh && bash ss-go.sh
 ```
 
 ***
 
-> 如果提示 wget: command not found 的错误，这是你的系统精简的太干净了，wget都没有安装，所以需要安装wget。CentOS系统安装wget命令: yum install -y wget  Debian/Ubuntu系统安装wget命令:apt-get install -y wget
+> 如果输入安装命令后提示wget: command not found，那是因为服务器系统没有自带wget命令，安装一下wget。
+
+> CentOS系统安装curl命令：yum install -y wget
+
+> Debian/Ubuntu系统安装curl命令：apt-get install -y wget
 
 
 ***
