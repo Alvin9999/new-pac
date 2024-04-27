@@ -1,4 +1,4 @@
-**2024年4月2日更新。**
+**2024年4月27日更新。**
 
 ***
 
@@ -108,8 +108,12 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：
 
+xshell5:
+
 [国外云盘1下载](https://d2.freessr2.xyz/Xshell_setup_wm.exe)
 [国外云盘2下载](https://d.dtku35.xyz/Xshell_setup_wm.exe)
+
+**注意：如果使用xshell5的过程中提示“找不到匹配的host key算法”，可以下载更高的版本来解决，比如xshell7，可在xshell中文官方网站下载**：https://www.xshell.com/zh/free-for-home-school
 
 如果你是Mac苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。直接打开Terminal终端，输入：ssh root@43.45.43.21（将45.45.43.21换成你的IP），之后输入你的密码就可以登录了（输入密码的时候屏幕上不会有显示）
 
