@@ -1,4 +1,4 @@
-**2024年4月27日更新。**
+**2024年4月30日更新。**
 
 ***
 
@@ -267,6 +267,8 @@ chmod +x tcp.sh
 
 **客户端使用教程：[v2ray各平台图文使用教程](https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%90%84%E5%B9%B3%E5%8F%B0%E5%9B%BE%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)**
 
+**浏览器代理设置第一种方法（不安装插件）**：
+
 浏览器代理设置成Socks(5) 127.0.0.1 和端口号，这个端口号需要和你的客户端本地端口号一致，如果你使用的是V2rayN客户端，打开软件——设置——参数设置——本地socks监听端口号，默认是10808或者1080。
 
 谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
@@ -276,6 +278,12 @@ chmod +x tcp.sh
 
 完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。
 ![20181116001438](https://user-images.githubusercontent.com/12132898/70548727-04fa6680-1bae-11ea-99da-568af4fd6f5f.png)
+
+**浏览器代理设置第二种方法（不安装插件）**：
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn001.jpg)
+
+windows系统打开v2rayN软件，在软件的底部，选择“自动配置系统代理”，路由可选择“全局(Global)”。全局(Global)模式：所有网站通过节点服务器代理上网。
 
 
 ***
