@@ -267,19 +267,7 @@ chmod +x tcp.sh
 
 **客户端使用教程：[v2ray各平台图文使用教程](https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%90%84%E5%B9%B3%E5%8F%B0%E5%9B%BE%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)**
 
-**浏览器代理设置第一种方法（不安装插件）**：
-
-浏览器代理设置成Socks(5) 127.0.0.1 和端口号，这个端口号需要和你的客户端本地端口号一致，如果你使用的是V2rayN客户端，打开软件——设置——参数设置——本地socks监听端口号，默认是10808或者1080。
-
-谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
-
-安装插件，打开chrome，打开扩展程序，将下载的插件拖动到扩展程序页面，添加到扩展。
-![20181116000534](https://user-images.githubusercontent.com/12132898/70548725-0461d000-1bae-11ea-9d1e-4577e36ac46e.png)
-
-完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。
-![20181116001438](https://user-images.githubusercontent.com/12132898/70548727-04fa6680-1bae-11ea-99da-568af4fd6f5f.png)
-
-**浏览器代理设置第二种方法（不安装插件）**：
+**软件代理设置**：
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn001.jpg)
 
