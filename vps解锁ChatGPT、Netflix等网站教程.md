@@ -222,7 +222,7 @@ bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/netflix3.png)
 
-**注意**：通过此方法检测出来的落地ip为Cloud­flare WARP的ip，相当于服务器ip伪装成了Cloud­flare WARP的ip。但你的ssr、ss、v2ray等搭建好的账号的ip还是要填写vps的ip。
+**注意**：通过此方法检测出来的落地ip为Cloud­flare WARP的ip，相当于服务器ip伪装成了Cloud­flare WARP的ip。但你的ss、v2ray等搭建好的账号的ip还是要填写vps的ip。另外，ssr账号用此方法测试不成功，ss、v2ray、hysteria账号测试可行。
 
 ip检测网址：https://allinfa.com/tool/ip2/ip.php
 
