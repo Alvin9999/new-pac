@@ -152,7 +152,7 @@ xshell5:
 
 ***
 
-本方法默认服务器已经安装了ssr、ssr、v2ray、hysteria等工具。如果服务器没有安装翻墙工具，可以选择以下方法：
+本方法默认服务器已经安装了ss、v2ray、hysteria等工具。如果服务器没有安装翻墙工具，可以选择以下方法：
 
 [自建ss/ssr服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建v2ray服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
