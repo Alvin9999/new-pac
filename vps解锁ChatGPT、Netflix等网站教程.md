@@ -12,9 +12,6 @@
 
 Netflix无法访问页面。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/youtube1.png)
-
-解锁后可以不用登录账号访问YouTube。
 
 一般来说，需要原生ip才能正常访问这些受限制的网站，但原生ip的vps比较难找，且比较贵，因此我们可以借助Cloud­flare WARP来实现原生ip的功能。如果不想搭建vps，那么也可以考虑这个原生ip [V2free机场](https://github.com/Alvin9999/new-pac/wiki/V2free%E6%9C%BA%E5%9C%BA)。
 
@@ -207,13 +204,6 @@ bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/netflix3.png)
 
-打开YouTube官网：https://www.youtube.com
-
-某个YouTube视频页面：
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/youtube2.jpg)
-
-无需登录YouTube即可观看视频。
 
 ***
 
