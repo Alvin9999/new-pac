@@ -188,7 +188,7 @@ bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
 
 演示操作：
 
-复制上面的脚本代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装。
+复制上面的Cloud­flare WARP 一键安装脚本代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt2.jpg)
 
