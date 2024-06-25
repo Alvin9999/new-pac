@@ -2,11 +2,7 @@
 
 ***
 
-如果你的vps搭建翻墙工具后不能访问[ChatGPT](https://chatgpt.com)、[Netflix](https://www.netflix.com)等网站，出现以下界面：
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt1.png)
-
-解锁后可以不用登录账号访问ChatGPT。
+如果你的vps搭建翻墙工具后不能访问[Netflix](https://www.netflix.com)、[ChatGPT](https://chatgpt.com)等网站，比如出现以下界面：
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/netflix1.png)
 
