@@ -328,15 +328,15 @@ chmod +x tcp.sh
 
 第一次电脑系统使用SSR/SS客户端时，如果提示你需要安装NET Framework 4.0，网上搜一下这个东西，安装一下即可。NET Framework 4.0是SSR/SS的运行库，没有这个SSR/SS客户端无法正常运行。有的电脑系统可能会自带NET Framework 4.0。
 
-Windows SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases)
+Windows SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases) [github镜像下载](https://dgithub.xyz/shadowsocksr-backup/shadowsocksr-csharp/releases)
 
-Windows SS 客户端：[github最新版下载](https://github.com/shadowsocks/shadowsocks-windows/releases) 
+Windows SS 客户端：[github最新版下载](https://github.com/shadowsocks/shadowsocks-windows/releases) [github镜像下载](https://dgithub.xyz/shadowsocks/shadowsocks-windows/releases) 
 
-Mac SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases) 
+Mac SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases)  [github镜像下载](https://dgithub.xyz/shadowsocksr-backup/ShadowsocksX-NG/releases) 
 
 Linux 客户端：[下载地址](https://d2.freessr2.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
 
-安卓SSR 客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)
+安卓SSR 客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases) [github镜像下载](https://dgithub.xyz/shadowsocksr-backup/shadowsocksr-android/releases)
 
 iOS：[没有美区AppleID的翻墙教程](https://github.com/Alvin9999/new-pac/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)  [iOS注册美区Apple ID教程](https://github.com/Alvin9999/new-pac/wiki/iOS%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%8C%BAApple-ID%E6%95%99%E7%A8%8B) 
 
