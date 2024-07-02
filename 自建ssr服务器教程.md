@@ -1,4 +1,4 @@
-**2024年4月30日更新。**
+**2024年7月3日更新。**
 
 ***
 
@@ -328,46 +328,17 @@ chmod +x tcp.sh
 
 第一次电脑系统使用SSR/SS客户端时，如果提示你需要安装NET Framework 4.0，网上搜一下这个东西，安装一下即可。NET Framework 4.0是SSR/SS的运行库，没有这个SSR/SS客户端无法正常运行。有的电脑系统可能会自带NET Framework 4.0。
 
-Windows SSR 4.7.0客户端 文件名称：ShadowsocksR-4.7.0-win.7z
+Windows SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases)
 
-[下载地址1](https://d2.freessr2.xyz/ShadowsocksR-4.7.0-win.7z)
-[下载地址2](https://d.dtku35.xyz/ShadowsocksR-4.7.0-win.7z)
-[下载地址3](https://free.zhujicn2.net/ShadowsocksR-4.7.0-win.7z)
-[github下载](https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases)
+Windows SS 客户端：[github最新版下载](https://github.com/shadowsocks/shadowsocks-windows/releases) 
 
-Windows SS 4.4.1客户端 文件名称：Shadowsocks-4.4.1.0.zip
+Mac SSR客户端：[github最新版下载](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases) 
 
-[下载地址1](https://d2.freessr2.xyz/Shadowsocks-4.4.1.0.zip)
-[下载地址2](https://d.dtku35.xyz/Shadowsocks-4.4.1.0.zip)
-[下载地址3](https://free.zhujicn2.net/Shadowsocks-4.4.1.0.zip)
-[github下载](https://github.com/shadowsocks/shadowsocks-windows/releases) 
+Linux 客户端：[下载地址](https://d2.freessr2.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
 
-Mac SSR客户端 文件名称：ShadowsocksX-NG-R8.dmg
-
-[下载地址1](https://d2.freessr2.xyz/ShadowsocksX-NG-R8.dmg)
-[下载地址2](https://d.dtku35.xyz/ShadowsocksX-NG-R8.dmg)
-[下载地址3](https://free.zhujicn2.net/ShadowsocksX-NG-R8.dmg)
-[github下载](https://github.com/shadowsocksr-backup/ShadowsocksX-NG/releases) 
-
-Linux 客户端 文件名称：Shadowsocks-Qt5-x86_64-v3.0.1.AppImage
-
-[下载地址1](https://d2.freessr2.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
-[下载地址2](https://d.dtku35.xyz/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
-[下载地址3](https://free.zhujicn2.net/Shadowsocks-Qt5-x86_64-v3.0.1.AppImage)
-[下载地址](http://www.mediafire.com/folder/xag0zy318a5tt/Linux) 
-
-
-安卓SSR 3.4.0客户端  文件名称：shadowsocksr-release.apk
-
-[下载地址1](https://d2.freessr2.xyz/shadowsocksr-release.apk)
-[下载地址2](https://d.dtku35.xyz/shadowsocksr-release.apk)
-[下载地址3](https://free.zhujicn2.net/shadowsocksr-release.apk)
-[github下载](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)
-
+安卓SSR 客户端：[github最新版下载](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)
 
 iOS：[没有美区AppleID的翻墙教程](https://github.com/Alvin9999/new-pac/wiki/%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6)  [iOS注册美区Apple ID教程](https://github.com/Alvin9999/new-pac/wiki/iOS%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%8C%BAApple-ID%E6%95%99%E7%A8%8B) 
-
-[全平台SS/SSR客户端下载汇总](http://www.mediafire.com/folder/sfqz8bmodqdx5/shadowsocks相关客户端)
 
 ***
 
