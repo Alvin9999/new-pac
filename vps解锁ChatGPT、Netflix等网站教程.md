@@ -1,4 +1,4 @@
-**2024年6月12日发布。**
+**2024年7月4日更新。**
 
 ***
 
@@ -223,6 +223,8 @@ bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
 ip检测网址：https://allinfa.com/tool/ip2/ip.php
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ipcheck1.png)
+
+**记住：客户端使用翻墙账号时，记住一定要换成你自己的vps服务器ip！不是Cloud­flare WARP的ip！不是Cloud­flare WARP的ip！不是Cloud­flare WARP的ip！**
 
 ***
 
