@@ -158,7 +158,7 @@ xshell5:
 
 vps的服务器操作系统不要用的太高，脚本不支持，会导致安装后无法启动成功，比如CentOS8、CentOS9、Debain12。
 
-**CentOS6 CentOS7、Debian10、Debain11 ShadowsocksR/Shadowsocks一键部署管理脚本：**
+**CentOS6、CentOS7、Debian10、Debain11 ShadowsocksR/Shadowsocks一键部署管理脚本：**
 
 **脚本一(SSR)，安装完成后，快捷管理命令：bash ssr.sh**
 
