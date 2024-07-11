@@ -1,4 +1,4 @@
-**2024年4月30日更新。**
+**2024年7月11日更新。**
 
 ***
 
@@ -62,7 +62,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
 
-点击图中的系统名字，会弹出具体系统版本，推荐Debain10、Debain11 ,不要选择CentOS
+点击图中的系统名字，会弹出具体系统版本，推荐Debain11 ,不要选择CentOS
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
@@ -273,7 +273,6 @@ chmod +x tcp.sh
 
 windows系统打开v2rayN软件，在软件的底部，选择“自动配置系统代理”，路由可选择“全局(Global)”。全局(Global)模式：所有网站通过节点服务器代理上网。
 
-
 ***
 
 **常见问题参考解决方法**：
@@ -300,13 +299,13 @@ windows系统打开v2rayN软件，在软件的底部，选择“自动配置系�
 **3、一键搭建多个协议节点脚本，无需域名，小白专用**
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
+bash <(curl -Ls https://gitlab.com/rwkgyg/sing-box-yg/raw/main/sb.sh)
 ```
-脚本快捷管理命令：argox
+脚本快捷管理命令：sb
 
 [图文教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)
 
-无需域名。有域名也行。按照提示操作安装，全程回车即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。鼠标往上翻，根据客户端来复制对应的一键导入链接。
+无需域名。按照提示操作安装，全程回车即可。搭建好后默认有4个节点，1个vless-reality-vision节点，1个vmess-ws节点，1个Hysteria-2节点，1个Tuic-v5节点。
 
 ***
 
