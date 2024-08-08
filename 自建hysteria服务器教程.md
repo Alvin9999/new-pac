@@ -1,4 +1,4 @@
-**2024年4月27日更新。**
+**2024年8月8日更新。**
 
 ***
 
@@ -173,29 +173,40 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy2.png)
 
-选择数字3来安装证书，如果有域名，可以选择数字1或者3来安装证书，没有域名就选择数字3
+没有域名就选择数字3
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy3.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy001.png)
 
-自签证书默认是wechat.com 回车即可
+自签证书可以输入bing.com
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy4.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy002.png)
 
-账号端口也可以回车，或者输入想要的端口号
+选择数字1，正确
 
-协议类型很重要：没有域名只能选择数字1的upd协议类型，其它2个都用不了。如果有域名，那么会多一个选择，可以选择udp或者wechat-video，如果选择wechat-video后需要填写自己的域名。faketcp模式需要电脑是linux。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy003.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy5.png)
+选择数字1，udp类型
 
-延迟、上传、下载都可以用默认的配置，也可以自己修改，默认就回车
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy004-2.png)
 
-接着会提醒输入认证口令，就是密码，可以自己输入想要的
+端口可以回车随机
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy6.png)
+关于是否启用端口跳跃/多端口模式，一般选择2，跳过。如果封锁严重的时候可以选择1，启用。如果启用端口跳跃/多端口模式，需要按照提示输入开始端口和结束端口。
 
-一般提示安装成功，请查看下方配置详细信息就说明安装成功了。如果失败会有相应的提示，一般解决方法就是卸载脚本后重新安装。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy005.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy7.png)
+延迟、上传速度、下载速度、密码都可以用默认的配置，也可以自己修改，默认就回车
+
+关于验证方式，一般选择1，auth_str(默认)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy006.png)
+
+关于客户端名称，默认就回车
+
+接下来会等待几分钟，成功后会出现“安装完成，请查看下方配置详细信息”。如果失败会有相应的提示，一般解决方法就是卸载脚本后重新安装。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy007.png)
+
 
 带大括号的就是整个配置信息，需要复制下来，用鼠标右键有复制。在电脑上新建一个**config.json**的文件，把配置信息粘帖进去。需要**注意**的是：**有两行必须删除**，不然会无法启动hysteria客户端。这两行信息是：
 
@@ -213,13 +224,11 @@ bash <(curl -fsSL https://git.io/hysteria.sh)
 
 hysteria 1官方客户端下载地址：https://github.com/apernet/hysteria/releases/tag/v1.3.5
 
-根据电脑系统进行下载，电脑windows 32位系统就下载[hysteria-windows-386.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.2.1/hysteria-windows-386.exe) 64位系统可以用hysteria-windows-386.exe 或者[hysteria-windows-amd64.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.2.1/hysteria-windows-amd64.exe)
+根据电脑系统进行下载，电脑windows 32位系统就下载[hysteria-windows-386.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.3.5/hysteria-windows-386.exe) 64位系统可以用[hysteria-windows-386.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.3.5/hysteria-windows-386.exe)  或者[hysteria-windows-amd64.exe](https://github.com/HyNetwork/hysteria/releases/download/v1.3.5/hysteria-windows-amd64.exe)
 
 hysteria客户端下载好后，将config.json配置文件放在同一级目录就能启动了。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/hy8.png)
-
-为了方便大家，打包了一份包含config.json配置文件和hysteria 1.2.1版本的文件压缩包，解压后可以编辑config.json，将里面的内容替换成自己的，编辑工具可以用记事本或者notepad。再次提醒需要删除acl和mmdb两行信息，不然客户端无法正常启动。[国外网盘下载](https://d.dtku35.xyz/hysteria1.2.1.7z)
 
 启动hysteria，浏览器代理设置成和配置文件一样就行，配置文件包含http和socks5代理，http代理默认的是127.0.0.1和10809，socks5代理默认的是127.0.0.1和10808，端口号可以修改，浏览器二选一，端口号和配置文件一致。
 
@@ -287,7 +296,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/flame1ce/hyster
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-004.jpg)
 
-端口模式选择1，单端口模式。
+端口模式一般选择1，单端口模式。如果封锁严重的时候可以选择2，启用端口跳跃/多端口模式。如果启用端口跳跃，需要按照提示输入开始端口和结束端口。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/hy2-005.jpg)
 
