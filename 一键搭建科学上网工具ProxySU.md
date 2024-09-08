@@ -110,7 +110,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **第二步:ProxySU下载及搭建**
 
-当前提供下载的版本为ProxySU-v2.5.7,文件很小,大小为798. ProxySU-v2.5.7是比较老的版本，保留了SSR和SS搭建，最新版不支持。除了SSR、SS，还可以搭建v2ray，如果搭建的协议有TLS字样就需要域名，如果没有TLS就不用域名。
+当前提供下载的版本为ProxySU-v2.5.7,文件很小,大小为798kb. ProxySU-v2.5.7是比较老的版本，保留了SSR和SS搭建，最新版不支持。除了SSR、SS，还可以搭建v2ray，如果搭建的协议有TLS字样就需要域名，如果没有TLS就不用域名。
+
+ProxySU-v2.5.7：
 
 [国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.5.7.zip)  [国外云盘下载2](https://d.dtku35.xyz/ProxySU-v2.5.7.zip)  
 
