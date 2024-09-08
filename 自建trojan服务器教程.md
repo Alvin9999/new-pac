@@ -174,7 +174,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/t
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
 ```
 
-无需域名。有域名也行。按照提示操作，一般回车即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。鼠标往上翻，根据客户端来复制对应的一键导入链接。
+无需域名。有域名也行。按照提示操作，一般回车即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。
 
 脚本2安装方法：数字2“简体中文”——数字1“安装 ArgoX 脚本”，后面回车即可。搭建完成后鼠标滑轮往上翻可以看到不同客户端的一键导入链接以及配置信息。
 
