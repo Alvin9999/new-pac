@@ -1,4 +1,4 @@
-**2024年9月8日更新。**
+**2024年9月8日更新SSR、v2ray、trojan演示教程。**
 
 ***
 
@@ -126,6 +126,8 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **填上ip和密码，端口22和root默认。**
 
+***
+
 **演示1:以搭建SSR为例，选中SSR模板库。**
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-1.png)
@@ -136,11 +138,14 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-3.png)
 
-出现上面这个信息显示就是搭建成功了。
+出现上面这个信息显示就是搭建成功了。Debain系统搭建过程中会开启bbr加速。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-6.png)
 
 搭建完成后会弹出账号信息，可以手动填写到SSR客户端，也可以复制一键导入链接。
+
+
+***
 
 **演示2：以搭建v2ray为例，选中v2ray模板库。**
 
@@ -181,6 +186,27 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/111.jpg)
 
 **如果忘记了vmes地址，在文件夹中有url的txt文档。**
+
+
+***
+
+**演示3：以搭建trojan为例，选中trojan模板库。**
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-1.png)
+
+填写服务器ip、服务器密码、端口22、用户root
+
+绑定服务器ip的域名、伪装网站(选填)
+
+最后点击trojan一键安装
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-2.png)
+
+出现上面这个信息显示就是搭建成功了。Debain系统搭建过程中会开启bbr加速。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-3.png)
+
+最后会弹出账号信息。
 
 ***
 
