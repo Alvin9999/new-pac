@@ -124,7 +124,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps1.jpg)
 
-**填上ip和密码，端口22和root默认。**
+**填上ip和密码，端口22和root默认。注意：ProxySU-v2.5.7版本，就算没有域名，在界面上也需要填写1个邮箱，可以是真实的，也可以随便填写1个，比如[123456@gmail.com](mailto:123456@gmail.com) 不然软件无法正常运行。**
 
 ***
 
@@ -194,7 +194,7 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-1.png)
 
-填写服务器ip、服务器密码、端口22、用户root
+填写服务器ip、服务器密码、端口22、用户root、email
 
 绑定服务器ip的域名、伪装网站(选填)
 
