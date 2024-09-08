@@ -1,4 +1,4 @@
-**2024年4月2日更新。**
+**2024年9月8日更新。**
 
 ***
 
@@ -110,11 +110,11 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **第二步:ProxySU下载及搭建**
 
-当前提供下载的版本为ProxySU-v2.4.0,文件很小,大小为569kb. ProxySU-v2.4.0是比较老的版本，保留了SSR和SS搭建。如果想搭建其它工具，推荐用[ProxySU最新版](https://github.com/proxysu/ProxySU/releases)。
+当前提供下载的版本为ProxySU-v2.5.7,文件很小,大小为798. ProxySU-v2.5.7是比较老的版本，保留了SSR和SS搭建，最新版不支持。除了SSR、SS，还可以搭建v2ray，如果搭建的协议有TLS字样就需要域名，如果没有TLS就不用域名。
 
-[国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.4.0.zip)  [国外云盘下载2](https://d.dtku35.xyz/ProxySU-v2.4.0.zip)  
+[国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.5.7.zip)  [国外云盘下载2](https://d.dtku35.xyz/ProxySU-v2.5.7.zip)  
 
-**如果在安装过程中总是提示某个错误，也可以尝试其它ProxySU版本，官方其它版本下载。下载第一个后缀名为zip的文件，解压后运行ProxySuper.WPF.exe**：https://github.com/proxysu/ProxySU/releases
+[ProxySU最新版](https://github.com/proxysu/ProxySU/releases)。
 
 ## Windows系统需要安装net4.0及以上
 
@@ -126,13 +126,31 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **填上ip和密码，端口22和root默认。**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps10.jpg)
+**演示1:以搭建SSR为例，选中SSR模板库。**
 
-**以搭建v2ray为例，选中v2ray模板库。**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-1.png)
+
+SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个邮箱，可以填写真实的，也可以随便填写一个，比如123455@gmail.com
+
+伪装域名可以不填，如果填写，可以填写一个在大陆可以访问的域名，比如bing.com、www.microsoft.com等，伪装域名前面不要加https://
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-3.png)
+
+出现上面这个信息显示就是搭建成功了。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-2.png)
+
+搭建完成后会弹出账号信息，可以手动填写到SSR客户端，也可以复制一键导入链接。
+
+**演示2：以搭建v2ray为例，选中v2ray模板库。**
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-4.png)
+
+注意：ProxySU-v2.5.7版本，就算没有域名，在界面上也需要填写1个邮箱，可以是真实的，也可以随便填写1个，比如123456@gmail.com  不然软件无法正常运行。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps3.jpg)
 
-**在v2ray模板库中，选中想要搭建的v2ray协议，有的协议不需要域名，可以直接搭建，有的需要域名，所以需要提前购买域名并绑定服务器ip。第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) 。**
+**在v2ray模板库中，选中想要搭建的v2ray协议，有的协议不需要域名，可以直接搭建，有的需要域名，所以需要提前购买域名并绑定服务器ip。如果搭建的协议有TLS字样就需要域名，如果没有TLS就不用域名。第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) 。**
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps4.jpg)
 
@@ -172,11 +190,10 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 [自建v2ray服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建hysteria服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAhysteria%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B)
  
-[一键搭建多个协议节点教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)  
+[一键搭建多个协议节点教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)  [vps解锁ChatGPT、Netflix等网站教程](https://github.com/Alvin9999/new-pac/wiki/vps%E8%A7%A3%E9%94%81ChatGPT%E3%80%81Netflix%E7%AD%89%E7%BD%91%E7%AB%99%E6%95%99%E7%A8%8B)
 
 [自建brook服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAbrook%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建trojan服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAtrojan%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
-[自建WireGuard VPN服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAWireGuard-VPN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 
 ***
 
