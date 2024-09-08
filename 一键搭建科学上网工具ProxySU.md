@@ -138,7 +138,7 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 
 出现上面这个信息显示就是搭建成功了。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-2.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-5.png)
 
 搭建完成后会弹出账号信息，可以手动填写到SSR客户端，也可以复制一键导入链接。
 
