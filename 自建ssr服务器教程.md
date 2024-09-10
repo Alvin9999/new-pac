@@ -1,4 +1,4 @@
-**2024年7月11日更新。**
+**2024年9月10日更新。**
 
 ***
 
@@ -55,7 +55,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0910-01.png)
 
 点击图中的系统名字，会弹出具体系统版本，推荐Debain 11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
 
