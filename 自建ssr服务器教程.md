@@ -57,7 +57,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0910-01.png)
 
-点击图中的系统名字，会弹出具体系统版本，推荐Debain 11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
+点击图中的系统名字，会弹出具体系统版本，推荐Debian 11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，比如Debian12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
@@ -154,7 +154,7 @@ xshell5:
 
 ***
 
-系统推荐Debain11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，会导致SSR无法启动成功，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
+系统推荐Debian11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，会导致SSR无法启动成功，比如Debian12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
 
 **一键部署管理脚本：**
 
@@ -297,7 +297,7 @@ chmod +x tcp.sh
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
-操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debain10或以上系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
+操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debian或Ubuntu系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
@@ -369,7 +369,7 @@ C：混淆选择plain意思是不混淆，有的时期增加混淆有利于突�
 
 如果你的手机用的是SS客户端，SS客户端没有填协议和混淆的地方，如果你部署的协议和混淆的时候没有选择兼容原版（SS版），因此手机是用不了的。这个时候你把协议弄成兼容原版、混淆也设置成兼容原版即可。或者直接将协议设置成origin且混淆设置成plain。
 
-3、vps的服务器操作系统不要用的太高，SSR脚本不支持，会导致安装后SSR无法启动成功，比如Debain12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24。
+3、vps的服务器操作系统不要用的太高，SSR脚本不支持，会导致安装后SSR无法启动成功，比如Debian12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24。
 
 4、vultr服务商提供的vps服务器是单向流量计算，有的vps服务商是双向流量计算，单向流量计算对于用户来说更实惠。因为我们是在vps服务器上部署SSR服务端后，再用SSR客户端翻墙，所以SSR服务端就相当于中转，比如我们看一个视频，必然会产生流量，假如消耗流量80M，那么VPS服务器会产生上传80M和下载80M流量，vultr服务商只计算单向的80M流量。如果是双向计算流量，那么会计算为160M流量。
 
