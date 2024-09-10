@@ -1,4 +1,4 @@
-**2024年7月11日更新。**
+**2024年9月10日更新。**
 
 ***
 
@@ -60,9 +60,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/debian110908.png)
 
-点击图中的系统名字，会弹出具体系统版本，推荐Debain11 ,不要选择CentOS
+点击图中的系统名字，会弹出具体系统版本，推荐Debian系统
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
@@ -236,7 +236,7 @@ chmod +x tcp.sh
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
-操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debain10或以上系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
+操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debian或Ubuntu系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
