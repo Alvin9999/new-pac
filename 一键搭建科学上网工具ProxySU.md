@@ -134,7 +134,7 @@ ProxySU-v2.5.7：
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-1.png)
 
-SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个邮箱，可以填写真实的，也可以随便填写一个，比如123455@gmail.com
+SSR模板库只有SSR+TLS+Caddy，需要域名，第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) 。证书申请需要填写一个邮箱，可以填写真实的，也可以随便填写一个，比如123455@gmail.com
 
 伪装域名可以不填，如果填写，可以填写一个在大陆可以访问的域名，比如bing.com、www.microsoft.com等，伪装域名前面不要加https://
 
