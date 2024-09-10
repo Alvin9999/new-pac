@@ -1,4 +1,4 @@
-**2024年9月8日更新SSR、v2ray、trojan演示教程。**
+**2024年9月10日更新SSR、v2ray、trojan演示教程。**
 
 ***
 
@@ -68,9 +68,9 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v5.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/debian110908.png)
 
-点击图中的系统名字，会弹出具体系统版本，推荐Debain10、Debain11，不推荐用CentOS系统，CentOS系统用ProxySU无法自动开启bbr加速。
+点击图中的系统名字，会弹出具体系统版本，推荐Debian系统，不推荐用CentOS系统，CentOS系统用ProxySU无法自动开启bbr加速。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
 
@@ -140,7 +140,7 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-3.png)
 
-出现上面这个信息显示就是搭建成功了。Debain系统搭建过程中会开启bbr加速。
+出现上面这个信息显示就是搭建成功了。Debian系统搭建过程中会开启bbr加速。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-6.png)
 
@@ -155,40 +155,39 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 
 注意：ProxySU-v2.5.7版本，就算没有域名，在界面上也需要填写1个邮箱，可以是真实的，也可以随便填写1个，比如123456@gmail.com  不然软件无法正常运行。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps3.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray0910-1.png)
 
 **在v2ray模板库中，选中想要搭建的v2ray协议，有的协议不需要域名，可以直接搭建，有的需要域名，所以需要提前购买域名并绑定服务器ip。如果搭建的协议有TLS字样就需要域名，如果没有TLS就不用域名。第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) 。**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps4.jpg)
+websocket+tls+web协议：
 
-**目前比较热门的v2ray协议:WebSocket+Tls+Web （需要域名）选中后，填写域名。**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray0910-2.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps5.jpg)
+websocket协议：
 
-**如果没有域名，可以搭建其它的协议，比如TCP、WebSocket（不带tls）、KCP。**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray0910-3.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps9.jpg)
+点击确定
 
-**点击v2ray一键安装，软件会自动搭建。**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray0910-4.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps6.jpg)
+点击v2ray一键安装，软件会自动搭建
 
-**系统工具：点击系统工具可以校对时间和部署bbr加速。v2ray需要校对时间。目前搭建v2ray的过程中，软件会自动校对时间和开启bbr加速，如果一切顺利不用手动再去点击系统工具。**
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray0910-5.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps11.jpg)
+如果服务器是Debian或Ubuntu系统，软件会自动开启bbr加速
 
-**部署完后，会自动弹出帐号配置信息，并且在文件夹中也会自动生成相关配置文件及客户端下载地址。**
+部署完后，会自动弹出帐号配置信息，并且在文件夹中也会自动生成相关配置文件及客户端下载地址
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps7.jpg)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ps8.jpg)
 
-**有个vmess地址，把它复制下来，然后右键“v2rayN”图标，选择“从剪切板批量导入url”，如下图**
+有个vmess地址，把它复制下来，然后右键“v2rayN”图标，选择“从剪切板批量导入url”，如下图
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/111.jpg)
 
-**如果忘记了vmes地址，在文件夹中有url的txt文档。**
-
+如果忘记了vmes地址，在文件夹中有url的txt文档
 
 ***
 
@@ -204,7 +203,7 @@ SSR模板库只有SSR+TLS+Caddy，需要域名，证书申请需要填写一个�
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-2.png)
 
-出现上面这个信息显示就是搭建成功了。Debain系统搭建过程中会开启bbr加速。
+出现上面这个信息显示就是搭建成功了。Debian系统搭建过程中会开启bbr加速。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-3.png)
 
