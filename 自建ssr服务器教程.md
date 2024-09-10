@@ -154,7 +154,7 @@ xshell5:
 
 ***
 
-系统推荐Debian11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，会导致SSR无法启动成功，比如Debian12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持）
+系统推荐Debian11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，会导致SSR无法启动成功，比如Debian12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持；另外教程末尾的《常见问题及解决方法》第11点有使用docker安装SSR方法，高系统版本的服务器也能使用。）
 
 **一键部署管理脚本：**
 
@@ -393,6 +393,81 @@ vultr和其他的国外商家一样，都是使用工单的形式与客服联系
 
 10、配置bbr加速脚本，重启电脑后xshell无法连接服务器。如果你遇到这样的问题，只能把服务器删除了，重新搭建个新的，可以先配置bbr加速脚本再配置ss/ssr脚本。
 
+11、vps系统较高，不支持ssr一键脚本怎么办？
+
+**解决方法：使用docker来安装ssr**
+
+**使用curl工具下载docker脚本自动安装**
+
+```bash
+curl -fsSL get.docker.com -o get-docker.sh
+
+sh get-docker.sh --mirror Aliyun
+```
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssrdocker0908-1.png)
+
+**启动Docker**
+
+```bash
+systemctl enable docker
+
+systemctl start docker
+```
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssrdocker0908-2.png)
+
+**下载SSR镜像 并配置主机端口20000映射到容器20000，容器命名为为ssr**
+
+```bash
+docker run -idt --name ssr  -p 20000:20000 yinqishuo/ssr:0.01  
+```
+
+**启动shadowsocks** 
+
+```bash
+docker exec -d ssr /bin/python /usr/local/shadowsocks/server.py -c /etc/shadowsocks-r/config.json -d start
+```
+
+**查看容器是否启动成功**
+
+```bash
+docker ps
+```
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssrdocker0908-3.png)
+
+**使用此docker搭建好的SSR账号默认参数**：
+
+端口：20000  密码：123456789 加密方式：chacha20-ietf 协议：auth_sha1_v4  混淆：plain
+
+把账号信息填入到自己客户端中就可以用了。因为默认的参数来源于制作好的docker，所以如果想自己修改参数，需要改配置文件
+
+**以命令行方式进入SSR容器内部** 
+
+```bash
+docker exec -it ssr /bin/bash
+```
+
+**编辑配置文件**
+
+```bash
+vi /etc/shadowsocks-r/config.json
+```
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssrdocker0908-4.png)
+
+输入字母i进入编辑模式，编辑好后，先按ESC键，然后输入:wq 
+
+之后回车退出编辑模式
+
+**重启SSR**
+
+```bash
+python /usr/local/shadowsocks/server.py -c /etc/shadowsocks-r/config.json -d restart
+```
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssrdocker0908-5.png)
 
 ***
 
