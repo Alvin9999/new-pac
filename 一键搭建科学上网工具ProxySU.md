@@ -1,4 +1,4 @@
-**2024年9月10日更新SSR、v2ray、trojan演示教程。**
+**2024年9月20日更新SSR、v2ray、trojan演示教程。**
 
 ***
 
@@ -131,6 +131,8 @@ ProxySU-v2.5.7：
 ***
 
 **演示1:以搭建SSR为例，选中SSR模板库。**
+
+注意：服务器系统推荐Debian11或者Ubuntu 20.04，SSR脚本不支持版本较高的系统，会导致SSR无法启动成功。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-1.png)
 
