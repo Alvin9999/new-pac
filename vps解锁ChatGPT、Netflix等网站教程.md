@@ -1,13 +1,12 @@
-**2024年9月10日更新。**
+**2024年9月29日更新。**
 
 ***
 
-如果你的vps搭建翻墙工具后不能访问[Netflix](https://www.netflix.com)、[ChatGPT](https://chatgpt.com)等网站，比如出现以下界面：
+如果你的vps搭建翻墙工具后不能访问[Netflix](https://www.netflix.com)、[ChatGPT](https://chatgpt.com)等网站，比如出现Netflix无法访问页面：
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/netflix1.png)
 
-Netflix无法访问页面。
-
+（如果访问YouTube出现需要登录账号才能观看视频，也可以用此方法来解决）
 
 一般来说，需要原生ip才能正常访问这些受限制的网站，但原生ip的vps比较难找，且比较贵，因此我们可以借助Cloud­flare WARP来实现原生ip的功能。如果不想搭建vps，那么也可以考虑这个原生ip [V2free机场](https://github.com/Alvin9999/new-pac/wiki/V2free%E6%9C%BA%E5%9C%BA)。
 
@@ -158,7 +157,6 @@ xshell5:
 
 [自建brook服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAbrook%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建trojan服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAtrojan%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
-[自建WireGuard VPN服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAWireGuard-VPN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 
 ***
 
@@ -225,6 +223,22 @@ ip检测网址：https://allinfa.com/tool/ip2/ip.php
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ipcheck1.png)
 
 **记住：客户端使用翻墙账号时，记住一定要换成你自己的vps服务器ip！不是Cloud­flare WARP的ip！不是Cloud­flare WARP的ip！不是Cloud­flare WARP的ip！**
+
+***
+
+**千万要注意：如出现IP丢失、VPS运行卡顿、脚本运行下载失败、无法进入脚本界面等现象，请用以下命令终止warp，再重启或者重装warp**
+
+1、终止warp-go： 
+
+```bash
+kill -15 $(pgrep warp-go)
+```
+
+2、终止wgcf： 
+
+```bash
+systemctl stop wg-quick@wgcf
+```
 
 ***
 
