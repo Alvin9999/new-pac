@@ -174,9 +174,17 @@ bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
 
 千万要注意：如出现IP丢失、VPS运行卡顿、脚本运行下载失败、无法进入脚本界面等现象，请用以下命令终止warp，再重启或者重装warp
 
-1、终止warp-go： kill -15 $(pgrep warp-go)
+1、终止warp-go： 
 
-2、终止wgcf： systemctl stop wg-quick@wgcf
+```bash
+kill -15 $(pgrep warp-go)
+```
+
+2、终止wgcf： 
+
+```bash
+systemctl stop wg-quick@wgcf
+```
 
 ***
 
