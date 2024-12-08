@@ -1,34 +1,48 @@
-name: Auto Update Wiki
+name: Auto Update Wiki Page
 
 on:
   schedule:
-    - cron: '5 * * * *'  # 每小时 5 分自动运行
+    - cron: '5 * * * *'  # 每小时第 5 分钟自动运行（UTC 时间）
   workflow_dispatch:       # 支持手动触发
+
+permissions:
+  contents: write  # 允许写入 Wiki 仓库
+  actions: read    # 允许读取 Actions 配置
 
 jobs:
   update-wiki:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. 检出主仓库（包含 Python 脚本）
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # 确保拉取完整仓库
+          fetch-depth: 0  # 拉取所有历史记录
 
+      # 2. 检出 Wiki 仓库到 wiki 目录
       - name: Checkout Wiki Repository
         run: |
-          git clone https://github.com/Alvin9999/new-pac.wiki.git wiki
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.wiki.git wiki
 
+      # 3. 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # 4. 执行更新脚本
       - name: Run Update Script
         run: |
           python update_wiki_page.py
-        working-directory: ./  # 运行脚本，脚本在主仓库根目录
+        working-directory: ./  # 确保脚本在主仓库根目录执行
 
+      # 5. 提交并推送更新回 Wiki 仓库
       - name: Commit and Push Changes to Wiki
         run: |
           cd wiki
           git config --local user.name "github-actions"
           git config --local user.email "actions@github.com"
           git add .
-          git commit -m "Auto-update Wiki page: Increment domains"
-          git push
+          git commit -m "Auto-update Wiki page: Increment domains" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.wiki.git
