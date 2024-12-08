@@ -1,0 +1,34 @@
+name: Auto Update Wiki
+
+on:
+  schedule:
+    - cron: '5 * * * *'  # 每小时 5 分钟触发（UTC 时间）
+  workflow_dispatch:       # 支持手动触发
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Wiki Repository
+        uses: actions/checkout@v3
+        with:
+          repository: 'Alvin9999/new-pac.wiki'  # 拉取 Wiki 仓库
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run Update Script
+        run: |
+          python update_wiki_page.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "actions@github.com"
+          git add 直翻通道.md
+          git commit -m "Auto-update 直翻通道 page: Increment domains"
+          git push
