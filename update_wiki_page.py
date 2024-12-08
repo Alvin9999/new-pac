@@ -2,28 +2,25 @@ import re
 import os
 from datetime import datetime
 
-# 指定文件名（对应 Wiki 页面内容的 Markdown 文件）
-page_file = "直翻通道.md"
-
-# 拉取的 Wiki 页面路径
-wiki_path = os.path.join(os.getcwd(), page_file)
+# 指定目标 Wiki 文件的路径（在 wiki 目录下）
+wiki_file = os.path.join("wiki", "直翻通道.md")
 
 # 检查文件是否存在
-if not os.path.exists(wiki_path):
-    raise FileNotFoundError(f"{page_file} 不存在，请检查路径。")
+if not os.path.exists(wiki_file):
+    raise FileNotFoundError(f"{wiki_file} 不存在，请检查路径。")
 
 # 读取页面内容
-with open(wiki_path, "r", encoding="utf-8") as file:
+with open(wiki_file, "r", encoding="utf-8") as file:
     content = file.read()
 
-# 定义更新二级域名的函数
+# 正则匹配并递增二级域名数字
 def increment_domain(match):
     base = match.group(1)
-    num = int(match.group(2)) + 1  # 数字加 1
+    num = int(match.group(2)) + 1
     suffix = match.group(3)
     return f"{base}{num}{suffix}"
 
-# 更新内容：匹配 fan29.113513.xyz 和 fan13.420820.xyz
+# 更新内容
 updated_content = re.sub(r"(fan)(\d+)(\.113513\.xyz)", increment_domain, content)
 updated_content = re.sub(r"(fan)(\d+)(\.420820\.xyz)", increment_domain, updated_content)
 
@@ -35,7 +32,7 @@ updated_content = re.sub(
 )
 
 # 将更新后的内容写回文件
-with open(wiki_path, "w", encoding="utf-8") as file:
+with open(wiki_file, "w", encoding="utf-8") as file:
     file.write(updated_content)
 
 print("Wiki 页面内容已更新。")
