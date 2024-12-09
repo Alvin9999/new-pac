@@ -2,7 +2,7 @@ name: Auto Update Wiki Page
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # 每 30 分钟运行一次（UTC时间）
+    - cron: '*/10 * * * *'  # 每 10 分钟运行一次（UTC时间）
   workflow_dispatch:       # 支持手动触发
 
 permissions:
