@@ -1,44 +1,60 @@
-name: Auto Update Wiki Page
+name: Auto Update Wiki and README
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # 每 10 分钟运行一次
+    - cron: '*/10 * * * *'  # 每 10 分钟执行一次
   workflow_dispatch:       # 支持手动触发
-
 
 permissions:
   contents: write  # 允许写入仓库内容
 
 jobs:
-  update-wiki:
+  update-wiki-readme:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. 检出主仓库（包含 README.md 和脚本）
       - name: Checkout Main Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
+      # 2. 克隆 Wiki 仓库到 wiki 目录
       - name: Checkout Wiki Repository
         run: |
           git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.wiki.git wiki
 
+      # 3. 设置 Python 环境
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # 4. 安装 Python 依赖
       - name: Install Dependencies
         run: |
           pip install pytz
 
+      # 5. 运行更新脚本
       - name: Run Update Script
         run: |
           python update_wiki_page.py
 
-      - name: Commit and Push Changes to Wiki
+      # 6. 提交和推送更新到主仓库（README.md）
+      - name: Commit and Push README Updates
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "actions@github.com"
+          git add README.md
+          git commit -m "Auto-update README.md: Update timestamp" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.git
+
+      # 7. 提交和推送更新到 Wiki 仓库
+      - name: Commit and Push Wiki Updates
         run: |
           cd wiki
           git config --local user.name "github-actions"
           git config --local user.email "actions@github.com"
           git add .
-          git commit -m "Auto-update Wiki page: Increment domains and update time" || echo "No changes to commit"
+          git commit -m "Auto-update Wiki: Increment domains and update timestamp" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.wiki.git
