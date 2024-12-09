@@ -4,8 +4,8 @@ from datetime import datetime
 import pytz  # 引入时区库
 
 # ====== 文件路径设置 ======
-wiki_file = os.path.join("wiki", "直翻通道.md")
-readme_file = os.path.join("README.md")
+wiki_file = os.path.join("wiki", "直翻通道.md")  # Wiki 仓库中的文件
+readme_file = os.path.join("README.md")  # 主仓库根目录下的 README.md 文件
 
 # ====== 获取当前北京时间 ======
 shanghai_tz = pytz.timezone("Asia/Shanghai")
