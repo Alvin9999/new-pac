@@ -1,8 +1,8 @@
 name: Auto Update Wiki Page
 
 on:
-  schedule:
-    - cron: '5 * * * *'  # 每小时的第5分钟自动运行（UTC时间）
+schedule:
+  - cron: '*/30 * * * *'  # 每 30 分钟触发一次
   workflow_dispatch:       # 支持手动触发
 
 permissions:
