@@ -18,16 +18,15 @@ if not os.path.exists(wiki_file):
 with open(wiki_file, "r", encoding="utf-8") as file:
     content = file.read()
 
-# 定义更新域名的函数
+# 定义更新域名的函数（递增域名中的数字部分）
 def increment_domain(match):
     base = match.group(1)
     num = int(match.group(2)) + 1  # 数字加 1
     suffix = match.group(3)
     return f"{base}{num}{suffix}"
 
-# 更新域名数字
-updated_content = re.sub(r"(fan)(\d+)(\.113513\.xyz)", increment_domain, content)
-updated_content = re.sub(r"(fan)(\d+)(\.420820\.xyz)", increment_domain, updated_content)
+# 更新域名数字，适配单个域名 958187.xyz
+updated_content = re.sub(r"(fan)(\d+)(\.958187\.xyz)", increment_domain, content)
 
 # 替换时间部分为当前北京时间
 updated_content = re.sub(
