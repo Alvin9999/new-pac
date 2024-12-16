@@ -12,9 +12,8 @@ jobs:
     steps:
       # 1. 检出 Wiki 仓库
       - name: Checkout Wiki Repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        run: |
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.wiki.git wiki
 
       # 2. 设置 Python 环境
       - name: Set up Python
@@ -32,11 +31,12 @@ jobs:
         run: |
           python update_v2ray_wiki.py
 
-      # 5. 提交更新
+      # 5. 提交和推送修改
       - name: Commit and Push Changes
         run: |
+          cd wiki
           git config --local user.name "github-actions"
           git config --local user.email "actions@github.com"
           git add .
-          git commit -m "Auto-update V2Ray Wiki: Update Host and Timestamp" || echo "No changes to commit"
-          git push
+          git commit -m "Auto-update Wiki: Increment domains and update timestamp" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Alvin9999/new-pac.wiki.git
