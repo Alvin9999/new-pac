@@ -3,6 +3,7 @@ name: Auto Update V2Ray Wiki
 on:
   schedule:
     - cron: '10 1 * * *'  # 每天 UTC 时间 01:10（对应北京时间 09:10）
+    - cron: '10 10 * * *' # 每天 UTC 时间 10:10（对应北京时间 18:10）
   workflow_dispatch:       # 支持手动触发
 
 jobs:
