@@ -6,7 +6,7 @@ import base64
 import json
 
 # ====== 文件路径设置 ======
-wiki_file = os.path.join("wiki", "v2ray免费账号.md")  # Wiki 仓库中的文件
+wiki_file = os.path.join("wiki", "v2ray免费账号.md")  # Wiki 文件路径
 
 # ====== 获取当前北京时间 ======
 shanghai_tz = pytz.timezone("Asia/Shanghai")
@@ -20,9 +20,9 @@ with open(wiki_file, "r", encoding="utf-8") as file:
     content = file.read()
 
 # ====== 提取当前的 host ======
-host_match = re.search(r"(y)(\d+)(\.582185\.xyz)", content)
+host_match = re.search(r"伪装域名（host）\s+\|\s+(y)(\d+)(\.582185\.xyz)", content)
 if not host_match:
-    raise ValueError("未找到有效的 host 格式，请检查文件内容。")
+    raise ValueError("未找到有效的伪装域名（host）格式，请检查文件内容。")
 
 current_host_num = int(host_match.group(2))  # 提取当前 host 的数字部分
 next_host_num = current_host_num + 1         # 计算下一次的数字
@@ -33,11 +33,8 @@ def increment_host(match):
     suffix = match.group(3)  # ".582185.xyz"
     return f"{base}{next_host_num}{suffix}"  # 替换为下一个数字
 
-# 更新 host
-updated_content = re.sub(r"(host\):\s+y)(\d+)(\.582185\.xyz)", increment_host, content)
-
-# ====== 更新节点一键导入链接中的 host ======
-updated_content = re.sub(r"(\"host\":\s+\"y)(\d+)(\.582185\.xyz\")", increment_host, updated_content)
+# 更新表格中的伪装域名（host）
+updated_content = re.sub(r"(伪装域名（host）\s+\|\s+y)(\d+)(\.582185\.xyz)", increment_host, content)
 
 # ====== 更新 vmess 链接 ======
 def update_vmess(match):
@@ -54,8 +51,8 @@ updated_content = re.sub(r"vmess://([A-Za-z0-9+/=]+)", update_vmess, updated_con
 
 # ====== 更新更新时间 ======
 updated_content = re.sub(
-    r"更新时间：\s+北京时间\d{4}年\d{2}月\d{2}日\d{2}点\d{2}分",
-    f"更新时间： 北京时间{current_time}",
+    r"\*\*更新时间：\*\* 北京时间\d{4}年\d{2}月\d{2}日\d{2}点\d{2}分",
+    f"**更新时间：** 北京时间{current_time}",
     updated_content,
 )
 
