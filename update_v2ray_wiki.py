@@ -6,7 +6,7 @@ import base64
 import json
 
 # ====== 文件路径设置 ======
-wiki_file = os.path.join(os.path.dirname(__file__), "v2ray_free_account.md")  # Wiki 文件的路径
+wiki_file = os.path.join("wiki", "v2ray免费账号.md")  # Wiki 仓库中的文件
 
 # ====== 获取当前北京时间 ======
 shanghai_tz = pytz.timezone("Asia/Shanghai")
