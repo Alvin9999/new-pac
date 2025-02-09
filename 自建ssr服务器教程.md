@@ -242,6 +242,26 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/23.png)
 
+**注意**：如果想使用**chacha20**或者**chacha20-ietf**加密方式，服务器需要安装libsodium，脚本中的数字4无法正常安装的话，使用以下命令：
+
+在 Ubuntu 或 Debian 系统上，执行以下命令直接安装 libsodium：
+
+```bash
+apt update
+
+apt install libsodium-dev -y
+```
+
+在CentOS系统上，执行以下命令直接安装 libsodium：
+
+```bash
+yum install epel-release
+
+yum install libsodium-devel -y
+```
+
+安装完libsodium后，加密方式就可以选择chacha20或者chacha20-ietf。
+
 **脚本演示结束。**
 
 
