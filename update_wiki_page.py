@@ -25,8 +25,8 @@ def increment_domain(match):
     suffix = match.group(3)
     return f"{base}{num}{suffix}"
 
-# 更新域名数字，适配单个域名 501930.xyz
-updated_content = re.sub(r"(fan)(\d+)(\.501930\.xyz)", increment_domain, content)
+# 更新域名数字，适配单个域名 206254.xyz
+updated_content = re.sub(r"(fan)(\d+)(\.206254\.xyz)", increment_domain, content)
 
 # 替换时间部分为当前北京时间
 updated_content = re.sub(
