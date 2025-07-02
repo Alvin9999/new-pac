@@ -221,7 +221,6 @@ websocket协议：
  
 [一键搭建多个协议节点教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)  [vps解锁ChatGPT、Netflix等网站教程](https://github.com/Alvin9999/new-pac/wiki/vps%E8%A7%A3%E9%94%81ChatGPT%E3%80%81Netflix%E7%AD%89%E7%BD%91%E7%AB%99%E6%95%99%E7%A8%8B)
 
-[自建brook服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAbrook%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 [自建trojan服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAtrojan%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) 
 
 ***
