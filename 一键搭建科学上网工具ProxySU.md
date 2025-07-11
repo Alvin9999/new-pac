@@ -1,4 +1,4 @@
-**2024年9月20日更新SSR、v2ray、trojan演示教程。**
+**2025年7月11日更新。**
 
 ***
 
@@ -114,7 +114,7 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 ProxySU-v2.5.7：
 
-[国外云盘下载1](https://d2.freessr2.xyz/ProxySU-v2.5.7.zip)  [国外云盘下载2](https://d.dtku35.xyz/ProxySU-v2.5.7.zip)  
+[国外云盘下载1](https://download.574981.xyz/ProxySU-v2.5.7.zip)  [国外云盘下载2](https://d.dtku35.xyz/ProxySU-v2.5.7.zip)  
 
 [ProxySU最新版](https://github.com/proxysu/ProxySU/releases)
 
