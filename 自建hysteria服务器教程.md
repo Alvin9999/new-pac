@@ -1,4 +1,4 @@
-**2025年7月11日更新。**
+**2025年8月22日更新。**
 
 ***
 
@@ -40,6 +40,8 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **vultr改版了，最新开通服务器步骤如图**：
 
+**vultr改版了，最新开通服务器步骤如图**：
+
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
 点击网页右上角的Deploy图标
@@ -48,29 +50,33 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 在下拉菜单中，点击Deploy New Server
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v3.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-1.png)
 
-服务器类型选择Cloud Compute-Shared CPU
+服务器类型选择Shared CPU，选择服务器位置。不同的服务器位置速度会有所不同。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v4.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-2.png)
 
-选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
+选择服务器套餐。有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。注意：2.5美元/月的套餐只提供ipv6，没有ipv4。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/debian110908.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-3.png)
 
-点击图中的系统名字，会弹出具体系统版本，推荐Debian系统
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-4.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-5.png)
 
-选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。便宜的套餐，点击Regular Cloud Compute，选择第一个套餐，提示升级选择No Thanks。
+关闭自动备份Auto Backups，这个是收费的，每月1美元。点击它就可以省1美元，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。接下来进行下一步，点击“Configure”
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v7.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-6.png)
 
-关闭自动备份Auto Backups，这个是收费的。点击它，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。
+点击图中的系统名字，会弹出具体系统版本，推荐Debian 11
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v8.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-7.png)
 
-最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
+选择ipv4，不要选择ipv6，当同时选择ipv4和ipv6时，ipv4会被禁用。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-8.png)
+
+最后点击“Deploy”开始部署，等3～5分钟就差不多了。
 
 **完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
