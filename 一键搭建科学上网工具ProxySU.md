@@ -1,4 +1,4 @@
-**2025年7月11日更新。**
+**2025年8月22日更新。**
 
 ***
 
@@ -52,6 +52,8 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **vultr改版了，最新开通服务器步骤如图**：
 
+**vultr改版了，最新开通服务器步骤如图**：
+
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
 点击网页右上角的Deploy图标
@@ -60,29 +62,33 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 在下拉菜单中，点击Deploy New Server
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v3.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-1.png)
 
-服务器类型选择Cloud Compute-Shared CPU
+服务器类型选择Shared CPU，选择服务器位置。不同的服务器位置速度会有所不同。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v4.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-2.png)
 
-选择服务器位置。不同的服务器位置速度会有所不同，有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。
+选择服务器套餐。有的服务器的最低价格会不同，一般纽约等位置的价格最低，有3.5美元/月的，可根据自己的需求来选择。推荐洛杉矶服务器，延迟较低且比较稳定。注意：2.5美元/月的套餐只提供ipv6，没有ipv4。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/debian110908.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-3.png)
 
-点击图中的系统名字，会弹出具体系统版本，推荐Debian系统，不推荐用CentOS系统，CentOS系统用ProxySU无法自动开启bbr加速。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-4.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v6.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-5.png)
 
-选择服务器套餐。根据自己的需求来选择，如果服务器位置定了，套餐不影响速度，影响流量和配置，一般用的人数少，选择低配置就够了。便宜的套餐，点击Regular Cloud Compute，选择第一个套餐，提示升级选择No Thanks。
+关闭自动备份Auto Backups，这个是收费的，每月1美元。点击它就可以省1美元，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。接下来进行下一步，点击“Configure”
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v7.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-6.png)
 
-关闭自动备份Auto Backups，这个是收费的。点击它，在右侧的I understand the risk前面选择勾，然后点击Disable Auto Backups即可关闭自动备份。
+点击图中的系统名字，会弹出具体系统版本，推荐Debian 11
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v8.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-7.png)
 
-最后点击“Deploy Now”开始部署，等6~10分钟就差不多了。
+选择ipv4，不要选择ipv6，当同时选择ipv4和ipv6时，ipv4会被禁用。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025vultr-8.png)
+
+最后点击“Deploy”开始部署，等3～5分钟就差不多了。
 
 **完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统的密码获取方法如下图：**
 
@@ -136,7 +142,7 @@ ProxySU-v2.5.7：
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ssr0908-1.png)
 
-SSR模板库只有SSR+TLS+Caddy，需要域名，第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B) 。证书申请需要填写一个邮箱，可以填写真实的，也可以随便填写一个，比如123455@gmail.com
+SSR模板库只有SSR+TLS+Caddy，需要域名，第一次购买域名，可以参考这个[域名购买教程](https://github.com/Alvin9999/new-pac/wiki/%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%E6%95%99%E7%A8%8B)。证书申请需要填写一个邮箱，可以填写真实的，也可以随便填写一个，比如123455@gmail.com
 
 伪装域名可以不填，如果填写，可以填写一个在大陆可以访问的域名，比如bing.com、www.microsoft.com等，伪装域名前面不要加https://
 
