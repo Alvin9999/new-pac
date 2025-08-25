@@ -1,4 +1,4 @@
-**2025年8月22日更新。**
+**2025年8月25日更新。**
 
 ***
 
@@ -304,7 +304,11 @@ systemctl disable firewalld.service
 
 **第三步：一键加速VPS服务器**
 
-五合一的TCP网络加速脚本，包括了BBR原版、BBR魔改版、暴力BBR魔改版、BBR plus（首选）、Lotsever(锐速)安装脚本。可用于KVMXen架构，不兼容OpenVZ（OVZ）。支持Centos 6+ / Debian 7+ / Ubuntu 14+，BBR魔改版不支持Debian 8。
+五合一的TCP网络加速脚本，包括了BBR原版（首选）、BBR Plus、BBR魔改版、暴力BBR魔改版、LotServer(锐速)安装脚本。可用于KVMXen架构，不兼容OpenVZ（OVZ）。支持Centos 6+ / Debian 7+ / Ubuntu 14+，BBR魔改版不支持Debian 8。
+
+👉 强烈推荐使用 BBR 原版加速：最稳定——谷歌官方维护，速度不错；最省心——Debian 9+ / Ubuntu 18.04+  系统无需更换内核；最安全——避免因魔改内核导致 VPS 无法启动。
+
+⚠️ 其他版本（BBR Plus / 魔改 / 暴力魔改 / 锐速）需要更换或指定内核，风险较高，不推荐新手使用。
 
 ***
 
@@ -321,7 +325,14 @@ chmod +x tcp.sh
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
 
-操作方法：先安装内核，重启vps让内核生效，再启动对应的加速即可。数字1的BBR/BBR魔改内核对应数字4、5、6的BBR加速、BBR魔改加速和暴力BBR魔改版加速。数字2的BBRplus内核对应数字7的BBRplus加速。数字3的锐速加速内核对应数字8的锐速加速。（如果服务器系统是Debian或Ubuntu系统，可不用安装内核，直接输入数字4启动bbr原版加速。）
+如果服务器系统是 **Debian** 或 **Ubuntu**，可不用安装内核，直接输入 **数字 4** 启动 **BBR 原版加速**。  
+
+如果服务器系统是 **CentOS**，先输入 **数字 1** 安装内核，然后 **重启服务器** 后，输入 **数字 4** 启动 **BBR 原版加速**。  
+
+**BBR 原版**由谷歌官方开发，稳定且速度表现优秀，推荐使用。  
+
+⚠️ **注意**：对于其他第三方内核，可能存在与系统不兼容的情况，安装后有概率导致 **VPS 无法正常启动**，需谨慎，因此 **不推荐**。  
+如果确实想尝试，可以考虑 **BBR Plus**。
 
 以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
 
