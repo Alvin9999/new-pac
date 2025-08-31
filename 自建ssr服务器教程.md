@@ -171,7 +171,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 ```
 ***
 
-**SSR 脚本（新），支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，安装完成后，快捷管理命令：bash ssr-plus.sh  脚本地址：[Alvin9999/SSR-Plus](https://github.com/Alvin9999/SSR-Plus)**
+**SSR 脚本（新），支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，安装完成后，快捷管理命令：bash ssr-plus.sh  脚本地址：[Alvin9999/SSR-Plus](https://github.com/Alvin9999/SSR-Plus)  如果使用新脚本，请先把旧脚本卸载了。**
 
 ***
 
