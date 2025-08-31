@@ -1,4 +1,4 @@
-**2025年8月25日更新。**
+**2025年8月31日更新。**
 
 ***
 
@@ -323,7 +323,7 @@ chmod +x tcp.sh
 
 安装完成后，脚本管理命令为：./tcp.sh
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr1.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-bbr-1.png)
 
 如果服务器系统是 **Debian** 或 **Ubuntu**，可不用安装内核，直接输入 **数字 4** 启动 **BBR 原版加速**。  
 
@@ -331,26 +331,19 @@ chmod +x tcp.sh
 
 **BBR 原版**由谷歌官方开发，稳定且速度表现优秀，推荐使用。  
 
-⚠️ **注意**：对于其他第三方内核，可能存在与系统不兼容的情况，安装后有概率导致 **VPS 无法正常启动**，需谨慎，因此 **不推荐**。  
-如果确实想尝试，可以考虑 **BBR Plus**。
+⚠️ **注意**：对于其他第三方内核，可能存在与系统不兼容的情况，安装后有概率导致 **VPS 无法正常启动**，需谨慎，因此 **不推荐**。 如果VPS 无法正常启动需要重装系统或者开新服务器。
 
-以安装暴力BBR魔改版加速为例，我们先安装对应的内核，输入数字1
+以安装**BBR 原版加速**为例，输入加速脚本，选择数字4
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr2.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-bbr-1.png)
 
-内核安装完成后，输入y进行重启，重启才能让内核生效
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-bbr-2.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr3.jpg)
-
-重启完成后，输入数字6来启动暴力BBR魔改版加速
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr4.jpg)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr5.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-bbr-3.png)
 
 输入./tcp.sh查看最终是否启动成功。
 
-如果想换一个加速，输入数字9进行卸载加速，然后进行同样的操作，安装内核再安装对应内核的加速即可。
+如果想换一个加速，输入数字9进行卸载加速，然后进行操作。
 
 **注意：如果在安装内核环节出现这样一张图，注意选择NO**
 
