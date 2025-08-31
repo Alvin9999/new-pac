@@ -1,4 +1,4 @@
-**2025年8月31日更新。**
+**2025年9月1日更新。**
 
 ***
 
@@ -158,20 +158,19 @@ xshell5:
 
 ***
 
-系统推荐Debian11或者Ubuntu 20.04 （注意：SSR旧脚本不支持版本较高的系统，会导致SSR无法启动成功。高版本系统用SSR新脚本。）
+**如果搭建SSR账号，目前推荐的SSR参数设置为以下，有利于突破网络封锁，参数如下**：
 
-**一键部署管理脚本：**
+1、加密方式：aes-256-cfb 协议：origin 混淆：tls1.2_ticket_auth
 
-**SSR 脚本（旧），安装完成后，快捷管理命令：bash ssr.sh**
+2、加密方式：chacha20-ietf 协议：auth_chain_a 混淆：plain
+
+**如果搭建SS账号，请使用SS脚本，加密方式推荐aes-256-gcm**
 
 ***
 
-```bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
-```
-***
+**支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，推荐 Debian/Ubuntu 系统。**
 
-**SSR 脚本（新），支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，安装完成后，快捷管理命令：bash ssr-plus.sh  脚本地址：[Alvin9999/SSR-Plus](https://github.com/Alvin9999/SSR-Plus)  如果使用新脚本，请先把旧脚本卸载了。**
+**SSR 脚本（新），支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，安装完成后，快捷管理命令：bash ssr-plus.sh  脚本地址：[Alvin9999/SSR-Plus](https://github.com/Alvin9999/SSR-Plus) 如果使用新脚本，请先把旧脚本卸载了。**
 
 ***
 
@@ -182,7 +181,7 @@ wget -O ssr-plus.sh https://raw.githubusercontent.com/Alvin9999/SSR-Plus/main/ss
 
 **SS 脚本**
 
-**SS脚本没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ss-go.sh**
+**SS脚本没有单独做图文教程，参考SSR脚本的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ss-go.sh**
 
 ***
 
@@ -202,98 +201,28 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 ***
 
 
-复制上面的**脚本一代码**到VPS服务器里，复制代码用鼠标右键的复制（整个代码一起复制，而不是分段哦！），然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装，以后只需要运行这个快捷命令就可以出现下图的界面进行设置，快捷管理命令为：bash ssr.sh
+复制上面的**SSR脚本代码**到VPS服务器里，复制代码用鼠标右键的复制（整个代码一起复制，而不是分段哦！），然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装，以后只需要运行这个快捷命令就可以出现下图的界面进行设置，快捷管理命令为：bash ssr-plus.sh
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/8.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-ssr1.png)
 
-如上图出现管理界面后，**输入数字1来安装SSR服务端**。如果输入1后不能进入下一步，那么请退出xshell，重新连接vps服务器，然后输入快捷管理命令bash ssr.sh 再尝试。
+输入数字 1 安装SSR。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/demo/31.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-ssr2.png)
 
-根据上图提示，依次输入自己想设置的**端口和密码** (**密码建议用复杂点的字母组合，端口号为40-65535之间的数字**)，回车键用于确认
+端口、密码、加密方式、协议、混淆，全部回车，或者自己输入或选择想要的。
 
-注：关于端口的设置，总的网络总端口有6万多个，理论上可以任意设置，但不要以0开头！但是有的地区需要设置特殊的端口才有效，一些特殊的端口比如80、143、443、1433、3306、3389、8080。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-ssr3.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/demo/32.png)
+搭建好后，会生成SSR账号信息以及SSR链接。
 
-如上图，选择想设置的**加密方式**，比如10，按回车键确认
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-ssr4.png)
 
-接下来是选择**协议插件**，如下图：
+Debian/Ubuntu系统，可以输入数字 8 来启动BBR + TCP Fast Open加速，这样就不用单独部署 BBR 加速脚本。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/11.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-ssr5.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/demo/41.PNG)
+输入数字 9 可以更新脚本。
 
-选择并确认后，会出现上图的界面，提示你是否选择兼容原版，这里的原版指的是SS客户端（SS客户端没有协议和混淆的选项），可以根据需求进行选择，演示选择y
-
-之后进行混淆插件的设置。
-
-**注意：混淆选择plain意思是不混淆，有的时期增加混淆有利于突破封锁，有的时期不混淆有利用突破封锁，需要自己来尝试。** 
-
-
-进行混淆插件的设置后，会依次提示你对设备数、单线程限速和端口总限速进行设置，默认值是不进行限制，个人使用的话，选择默认即可，即直接敲回车键。
-
-注意：关于限制设备数，这个协议必须是非原版且不兼容原版才有效，也就是必须使用SSR协议的情况下，才有效！
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/14.png)
-
-之后代码就正式自动部署了，到下图所示的位置，提示你下载文件，输入：y
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/15.png)
-
-耐心等待一会，出现下面的界面即部署完成：
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/16.png)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/demo/34.png)
-
-根据上图就可以看到自己设置的SSR账号信息，包括IP、端口、密码、加密方式、协议插件、混淆插件，这些信息需要填入你的SSR客户端。提醒一下：二维码链接地址由于域名失效不可用，所以部署好的账号需要自己在客户端里面手动填写信息。
-
-如果之后想修改账号信息，直接输入快捷管理命令：bash ssr.sh 进入管理界面，选择相应的数字来进行一键修改。例如：
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/22.png)
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/ss/23.png)
-
-**注意**：如果想使用**chacha20**或者**chacha20-ietf**加密方式，服务器需要安装libsodium，脚本中的数字4无法正常安装的话，使用以下命令：
-
-在 Ubuntu 或 Debian 系统上，执行以下命令直接安装 libsodium：
-
-```bash
-apt update
-
-apt install libsodium-dev -y
-```
-
-在CentOS系统上，执行以下命令直接安装 libsodium：
-
-```bash
-yum install epel-release
-
-yum install libsodium-devel -y
-```
-
-安装完libsodium后，加密方式就可以选择chacha20或者chacha20-ietf。
-
-**脚本演示结束。**
-
-
-此脚本是开机自动启动，部署一次即可。最后可以重启服务器确保部署生效（一般情况不重启也可以）。重启需要在命令栏里输入reboot ，输入命令后稍微等待一会服务器就会自动重启，一般重启过程需要2～5分钟，重启过程中Xshell会自动断开连接，等VPS重启好后才可以用Xshell软件进行连接。如果部署过程中卡在某个位置超过10分钟，可以用xshell软件断开，然后重新连接你的ip，再复制代码进行部署。
-
-**注意：如果创建的是centos7的服务器，需要使用命令关闭防火墙，否则无法使用代理。CentOS 7.0默认使用的是firewall作为防火墙。**
-
-**查看防火墙状态命令**：
-```bash
-firewall-cmd --state
-```
-**停止firewall命令**：
-```bash
-systemctl stop firewalld.service
-```
-**禁止firewall开机启动命令**：
-```bash
-systemctl disable firewalld.service
-```
 ***
 
 **高阶篇**
