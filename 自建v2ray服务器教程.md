@@ -160,11 +160,11 @@ xshell5:
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
 ```
 
-> 如果输入安装命令后提示curl: command not found，那是因为服务器系统没有自带curl命令，安装一下curl。
+> 如果输入安装命令后提示wget: command not found，那是因为服务器系统没有自带wget命令，安装一下wget。
 
-> CentOS系统安装curl命令：yum install -y curl   
+> CentOS系统安装wget命令：yum install -y wget
 
-> Debian/Ubuntu系统安装curl命令：apt-get install -y curl
+> Debian/Ubuntu系统安装wget命令：apt-get install -y wget
 
 > 安装完成后，输入 sb 可进入管理页面。
 
