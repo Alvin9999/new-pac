@@ -152,24 +152,12 @@ xshell5:
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**Ubuntu 16+ / Debian 8+ 系统 v2ray一键部署管理脚本**（ps：如果这个脚本不好用，教程末尾还有一键搭建多个协议节点脚本）
+**Ubuntu 16+ / Debian 8+ 系统 一键部署sing-box管理脚本**
 
 安装命令：
 
 ```bash
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
-```
-
-升级命令(保留配置文件更新)：
-
-```bash
-source <(curl -sL https://multi.netlify.app/v2ray.sh) -k
-```
-
-卸载命令：
-
-```bash
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
 ```
 
 > 如果输入安装命令后提示curl: command not found，那是因为服务器系统没有自带curl命令，安装一下curl。
@@ -178,28 +166,46 @@ source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
 
 > Debian/Ubuntu系统安装curl命令：apt-get install -y curl
 
-> 安装完成后，输入v2ray可进入管理页面。脚本来自[Jrohy/multi-v2ray](https://github.com/Jrohy/multi-v2ray)。
+> 安装完成后，输入 sb 可进入管理页面。
 
 
 ***
 
 **脚本演示**
 
-复制上面安装命令代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着输入数字1来安装。安装完成后，如果想修改、查看配置等，可以输入v2ray进行管理页面，不用重复安装脚本。
+复制上面安装命令代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray1.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-2.PNG)
+输入2，选择中文
 
-安装速度很快，安装结束后默认有个kcp协议帐号，如果不想用kcp协议，可以输入v2ray管理页面来进行传输方式的更改。（推荐websocket协议）
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray2.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-3.PNG)
+输入1，安装
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/PAC/v2ray/v2ray-2-4.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray3.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2ray-cs.png)
+输入a，选择全部类型
 
-安装成功后会出现“multi-v2ray install success!”字样。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray4.png)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray5.png)
+
+全部回车
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray6.png)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray7.png)
+
+出现上面字样表示安装成功
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray8.png)
+
+安装完成后，节点会有多种类型的输出形式，适合多个不同的客户端导入，从上往下包括v2rayN、ShadowRocket、 Clash Verge、NekoBox、Sing-box。如果是用v2ray客户端，鼠标一直往上面翻，找到v2rayN下面的所有节点，有鼠标右键全部复制下来，一键全部倒入到软件中。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray9.png)
+
+目前有9个不同类型的节点，有6～7个节点可以用。
 
 ***
 
@@ -282,38 +288,5 @@ windows系统打开v2rayN软件，在软件的底部，选择“自动配置系�
 
 ***
 
-**常见问题参考解决方法**：
-
-**1、账号无法使用，可能原因：vps防火墙端口没有放开或者本地电脑防火墙、杀毒软件阻挡代理软件。**
-
-关闭vps防火墙即可开放所有端口，本地电脑防火墙和杀毒软件手动关闭即可。
-
-查看防火墙状态命令：firewall-cmd --state  
-
-停止firewall命令：systemctl stop firewalld.service
-
-禁止firewall开机启动命令：systemctl disable firewalld.service
-
-
-**2、搭建的账号之前能用，突然不能用了，怎么解决？**
-
-如果ip不能ping通，xshell不能直接连接vps服务器，说明ip被墙了，需要开新服务器换ip。
-
-如果ip能ping，xshell能直接连接vps服务器，说明ip没有被墙，多半是端口被封了，优先换端口。
-
-如果ip和端口都没问题，可以尝试来更换传输协议，比如Websocket、TCP、mKCP等，测试哪种协议最适合自己的网络环境。
-
-**3、一键搭建多个协议节点脚本，无需域名，小白专用**
-
-```bash
-bash <(curl -Ls https://gitlab.com/rwkgyg/sing-box-yg/raw/main/sb.sh)
-```
-脚本快捷管理命令：sb
-
-[图文教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B)
-
-无需域名。按照提示操作安装，全程回车即可。搭建好后默认有4个节点，1个vless-reality-vision节点，1个vmess-ws节点，1个Hysteria-2节点，1个Tuic-v5节点。
-
-***
 
 有问题可以发邮件至海外邮箱rebeccalane27@gmail.com
