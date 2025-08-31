@@ -158,16 +158,6 @@ xshell5:
 
 ***
 
-**如果搭建SSR账号，目前推荐的SSR参数设置为以下，有利于突破网络封锁，参数如下**：
-
-1、加密方式：aes-256-cfb 协议：origin 混淆：tls1.2_ticket_auth
-
-2、加密方式：chacha20-ietf 协议：auth_chain_a 混淆：plain
-
-**如果搭建SS账号，请使用SS脚本，加密方式推荐aes-256-gcm**
-
-***
-
 **支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，推荐 Debian/Ubuntu 系统。**
 
 **SSR 脚本（新），支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，安装完成后，快捷管理命令：bash ssr-plus.sh  脚本地址：[Alvin9999/SSR-Plus](https://github.com/Alvin9999/SSR-Plus) 如果使用新脚本，请先把旧脚本卸载了。**
