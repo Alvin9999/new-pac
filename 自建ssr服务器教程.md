@@ -158,11 +158,11 @@ xshell5:
 
 ***
 
-系统推荐Debian11或者Ubuntu 20.04 （注意：SSR脚本不支持版本较高的系统，会导致SSR无法启动成功，比如Debian12、CentOS9、Ubuntu22、Ubuntu23、Ubuntu24；但SS脚本支持；另外教程末尾有使用docker安装SSR方法，高系统版本的服务器可以搭建SSR。）
+系统推荐Debian11或者Ubuntu 20.04 （注意：SSR旧脚本不支持版本较高的系统，会导致SSR无法启动成功。高版本系统用SSR新脚本。）
 
 **一键部署管理脚本：**
 
-**脚本一(SSR)，安装完成后，快捷管理命令：bash ssr.sh**
+**SSR 脚本（旧），安装完成后，快捷管理命令：bash ssr.sh**
 
 ***
 
@@ -171,9 +171,18 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 ```
 ***
 
-**脚本二（SS）**
+**SSR 脚本（新），支持 Debian 9-13、Ubuntu 18.04-25.04 等高版本 Linux 系统，安装完成后，快捷管理命令：bash ssr-plus.sh  脚本地址：[Alvin9999/SSR-Plus](https://github.com/Alvin9999/SSR-Plus)**
 
-**脚本二没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ss-go.sh**
+***
+
+```bash
+wget -O ssr-plus.sh https://raw.githubusercontent.com/Alvin9999/SSR-Plus/main/ssr-plus.sh && chmod +x ssr-plus.sh && bash ssr-plus.sh
+```
+***
+
+**SS 脚本**
+
+**SS脚本没有单独做图文教程，参考脚本一的图文说明摸索下就会了。安装完成后，快捷管理命令：bash ss-go.sh**
 
 ***
 
