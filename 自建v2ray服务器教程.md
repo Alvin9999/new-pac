@@ -187,7 +187,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-b
 
 输入a，选择全部类型
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray4.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray4-2.png)
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray5.png)
 
