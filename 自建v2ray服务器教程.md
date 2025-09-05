@@ -158,7 +158,7 @@ xshell5:
 apt update && apt -y install curl wget nginx  tar socat jq git openssl uuid-runtime build-essential zlib1g-dev libssl-dev libevent-dev dnsutils cron
 ```
 
-**安装依赖有点慢，耐心等待自动安装完成。Debian系统安装很快，Ubuntu系统安装要慢一点。**
+**Debian系统安装依赖很快，Ubuntu系统安装要慢一点，耐心等待依赖自动安装完成。**
 
 安装脚本:
 
