@@ -150,7 +150,7 @@ xshell5:
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**一键部署sing-box管理脚本**
+**一键部署sing-box管理脚本（推荐Debian系统）**
 
 安装依赖:
 
@@ -158,7 +158,7 @@ xshell5:
 apt update && apt -y install curl wget nginx  tar socat jq git openssl uuid-runtime build-essential zlib1g-dev libssl-dev libevent-dev dnsutils cron
 ```
 
-**安装依赖有点慢，耐心等待自动安装完成。**
+**安装依赖有点慢，耐心等待自动安装完成。Debian系统安装很快，Ubuntu系统安装要慢一点。**
 
 安装脚本:
 
