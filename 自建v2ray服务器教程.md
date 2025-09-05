@@ -152,7 +152,13 @@ xshell5:
 
 **一键部署sing-box管理脚本**
 
-安装命令：
+安装依赖:
+
+```bash
+apt update && apt -y install curl wget tar socat jq git openssl uuid-runtime build-essential zlib1g-dev libssl-dev libevent-dev dnsutils cron
+```
+
+安装脚本:
 
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
