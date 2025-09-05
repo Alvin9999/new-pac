@@ -155,7 +155,7 @@ xshell5:
 安装依赖:
 
 ```bash
-apt update && apt -y install curl wget tar socat jq git openssl uuid-runtime build-essential zlib1g-dev libssl-dev libevent-dev dnsutils cron
+apt update && apt -y install curl wget nginx  tar socat jq git openssl uuid-runtime build-essential zlib1g-dev libssl-dev libevent-dev dnsutils cron
 ```
 
 安装脚本:
