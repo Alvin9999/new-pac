@@ -44,8 +44,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-**vultr改版了，最新开通服务器步骤如图**：
-
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
 点击网页右上角的Deploy图标
@@ -152,7 +150,7 @@ xshell5:
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**Ubuntu 16+ / Debian 8+ 系统 一键部署sing-box管理脚本**
+**一键部署sing-box管理脚本**
 
 安装命令：
 
@@ -179,7 +177,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-b
 
 输入2，选择中文
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray2.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-v2ray2-2.png)
 
 输入1，安装
 
