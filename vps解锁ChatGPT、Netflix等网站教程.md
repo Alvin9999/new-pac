@@ -46,8 +46,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 **vultr改版了，最新开通服务器步骤如图**：
 
-**vultr改版了，最新开通服务器步骤如图**：
-
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v1.jpg)
 
 点击网页右上角的Deploy图标
