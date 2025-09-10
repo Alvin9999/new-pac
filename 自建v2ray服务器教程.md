@@ -155,7 +155,7 @@ xshell5:
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh)
 ```
-> 安装完成后，输入sb可进入管理页面。脚本来自[yonggekkk](https://github.com/yonggekkk/sing-box_hysteria2_tuic_argo_reality)。
+> 安装完成后，输入sb可进入管理页面。
 
 ***
 
