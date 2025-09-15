@@ -156,7 +156,7 @@ xshell5:
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-一键安装sing-box脚本，开箱即用 18 个节点（直连 9 + WARP 9），包括Trojan Reality节点，含端口一键切换、BBR 加速、分享链接导出等。支持 Debian/Ubuntu/CentOS/Arch Linux/Fedora/Rocky/openSUSE Linux 系统，已在[Vultr](https://www.vultr.com/?ref=7048874) 上测试通过。脚本地址：[Alvin9999/Sing-Box-Plus](https://github.com/Alvin9999/Sing-Box-Plus)
+一键安装sing-box脚本，开箱即用 18 个节点（直连 9 + WARP 9），包括2个 Trojan Reality节点，含端口一键切换、BBR 加速、分享链接导出等。支持 Debian/Ubuntu/CentOS/Arch Linux/Fedora/Rocky/openSUSE Linux 系统，已在[Vultr](https://www.vultr.com/?ref=7048874) 上测试通过。脚本地址：[Alvin9999/Sing-Box-Plus](https://github.com/Alvin9999/Sing-Box-Plus)
 
 ```bash
 wget -O sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Plus/main/sing-box-plus.sh && chmod +x sing-box-plus.sh && bash sing-box-plus.sh
