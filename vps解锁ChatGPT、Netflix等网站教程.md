@@ -1,4 +1,4 @@
-**2025年8月22日更新。**
+**2025年9月15日更新。**
 
 ***
 
@@ -7,16 +7,6 @@
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/netflix1.png)
 
 （如果访问YouTube出现需要登录账号才能观看视频，也可以用此方法来解决）
-
-一般来说，需要原生ip才能正常访问这些受限制的网站，但原生ip的vps比较难找，且比较贵，因此我们可以借助Cloud­flare WARP来实现原生ip的功能。如果不想搭建vps，那么也可以考虑这个原生ip [V2free机场](https://github.com/Alvin9999/new-pac/wiki/V2free%E6%9C%BA%E5%9C%BA)。
-
-***
-
-通过脚本搭建好后，预览图如下
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt6.jpg)
-
-此时以上网站都可以正常访问了。
 
 ***
 
@@ -151,104 +141,59 @@ xshell5:
 
 ***
 
-本方法默认服务器已经安装了ss、v2ray、hysteria等工具。如果服务器没有安装翻墙工具，可以选择以下方法：
+一键安装sing-box脚本，开箱即用 18 个节点（直连 9 + WARP 9），对于解锁网站需求，使用9个WARP节点。含端口一键切换、BBR 加速、分享链接导出等。支持 Debian/Ubuntu/CentOS/Arch Linux/Fedora/Rocky/openSUSE Linux 系统，已在[Vultr](https://www.vultr.com/?ref=7048874) 上测试通过。脚本地址：[Alvin9999/Sing-Box-Plus](https://github.com/Alvin9999/Sing-Box-Plus)
 
-| 教程名称 | 教程名称 |
-|----------|----------|
-| [自建 Shadowsocks/SSR 服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) | [自建 Hysteria 服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAhysteria%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) |
-| [自建 V2Ray 服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAv2ray%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) | [自建 Trojan 服务器教程](https://github.com/Alvin9999/new-pac/wiki/%E8%87%AA%E5%BB%BAtrojan%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B) |
-| [一键搭建多个协议节点教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E5%A4%9A%E4%B8%AA%E5%8D%8F%E8%AE%AE%E8%8A%82%E7%82%B9%E6%95%99%E7%A8%8B) | [一键搭建科学上网工具 ProxySU 教程](https://github.com/Alvin9999/new-pac/wiki/%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7ProxySU) |
-| [VPS 解锁 ChatGPT、Netflix 等教程](https://github.com/Alvin9999/new-pac/wiki/vps%E8%A7%A3%E9%94%81ChatGPT%E3%80%81Netflix%E7%AD%89%E7%BD%91%E7%AB%99%E6%95%99%E7%A8%8B) | |
+```bash
+wget -O sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Plus/main/sing-box-plus.sh && chmod +x sing-box-plus.sh && bash sing-box-plus.sh
+```
+> 安装完成后，输入 bash sing-box-plus.sh 可进入管理页面。
+
+> 如果安装过其它 sing-box 脚本，请先卸载。
 
 ***
 
-**Cloud­flare WARP 一键安装脚本**
+**脚本演示**
 
-```bash
-bash <(wget -qO- https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh 2> /dev/null)
-```
+复制上面安装命令代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。
 
-或者
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-1.png)
 
-```bash
-bash <(curl -Ls https://gitlab.com/rwkgyg/CFwarp/raw/main/CFwarp.sh)
-```
+复制脚本后，按回车键。
 
-千万要注意：如出现IP丢失、VPS运行卡顿、脚本运行下载失败、无法进入脚本界面等现象，请用以下命令终止warp，再重启或者重装warp
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-2.png)
 
-1、终止warp-go： 
+输入数字 1 安装脚本。脚本全自动安装。
 
-```bash
-kill -15 $(pgrep warp-go)
-```
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-3.png)
 
-2、终止wgcf： 
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-4.png)
 
-```bash
-systemctl stop wg-quick@wgcf
-```
+## ✨ 默认部署内容（18 个节点）
 
-***
+**直连 9：**
 
-演示操作：
+* VLESS Reality（Vision 流）
+* VLESS gRPC Reality
+* Trojan Reality
+* VMess WS
+* Hysteria2（直连证书）
+* Hysteria2 + OBFS(salamander)
+* Shadowsocks 2022（2022-blake3-aes-256-gcm）
+* Shadowsocks（aes-256-gcm）
+* TUIC v5（ALPN h3，自签证书）
 
-复制上面的Cloud­flare WARP 一键安装脚本代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装。
+​**WARP 9：**（同上 9 种，出站经 Cloudflare WARP）
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt2.jpg)
+> WARP 出站更利于流媒体解锁与回程质量。
 
-首次安装后，脚本会自动检测ChatGPT、Netflix解锁情况。从图片可以看出这台vultr vps都未解锁ChatGPT、Netflix。
+用鼠标复制所有节点链接一键导入到软件中。以v2ray为例，导入后界面：
 
-输入数字2，安装wgcf。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-5.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt3.jpg)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-6.png)
 
-输入数字1，选择方案一。
+脚本还有其它功能：查看分享链接、一键更换所有端口 、一键开启 BBR。可以输入数字 5 来启动 BBR 加速，这样就不用单独部署 BBR 加速脚本。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt4.jpg)
-
-如果你的vps只有ipv4，那么选择数字1（单栈ipv4）；如果你的vps只有ipv6，那么选择数字2（单栈ipv6）；如果你的vps同时有ipv4和ipv6，那么选择数字3（双栈ipv4+ipv6）。
-
-演示vultr vps为双栈ipv4+ipv6，所有选择数字3。
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt6.jpg)
-
-出现这个界面表示安装成功了，从图片可以看出这台vultr vps已经成功解锁ChatGPT、Netflix。
-
-测试：
-
-打开ChatGPT官网：https://chatgpt.com
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/chatgpt7.jpg)
-
-无需登录ChatGPT即可聊天。
-
-打开Netflix官网：https://www.netflix.com
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/netflix3.png)
-
-**注意**：通过此方法检测出来的落地ip为Cloud­flare WARP的ip，相当于服务器ip伪装成了Cloud­flare WARP的ip。但你的ss、v2ray等搭建好的账号的ip还是要填写vps的ip。另外，ssr账号用此方法测试不成功，ss、v2ray、hysteria账号测试可行。
-
-ip检测网址：https://allinfa.com/tool/ip2/ip.php
-
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/ipcheck1.png)
-
-**记住：客户端使用翻墙账号时，记住一定要换成你自己的vps服务器ip！不是Cloud­flare WARP的ip！不是Cloud­flare WARP的ip！不是Cloud­flare WARP的ip！**
-
-***
-
-**千万要注意：如出现IP丢失、VPS运行卡顿、脚本运行下载失败、无法进入脚本界面等现象，请用以下命令终止warp，再重启或者重装warp**
-
-1、终止warp-go： 
-
-```bash
-kill -15 $(pgrep warp-go)
-```
-
-2、终止wgcf： 
-
-```bash
-systemctl stop wg-quick@wgcf
-```
 
 ***
 
