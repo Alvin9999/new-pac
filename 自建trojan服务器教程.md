@@ -1,16 +1,14 @@
-**2025年8月31日更新。**
+**2025年9月15日更新。**
 
 ***
 
-**整个教程分四步**：
+**整个教程分三步**：
 
 第一步：购买VPS服务器
 
-第二步：购买域名（非必选）
+第二步：一键搭建服务器
 
-第三步：一键搭建服务器
-
-第四步：一键加速VPS服务器 （五合一的TCP网络加速脚本）
+第三步：一键加速VPS服务器 （五合一的TCP网络加速脚本）
 
 
 ***
@@ -158,69 +156,58 @@ xshell5:
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
-**一键安装trojan脚本代码（系统支持centos7+/debian9+/ubuntu16+）**：
-
-**脚本1**：
+一键安装sing-box脚本，开箱即用 18 个节点（直连 9 + WARP 9），包括Trojan Reality节点，含端口一键切换、BBR 加速、分享链接导出等。支持 Debian/Ubuntu/CentOS/Arch Linux/Fedora/Rocky/openSUSE Linux 系统，已在[Vultr](https://www.vultr.com/?ref=7048874) 上测试通过。脚本地址：[Alvin9999/Sing-Box-Plus](https://github.com/Alvin9999/Sing-Box-Plus)
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh)"
+wget -O sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Plus/main/sing-box-plus.sh && chmod +x sing-box-plus.sh && bash sing-box-plus.sh
 ```
+> 安装完成后，输入 bash sing-box-plus.sh 可进入管理页面。
 
-> 如果输入安装命令没反应，或者提示curl: command not found ，那是因为服务器系统没有自带curl命令，安装一下curl。
-
-> CentOS系统安装curl命令：yum install -y curl   
-
-> Debian/Ubuntu系统安装curl命令：apt-get install -y curl
+> 如果安装过其它 sing-box 脚本，请先卸载。
 
 ***
 
-**脚本2**：
+**脚本演示**
 
-```bash
-bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/argox/main/argox.sh)
-```
+复制上面安装命令代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。
 
-无需域名。有域名也行。按照提示操作，一般回车即可。搭建好后默认有6个节点，3个vless节点，1个vmess节点，1个trojan节点，1个ss节点。
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-1.png)
 
-脚本2安装方法：数字2“简体中文”——数字1“安装 ArgoX 脚本”，后面回车即可。搭建完成后鼠标滑轮往上翻可以看到不同客户端的一键导入链接以及配置信息。
+复制脚本后，按回车键。
 
-***
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-2.png)
 
-教程以第1个脚本为演示。复制上面第1个脚本代码到vps服务器中进行安装，安装过程中会提示输入域名。
+输入数字 1 安装脚本。脚本全自动安装。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-new1.PNG)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-3.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan3.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-4.png)
 
-安装过程会先提示输入域名，不要带http或https，只输入域名即可，例如domain.com或 a.domain.com ，之后提示输入密码时输入密码。
+## ✨ 默认部署内容（18 个节点）
 
-**注意：使用脚本1如果安装过程中出现https申请失败，先用数字4修复证书，再用数字1安装trojan。**
+**直连 9：**
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-4.png)
+* VLESS Reality（Vision 流）
+* VLESS gRPC Reality
+* Trojan Reality
+* VMess WS
+* Hysteria2（直连证书）
+* Hysteria2 + OBFS(salamander)
+* Shadowsocks 2022（2022-blake3-aes-256-gcm）
+* Shadowsocks（aes-256-gcm）
+* TUIC v5（ALPN h3，自签证书）
 
-修复证书后，会提示证书申请成功。
+​**WARP 9：**（同上 9 种，出站经 Cloudflare WARP）
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-5.png)
+> WARP 出站更利于流媒体解锁与回程质量。
 
-接着输入数字1重新安装trojan。
+用鼠标复制所有节点链接一键导入到软件中。以v2ray为例，导入后界面：
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan0908-6.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-5.png)
 
-最终安装完成后，配置文件信息会自动展示在屏幕上，对于trojan账号信息，最重要的是域名和密码。以v2rayN客户端为例，填入方法如下图：
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-6.png)
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/trojan-2.png)
-
-打开v2rayN客户端——添加trojan服务器——填入账号信息，如上图，重要信息包括：域名、密码、传输层安全tls、SNI。
-
-浏览器代理设置成socks5 127.0.0.1:1080。
-
-谷歌浏览器chrome可配合switchyomega插件来使用，下载插件：[switchyomega](https://github.com/atrandys/trojan/releases/download/1.0.0/SwitchyOmega_Chromium.crx)
-
-安装插件，打开chrome，打开扩展程序，将下载的插件拖动到扩展程序页面，添加到扩展。
-![20181116000534](https://user-images.githubusercontent.com/12132898/70548725-0461d000-1bae-11ea-9d1e-4577e36ac46e.png)
-
-完成添加，会跳转到switchyomega页面，点跳过教程，然后点击proxy，如图填写，最后点击应用选项。
-![20181116001438](https://user-images.githubusercontent.com/12132898/70548727-04fa6680-1bae-11ea-99da-568af4fd6f5f.png)
+脚本还有其它功能：查看分享链接、一键更换所有端口 、一键开启 BBR。可以输入数字 5 来启动 BBR 加速，这样就不用单独部署 BBR 加速脚本。
 
 ***
 
@@ -272,37 +259,6 @@ chmod +x tcp.sh
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
 
 ***
-
-**常见问题参考解决方法**：
-
-1、使用脚本1申请证书失败
-
-可能的原因1：
-
-一些原因导致使用nginx申请证书时出错，可能端口没开放，可以关闭服务器防火墙。服务器系统推荐debian，默认未开启防火墙。
-
-可能的原因2:
-
-使用脚本1如果安装过程中出现https申请失败，先用数字4修复证书，再用数字1重新安装trojan。
-
-2、trojan服务端怎么修改密码
-
-trojan服务端配置文件路径如下，如需修改内容，修改以下文件即可。
-
-/usr/src/trojan/server.conf
-
-修改完成后，重启trojan服务端即可，同时客户端的密码也要同步修改哦。
-
-systemctl restart trojan
-
-3、Trojan客户端打开无法运行，提示缺少找不到vcruntime140.dll或找不到msvcp140.dll。
-
-原因缺少运行库，点击[下载链接](https://www.microsoft.com/en-us/download/details.aspx?id=48145)中的两个软件，一个是32位一个是64位，请全部安装即可。
-
-4、如果遇到vcruntime140_1的错误，下载下面的文件放到C:\windows\system32目录下即可
-
-[点击下载140_1.dll](https://github.com/atrandys/trojan/raw/master/vcruntime140_1.dll)
-
 
 ***
 
