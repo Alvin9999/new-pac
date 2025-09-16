@@ -158,11 +158,11 @@ wget -O sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Pl
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-1.png)
 
-复制脚本后，按回车键。
+复制脚本后，按回车键。脚本会先安装相关依赖。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-2.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-0.png)
 
-输入数字 1 安装脚本。脚本全自动安装。
+出现管理界面后，输入数字 1 安装脚本。脚本全自动安装。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-3.png)
 
