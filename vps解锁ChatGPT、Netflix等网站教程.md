@@ -1,4 +1,4 @@
-**2025年9月15日更新。**
+**2025年9月17日更新。**
 
 ***
 
@@ -146,6 +146,13 @@ xshell5:
 ```bash
 wget -O sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Plus/main/sing-box-plus.sh && chmod +x sing-box-plus.sh && bash sing-box-plus.sh
 ```
+
+或者
+
+```bash
+curl -fsSL -o sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Plus/main/sing-box-plus.sh  && chmod +x sing-box-plus.sh && bash sing-box-plus.sh
+```
+
 > 安装完成后，输入 bash sing-box-plus.sh 可进入管理页面。
 
 > 如果安装过其它 sing-box 脚本，请先卸载。
@@ -158,11 +165,11 @@ wget -O sing-box-plus.sh https://raw.githubusercontent.com/Alvin9999/Sing-Box-Pl
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-1.png)
 
-复制脚本后，按回车键。脚本会先安装相关依赖。
+复制脚本后，按回车键。
 
-![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-0.png)
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-2.png)
 
-出现管理界面后，输入数字 1 安装脚本。脚本全自动安装。
+出现管理界面后，输入数字 1 来安装脚本，按回车键。脚本全自动安装。
 
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/2025-sing-box-3.png)
 
