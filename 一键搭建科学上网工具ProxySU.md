@@ -32,7 +32,7 @@ VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、
 
 vultr注册地址：https://www.vultr.com/?ref=7048874 （vps最低2.5美元/月，vultr全球32个服务器位置可选，包括洛杉矶、韩国、新加坡、日本、德国、荷兰等。支持支付宝和paypal付款。） 
 
-<a href="https://www.vultr.com/?ref=7048874"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
+<a href="https://www.vultr.com/?ref=7048874"><img src="https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/vultr_728x90.png" width="728" height="90"></a>
 
 虽然是英文界面，但是现在的浏览器都有网页翻译功能，鼠标点击右键，选择网页翻译即可翻译成中文。
 
@@ -49,8 +49,6 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v0.jpg)
 
 依次点击Account——Make a payment——Alipay(支付宝)
-
-**vultr改版了，最新开通服务器步骤如图**：
 
 **vultr改版了，最新开通服务器步骤如图**：
 
