@@ -1,4 +1,4 @@
-**2025年9月17日更新。**
+**2025年11月24日更新。**
 
 ***
 
@@ -256,6 +256,46 @@ chmod +x tcp.sh
 ![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/vultr/newbbr6.jpg)
 
 ***
+
+
+【v2rayN客户端下载及使用方法】
+
+**客户端使用教程：[v2ray各平台图文使用教程](https://github.com/Alvin9999/new-pac/wiki/v2ray%E5%90%84%E5%B9%B3%E5%8F%B0%E5%9B%BE%E6%96%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)**
+
+Windows/Mac/Linux v2rayN 客户端：[Github最新版下载](https://github.com/2dust/v2rayN/releases/latest) (下载带core的文件) [Github镜像下载](https://jgithub.xyz/2dust/v2rayN/releases/latest) (下载带core的文件)
+
+以Windows v2rayN客户端为例：
+
+第一步，按照地址下载v2rayN客户端，然后解压缩后打开应用：
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202500.png)
+
+第二步，在任务栏中找到蓝色V图标，单击打开客户端界面，点击配置项
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202501.png)
+
+复制节点一键导入链接后，选择“从剪贴板导入分享链接”即可把节点导入到软件中，可以批量导入。或者也可以通过扫描二维码或者手动填写节点信息。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202504.png)
+
+第三步，鼠标选中想用的节点，右键选择设置为活动服务器或者按回车，启用该节点。软件每次只能启用1个节点。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202502.png)
+
+第四步，在任务栏中右键v2rayN图标，选择“自动配置系统代理”，之后就可以通过浏览器翻墙了。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202503.png)
+
+如果路由选择“绕过大陆”，那么国内没有被封的网址就没有被代理。如果路由选择“全局”，那么所有的网址都会被代理。
+
+**快速检测节点是否有效**
+
+选中所有节点，选择“测试真链接”，如果延迟结果是“-1”，那么该节点不可用，反之节点可用。
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202505.png)
+
+![](https://cdn.jsdelivr.net/gh/Alvin9999/pac2/softimag/v2rayn202506.png)
+
 
 ***
 
